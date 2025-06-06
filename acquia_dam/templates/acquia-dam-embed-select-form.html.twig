@@ -1,0 +1,14 @@
+<div class="embed-select-form">
+  <h4>{% trans %}Choose a format for your media{% endtrans %}</h4>
+  <p>{% trans %}Select the format you would like your media to be placed in your webpage.{% endtrans %}</p>
+  <div class="embed-select-form__grid">
+    <div>
+      <h6>{% trans %}Media preview{% endtrans %}</h6>
+      {{ form.thumbnail }}
+    </div>
+    <div>
+      <h6>{% trans %}Format options{% endtrans %}</h6>
+      {{ form|without('thumbnail') }}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - acquia_dam
+id: acquia_dam_audio_asset
+label: 'Acquia DAM: Audio'
+description: 'Media assets type of sound clips in the remote DAM service.'
+source: 'acquia_dam_asset:audio'
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: acquia_dam_asset_id
+  download_assets: false
+field_map:
+  filename: name

@@ -1,0 +1,7 @@
+{
+    "name": "drupal/acquia_dam_integration_links",
+    "description": "Provides enhanced integration links for Acquia DAM.",
+    "license": "GPL-2.0-or-later",
+    "type": "drupal-module",
+    "require": {}
+}

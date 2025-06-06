@@ -1,0 +1,5 @@
+acquiadam_asset_import.configuration:
+  route_name: acquiadam_asset_import.configuration
+  title: 'Bulk import'
+  base_route: acquia_dam.config
+  weight: 2

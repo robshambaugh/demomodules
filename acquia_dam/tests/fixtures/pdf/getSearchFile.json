@@ -1,0 +1,77 @@
+{
+  "query":"Explorer FileType:pdf",
+  "sort":"-created",
+  "query_explained":"Explorer File Type: pdf",
+  "sort_explained":"Metadata: created (descending)",
+  "scroll_id":null,
+  "scroll_timeout":null,
+  "query_syntax_ok":true,
+  "include_archived":false,
+  "include_deleted":false,
+  "item_type":"asset",
+  "total_count":1,
+  "offset":0,
+  "limit":10,
+  "items":[
+    {
+      "id":"0324b0b2-5293-4aa0-b0aa-c85b003395e2",
+      "external_id":"8a1ouvfchk",
+      "filename":"Explorer owner's manual.pdf",
+      "created_date":"2021-08-18T11:37:19Z",
+      "last_update_date":"2021-10-26T14:23:20Z",
+      "file_upload_date":"2021-08-18T11:37:19Z",
+      "deleted_date":null,
+      "released_and_not_expired":true,
+      "asset_properties":null,
+      "file_properties":{
+        "format":"PdfDocument",
+        "format_type":"pdf",
+        "size_in_kbytes":2666,
+        "image_properties":null,
+        "video_properties":null
+      },
+      "metadata":null,
+      "metadata_info":null,
+      "security":null,
+      "status":null,
+      "thumbnails":{
+        "125px":{
+          "url":"https:\/\/previews.us-east-1.widencdn.net\/preview\/36614591\/assets\/asset-view\/56768476-748a-46c1-ad40-ac23f16654ec\/thumbnail\/eyJ3IjoxMjUsImgiOjEyNSwic2NvcGUiOiJhcHAifQ==?Expires=1643353200&Signature=YYw7zeuSwwwWr1fXO4U4ueglwsOu7muk7pWTrAfMv7aYOGVwFSRH3msfPR06-DLVpmvoePIzwShrOmQUCukgg1UeZmDStHefmIBsmvNBRlGxPcWA3nlJIK4Ka1axN4HQseiBGxSXIkCkaO2Mvq4~6dQi6WNFvWjd1UWSXuQqBWTcyH0zdIvcxTIBPoCXhEBlQakLqimnXIfhGUkzHqtFEJK5P1rDs4vVzN1EaecWLZj7Eo~-yIYA1zzqUH32A-AJYAl01pp5tbShwuUOdGjsx72666rR~TFwJ7-puazrUk-0Fjenz3YJzV~lJl4qwK-zjIQx-0FSe5ym8I3p3JLgqw__&Key-Pair-Id=APKAJM7FVRD2EPOYUXBQ",
+          "valid_until":"2022-01-28T06:55:49Z"
+        },
+        "160px":{
+          "url":"https:\/\/previews.us-east-1.widencdn.net\/preview\/36614591\/assets\/asset-view\/56768476-748a-46c1-ad40-ac23f16654ec\/thumbnail\/eyJ3IjoxNjAsImgiOjE2MCwic2NvcGUiOiJhcHAifQ==?Expires=1643353200&Signature=eWx1s5fUwm78VE0j9KsbxiyhoUT2U6xo1BbjtRiA3yWtxZ7WNRyhOvUwb3Kn569K2MqWpugHQ3dSNONGsdDBO-Lvgwn~rO8~2Ba7RLcVuwsMJ3FtyxfOeodP8m0BH4XNwbjnZ4diCQPbXUy~a8E5U9jFw7S3w-HXlP0ElleOa2qzFa0zcUIB4svSGHqFk-VkXEuEtkg2y7j3MG~SFwMa2CG9m3LRoj05cAR8PD7M8RJQ-iFEF0GSL6mUwsH5byOkfJF1y1lsImgy321n3o9VlvropVKGkB4UugGOpysVikQ30nxnpbrrBUID~h0OgyG06tULvaI8TAbOD1pkk8edow__&Key-Pair-Id=APKAJM7FVRD2EPOYUXBQ",
+          "valid_until":"2022-01-28T06:55:49Z"
+        },
+        "2048px":{
+          "url":"https:\/\/previews.us-east-1.widencdn.net\/preview\/36614591\/assets\/asset-view\/56768476-748a-46c1-ad40-ac23f16654ec\/thumbnail\/eyJ3IjoyMDQ4LCJoIjoyMDQ4LCJzY29wZSI6ImFwcCJ9?Expires=1643353200&Signature=rF6jbC9GEB~9gxJGkU3zdbkIV1gmpwemkyL7DaxY7ZVrDfGaIq6OZXrYzFPyYpp1PKFucM5Z-4ehv94gj0FmZeJunnJgbnx8XcEP4KL-yuegB4QhlNDWD4e7VStNEVYvN6JngiyMvgrKo3rQBiv3YNRs5gQslo7gCSQsJgaVdwCNQBTp6G0NX6mmQZdIFfApShPL1LdCUzhpbe8SwTtBNiuZmyC20LfK7hAsNj12Pka15k~F2VSBOmNd3sSt0NOcZgN6QKlj8lZ0bZspInLTCEaP29Yaena0xFBMuM-7fo0ZYmr89haW1F~q6u7I0E6q3W2tSHVy-km-94kbhT5rEg__&Key-Pair-Id=APKAJM7FVRD2EPOYUXBQ",
+          "valid_until":"2022-01-28T06:55:49Z"
+        },
+        "300px":{
+          "url":"https:\/\/previews.us-east-1.widencdn.net\/preview\/36614591\/assets\/asset-view\/56768476-748a-46c1-ad40-ac23f16654ec\/thumbnail\/eyJ3IjozMDAsImgiOjMwMCwic2NvcGUiOiJhcHAifQ==?Expires=1643353200&Signature=nDQCc1i~KuyBUZ0Zm6jThj81q1j3rDa6OcHW82~oIYezrnRRmngV6YMBCn-WMAM7Y4pVV6Ma1UX~Fwk4LfYC8fd~hOPzo~koGCLFCDBtZ~VNix~FerjSXN2EMGIkp122LqmthRb8ZE1SspFOui2AasnIhI21EZ0yhSJhkSU6stOATaoCkvgphkfau7Nx9336doAtCJwLQ4i4nSC1Kj1MmOdxGoiO53rVpKDBg1hBTuTo5mmCBsAknNZzMNfo2YmDz7Y8fhQ5pWr2fd0y5B2eK5lm9Yd8FKOSQH8~wS9b1JX4097DY0pZadxmzDZK3Bnes7tH9Zh1mhc~SrNfXNJ0nQ__&Key-Pair-Id=APKAJM7FVRD2EPOYUXBQ",
+          "valid_until":"2022-01-28T06:55:49Z"
+        },
+        "600px":{
+          "url":"https:\/\/previews.us-east-1.widencdn.net\/preview\/36614591\/assets\/asset-view\/56768476-748a-46c1-ad40-ac23f16654ec\/thumbnail\/eyJ3Ijo2MDAsImgiOjYwMCwic2NvcGUiOiJhcHAifQ==?Expires=1643353200&Signature=C~eQFn7QTylGB86RxsS-KPHLijCuMuyZWhR~T4Ai5KmnlfuZsmxhf3wXnda9VaqXqCg4zMmKutqDf8Un77TJuWB-11ELwHaqrSpebh9RiwYLKmdzzo-Gx8SLf2pEMnO7Hic7qQehibG6PBfE1iIA6BsvHq-19irQThJAczkdWbJ-coNuEB7VGdYHblv0UBzpPUESSpn~lAz7Eq1bXahBEG-ezcozIwumRKAs9p5uodnTTzpmbSS-~0MrrbUEADgaEA55MPFBTfHpyoNWxoyi24CbY9o4wQyix-HgguTv6z7ule356y49NdEm3oiNjmUuPPWzBN5pGkippYT9nnWMFQ__&Key-Pair-Id=APKAJM7FVRD2EPOYUXBQ",
+          "valid_until":"2022-01-28T06:55:49Z"
+        }
+      },
+      "embeds":null,
+      "expanded":{
+        "asset_properties":false,
+        "embeds":false,
+        "file_properties":true,
+        "metadata":false,
+        "metadata_info":false,
+        "metadata_vocabulary":false,
+        "security":false,
+        "thumbnails":true
+      },
+      "_links":{
+        "download":"https:\/\/orders-bb.us-east-1.widencdn.net\/download-deferred\/originals?asset_wrn=widen%3Aassets%3Aasset%3ALSRZZ%3A8a1ouvfchk&actor=wrn%3Ausers%3Auser%3A36614591%3At3nxzh&tracking=ewogICJkb19ub3RfdHJhY2siOiBmYWxzZSwKICAiYW5vbnltb3VzIjogZmFsc2UsCiAgInZpc2l0b3JfaWQiOiBudWxsLAogICJ1c2VyX3dybiI6ICJ3aWRlbjp1c2Vyczp1c2VyOkxTUlpaOnQzbnh6aCIKfQ%3D%3D&custom_metadata=ewogICJhcHBfbmFtZSI6ICJsZW5zIiwKICAiaW50ZW5kZWRfdXNlX2NvZGUiOiBudWxsLAogICJpbnRlbmRlZF91c2VfdmFsdWUiOiBudWxsLAogICJpbnRlbmRlZF91c2VfZW1haWwiOiBudWxsLAogICJjb2xsZWN0aW9uX2lkIjogbnVsbCwKICAicG9ydGFsX2lkIjogbnVsbCwKICAiZGFtX29yZGVyX2lkIjogbnVsbAp9&Expires=1643310000&Signature=DVjSY1kiKMvLAPxhTp281WiP1F159F85JIfKCPDnHDI9WJXMrQZ56Q5KgezJB03yXjKZMxAVZsmO-LHH1rvnb7BqYgVTEb49off18ZQJL7wm14ZZvQtZdLtfbUOa16MG-bx9YT0O4GDxHXWAIr8McbfrdpPFPi3uGs3uQ0rxMHB4KI2iaADKG9UHnnEfz4BQefuOLGs1Jxye572z2L18H6qLfH4ik~5dFBIkgHk96v2oSvjBYeUablviN~ZltyNx0ydMu1wfwWmlD3Dd4uxWrnSGzgcVs0hVJoed7hWsPWrwYlavCeyZSP6wn5MjHrlrdgYKeQI052UMX6IvCnSqKA__&Key-Pair-Id=APKAJM7FVRD2EPOYUXBQ",
+        "self":"https:\/\/api.widencollective.com\/v2\/assets\/0324b0b2-5293-4aa0-b0aa-c85b003395e2",
+        "self_all":"https:\/\/api.widencollective.com\/v2\/assets\/0324b0b2-5293-4aa0-b0aa-c85b003395e2?expand=asset_properties%2Cembeds%2Cfile_properties%2Cmetadata%2Cmetadata_info%2Cmetadata_vocabulary%2Csecurity%2Cthumbnails"
+      }
+    }
+  ]
+}

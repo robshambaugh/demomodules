@@ -1,0 +1,12 @@
+.acquia-dam-media-library .media-library-item__attributes,
+.acquia-dam-media-library .media-library-item__click-to-select-trigger {
+  background: white;
+}
+
+.acquia-dam-media-library .media-library-item__attributes,
+.acquia-dam-media-library .media-library-item__attributes a,
+.acquia-dam-media-library .media-library-widget .media-library-item__name a,
+.acquia-dam-media-library .media-library-view--widget .media-library-item__name a,
+.acquia-dam-media-library .media-library-add-form__selected-media .media-library-item__name a {
+  color: #232429;
+}

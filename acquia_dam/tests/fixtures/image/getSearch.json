@@ -1,0 +1,371 @@
+{
+  "query": "FileType:(image)",
+  "sort": "-created_date",
+  "query_explained": "File Type: image ",
+  "sort_explained": "Created date (descending)",
+  "scroll_id": null,
+  "scroll_timeout": null,
+  "query_syntax_ok": true,
+  "include_archived": false,
+  "include_deleted": false,
+  "item_type": "asset",
+  "total_count": 2,
+  "offset": 0,
+  "limit": 10,
+  "items": [
+    {
+      "id": "f2a9c03d-3664-477c-8013-e84504ed5adc",
+      "external_id": "m2x3z2j9ou",
+      "filename": "An asset with many versions.png",
+      "created_date": "2024-05-03T16:32:20Z",
+      "last_update_date": "2024-10-28T11:01:59Z",
+      "file_upload_date": "2024-05-03T16:33:15Z",
+      "deleted_date": null,
+      "released_and_not_expired": true,
+      "asset_properties": {
+        "favorite": true,
+        "popularity": 0,
+        "cutline_caption": ""
+      },
+      "file_properties": {
+        "format": "PNG",
+        "format_type": "image",
+        "size_in_kbytes": 55,
+        "size_in_bytes": 56905,
+        "image_properties": {
+          "width": 1920.0,
+          "height": 1080.0,
+          "aspect_ratio": 1.777777777778
+        },
+        "video_properties": null
+      },
+      "metadata": {
+        "fields": {
+          "altText": [
+            "This is the ALT TEXT field."
+          ],
+          "assettype": [
+            "Image"
+          ],
+          "author": [],
+          "captionAbstract": [
+            "This is the CAPTION/ABSTRACT field."
+          ],
+          "Color": [],
+          "containsFnords": [],
+          "dateCreated": [],
+          "dateSent": [],
+          "description": [
+            "This is the DESCRIPTION field."
+          ],
+          "keywords": [
+            "key, words"
+          ],
+          "numbers": [
+            "1644.37"
+          ],
+          "usagerightdetails": [],
+          "visualsShotSize": []
+        }
+      },
+      "metadata_info": {
+        "field_set": "DAM assets",
+        "field_set_fields": [
+          {
+            "key": "altText",
+            "label": "Alt Text",
+            "type": "text",
+            "field_type": "text",
+            "controlled_vocabulary": false,
+            "required": false,
+            "editable": true,
+            "vocabulary": null
+          },
+          {
+            "key": "assettype",
+            "label": "Asset Type",
+            "type": "selection_list",
+            "field_type": "selection_list",
+            "controlled_vocabulary": true,
+            "required": false,
+            "editable": true,
+            "vocabulary": [
+              "Document",
+              "Graphic",
+              "Other",
+              "Image",
+              "Video",
+              "Test"
+            ]
+          },
+          {
+            "key": "author",
+            "label": "Author",
+            "type": "text",
+            "field_type": "text",
+            "controlled_vocabulary": false,
+            "required": false,
+            "editable": true,
+            "vocabulary": null
+          },
+          {
+            "key": "captionAbstract",
+            "label": "Caption/Abstract",
+            "type": "text_short",
+            "field_type": "text_short",
+            "controlled_vocabulary": false,
+            "required": false,
+            "editable": true,
+            "vocabulary": null
+          },
+          {
+            "key": "Color",
+            "label": "Color",
+            "type": "selection_list",
+            "field_type": "selection_list",
+            "controlled_vocabulary": true,
+            "required": false,
+            "editable": true,
+            "vocabulary": [
+              "Red",
+              "Orange",
+              "Yellow",
+              "Green"
+            ]
+          },
+          {
+            "key": "containsFnords",
+            "label": "Contains Fnords",
+            "type": "selection_list",
+            "field_type": "selection_list",
+            "controlled_vocabulary": true,
+            "required": false,
+            "editable": true,
+            "vocabulary": [
+              "Yes",
+              "No"
+            ]
+          },
+          {
+            "key": "dateCreated",
+            "label": "Date Created",
+            "type": "date",
+            "field_type": "date",
+            "controlled_vocabulary": false,
+            "required": false,
+            "editable": true,
+            "vocabulary": null
+          },
+          {
+            "key": "dateSent",
+            "label": "Date Sent",
+            "type": "date",
+            "field_type": "date",
+            "controlled_vocabulary": false,
+            "required": false,
+            "editable": true,
+            "vocabulary": null
+          },
+          {
+            "key": "description",
+            "label": "Description",
+            "type": "text_multi_line",
+            "field_type": "text_multi_line",
+            "controlled_vocabulary": false,
+            "required": false,
+            "editable": true,
+            "vocabulary": null
+          },
+          {
+            "key": "keywords",
+            "label": "Keywords",
+            "type": "text",
+            "field_type": "text",
+            "controlled_vocabulary": false,
+            "required": false,
+            "editable": true,
+            "vocabulary": null
+          },
+          {
+            "key": "numbers",
+            "label": "Numbers",
+            "type": "numeric",
+            "field_type": "numeric",
+            "controlled_vocabulary": false,
+            "required": false,
+            "editable": true,
+            "vocabulary": null
+          },
+          {
+            "key": "usagerightdetails",
+            "label": "Usage Rights Details",
+            "type": "text_multi_line",
+            "field_type": "text_multi_line",
+            "controlled_vocabulary": false,
+            "required": false,
+            "editable": true,
+            "vocabulary": null
+          },
+          {
+            "key": "visualsShotSize",
+            "label": "Visuals: Shot Size",
+            "type": "selection_list_multi",
+            "field_type": "selection_list_multi",
+            "controlled_vocabulary": true,
+            "required": false,
+            "editable": true,
+            "vocabulary": [
+              "Extreme Wide Shot",
+              "Wide Shot",
+              "Full shot",
+              "Medium Full Shot",
+              "Cowboy Shot",
+              "Medium Shot",
+              "Medium Close-up",
+              "Close-up",
+              "Extreme Close-up",
+              "Establishing Shot"
+            ]
+          }
+        ]
+      },
+      "security": {
+        "expiration_date": null,
+        "release_date": "2024-05-03T16:32:20Z",
+        "asset_groups": [
+          "GLO",
+          "public"
+        ]
+      },
+      "status": null,
+      "thumbnails": {
+        "125px": {
+          "url": "https://previews.us-east-1.widencdn.net/preview/36614591/assets/asset-view/509a62d7-9e7f-49c3-b0a8-fce61a7ff23f/thumbnail/eyJ3IjoxMjUsImgiOjEyNSwic2NvcGUiOiJhcHAifQ==?sig.ver=1&sig.keyId=us-east-1.20240821&sig.expires=1730203200&sig=DUIc6yY45ua9ivJ9G1AeyLPyBH5i4Up04XlD1wKEbow",
+          "valid_until": "2024-10-29T11:17:07Z"
+        },
+        "160px": {
+          "url": "https://previews.us-east-1.widencdn.net/preview/36614591/assets/asset-view/509a62d7-9e7f-49c3-b0a8-fce61a7ff23f/thumbnail/eyJ3IjoxNjAsImgiOjE2MCwic2NvcGUiOiJhcHAifQ==?sig.ver=1&sig.keyId=us-east-1.20240821&sig.expires=1730203200&sig=7vJkNotFAn60xWKFeeElE-bMdLIcyk1A5nJhg1TwyRI",
+          "valid_until": "2024-10-29T11:17:07Z"
+        },
+        "2048px": {
+          "url": "https://previews.us-east-1.widencdn.net/preview/36614591/assets/asset-view/509a62d7-9e7f-49c3-b0a8-fce61a7ff23f/thumbnail/eyJ3IjoyMDQ4LCJoIjoyMDQ4LCJzY29wZSI6ImFwcCJ9?sig.ver=1&sig.keyId=us-east-1.20240821&sig.expires=1730203200&sig=qDPTSFZMC1laoGM05Vj1tl3LaZUhm43G-EDBF3b5M6A",
+          "valid_until": "2024-10-29T11:17:07Z"
+        },
+        "300px": {
+          "url": "https://previews.us-east-1.widencdn.net/preview/36614591/assets/asset-view/509a62d7-9e7f-49c3-b0a8-fce61a7ff23f/thumbnail/eyJ3IjozMDAsImgiOjMwMCwic2NvcGUiOiJhcHAifQ==?sig.ver=1&sig.keyId=us-east-1.20240821&sig.expires=1730203200&sig=d7nMOPIwPj8XdSO-hE5xSl3VgoWxLzNUySAgoZd1Xoo",
+          "valid_until": "2024-10-29T11:17:07Z"
+        },
+        "600px": {
+          "url": "https://previews.us-east-1.widencdn.net/preview/36614591/assets/asset-view/509a62d7-9e7f-49c3-b0a8-fce61a7ff23f/thumbnail/eyJ3Ijo2MDAsImgiOjYwMCwic2NvcGUiOiJhcHAifQ==?sig.ver=1&sig.keyId=us-east-1.20240821&sig.expires=1730203200&sig=Q0-tFNGFTVkGEzH4Iz_5JV3eVcesZenTxalX9IIl2so",
+          "valid_until": "2024-10-29T11:17:07Z"
+        }
+      },
+      "embeds": {
+        "640px-landscape": {
+          "url": "https://laser.widen.net/content/m2x3z2j9ou/jpeg/An%20asset%20with%20many%20versions.jpeg?w=640&keep=c&crop=yes&color=cccccc&quality=80&u=pfexxl",
+          "html": "<img width=\"640\" alt=\"An asset with many versions.jpeg\" src=\"https://laser.widen.net/content/m2x3z2j9ou/jpeg/An%20asset%20with%20many%20versions.jpeg?w=640&keep=c&crop=yes&color=cccccc&quality=80&u=pfexxl\">",
+          "share": "https://laser.widen.net/view/thumbnail/m2x3z2j9ou/An%20asset%20with%20many%20versions.png?w=640&keep=c&crop=yes&color=cccccc&quality=80&t.format=jpeg&u=pfexxl&x.share=t",
+          "apps": []
+        },
+        "640px-portrait": {
+          "url": "https://laser.widen.net/content/m2x3z2j9ou/jpeg/An%20asset%20with%20many%20versions.jpeg?h=640&keep=c&crop=yes&color=cccccc&quality=80&u=pfexxl",
+          "html": "<img height=\"640\" alt=\"An asset with many versions.jpeg\" src=\"https://laser.widen.net/content/m2x3z2j9ou/jpeg/An%20asset%20with%20many%20versions.jpeg?h=640&keep=c&crop=yes&color=cccccc&quality=80&u=pfexxl\">",
+          "share": "https://laser.widen.net/view/thumbnail/m2x3z2j9ou/An%20asset%20with%20many%20versions.png?h=640&keep=c&crop=yes&color=cccccc&quality=80&t.format=jpeg&u=pfexxl&x.share=t",
+          "apps": []
+        },
+        "original": {
+          "url": "https://laser.widen.net/content/m2x3z2j9ou/original/An-asset-with-many-versions.png?u=pfexxl&download=true",
+          "html": "<a href=\"https://laser.widen.net/content/m2x3z2j9ou/original/An-asset-with-many-versions.png?u=pfexxl&download=true\" target=\"_blank\">An-asset-with-many-versions.png</a>",
+          "share": "https://laser.widen.net/content/m2x3z2j9ou/original/An-asset-with-many-versions.png?u=pfexxl&download=true&x.share=t",
+          "apps": []
+        },
+        "templated": {
+          "url": "https://embed.widencdn.net/img/laser/m2x3z2j9ou/{size}px@{scale}x/An-asset-with-many-versions.png?q={quality}&x.template=y",
+          "html": null,
+          "share": "https://embed.widencdn.net/img/laser/m2x3z2j9ou/{size}px@{scale}x/An-asset-with-many-versions.png?q={quality}&x.template=y",
+          "apps": []
+        }
+      },
+      "expanded": {
+        "asset_properties": true,
+        "embeds": true,
+        "file_properties": true,
+        "metadata": true,
+        "metadata_info": true,
+        "metadata_vocabulary": true,
+        "security": true,
+        "status": false,
+        "thumbnails": true
+      },
+      "_links": {
+        "download": "https://orders-bb.us-east-1.widencdn.net/download-deferred/originals?actor=wrn%3Ausers%3Auser%3A36614591%3Apfexxl&tracking=ewogICJkb19ub3RfdHJhY2siOiBmYWxzZSwKICAiYW5vbnltb3VzIjogZmFsc2UsCiAgInZpc2l0b3JfaWQiOiBudWxsLAogICJ1c2VyX3dybiI6ICJ3aWRlbjp1c2Vyczp1c2VyOkxTUlpaOnBmZXh4bCIKfQ%3D%3D&asset_wrn=wrn%3Aassets%3Aasset%3A36614591%3Am2x3z2j9ou&custom_metadata=ewogICJhcHBfbmFtZSI6ICJheGlvbSIsCiAgImludGVuZGVkX3VzZV9jb2RlIjogbnVsbCwKICAiaW50ZW5kZWRfdXNlX3ZhbHVlIjogbnVsbCwKICAiaW50ZW5kZWRfdXNlX2VtYWlsIjogbnVsbCwKICAiY29sbGVjdGlvbl9pZCI6IG51bGwsCiAgInBvcnRhbF9pZCI6IG51bGwsCiAgInBvcnRhbF9hY2Nlc3NfY29kZV9lbWFpbCI6IG51bGwsCiAgImRhbV9vcmRlcl9pZCI6IG51bGwKfQ%3D%3D&Expires=1730160000&Signature=LQlEmBKklHwaAf2yxDzhhvHTqIRlVO7pGA~FSKUQN2D-G9aBdtdoFixR-L7t~n41fHbFimtCljwuqivh0ejlDKhKCAOIaQGIhzJadwesR6uQMfUyp1fxr1ntOZhBQ9iic5u4XW0OsaLx4srP21QUUGK6uxTeIdkrr9tj4DqNolHQQv2x-odL7I7hXtofASN2krD4Ia3utWKTowQEJ-QeiRRaFuX~bYaLuXVAyd-zhXaFKOVuc9D6AJVRerOgGK1gK1MXSNIms7teIuHvF4lHtYE8MmKkCa0dlW5mZ3~KOI-qdqadUeqwOIwQFLduhVOiv-soinAJ2Th~BYTIn6i4ag__&Key-Pair-Id=APKAJM7FVRD2EPOYUXBQ",
+        "self": "https://api.widencollective.com/v2/assets/f2a9c03d-3664-477c-8013-e84504ed5adc",
+        "self_all": "https://api.widencollective.com/v2/assets/f2a9c03d-3664-477c-8013-e84504ed5adc?expand=asset_properties%2Cembeds%2Cfile_properties%2Cmetadata%2Cmetadata_info%2Cmetadata_vocabulary%2Csecurity%2Cthumbnails"
+      }
+    },
+    {
+      "id": "56ff14de-02cd-41b5-9a73-c917eab19abf",
+      "external_id": "kcnabdscl5",
+      "filename": "Wheel Illustration.ai",
+      "created_date": "2021-09-23T22:34:29Z",
+      "last_update_date": "2021-09-23T22:35:27Z",
+      "file_upload_date": "2021-09-23T22:34:29Z",
+      "deleted_date": null,
+      "released_and_not_expired": true,
+      "asset_properties": null,
+      "file_properties": {
+        "format": "IllustratorNative",
+        "format_type": "image",
+        "size_in_kbytes": 305,
+        "image_properties": {
+          "width": 157.0,
+          "height": 120.0,
+          "aspect_ratio": 1.308333333333
+        },
+        "video_properties": null
+      },
+      "metadata": null,
+      "metadata_info": null,
+      "security": null,
+      "status": null,
+      "thumbnails": {
+        "125px": {
+          "url": "https://previews.us-east-1.widencdn.net/preview/36614591/assets/asset-view/a9963004-3bd4-4df3-9faa-7ef5c19e8c77/thumbnail/eyJ3IjoxMjUsImgiOjEyNSwic2NvcGUiOiJhcHAifQ==?Expires=1653728400&Signature=W7KMmtdq160R1amDkTGVF3XfawP1~d06RS~oHsaGGSWSAQIVwLmQYllcG9aDBwPdBCLLukr~kFQh4CBkL~MelqqOpRK0KokMhsary99DG85cLzYiRlD~9q~ojU77YmFbkwChq7tEsP1j7a5R40aXvAUZgS7oZ2CwTOcSPAb7atdp8u5xSVVfjm6W5abw6v-BiFRZdn77MxTK21CH62xzYORO698ny6i5-wu0l2amxhduMUUqdKcoEc-fF~Bx6sfbQG~nG0yCvdrp9N72CqRBca5YGDFMaOEo72mh4fyddc5M~QpCmyLfT1brp6CXLW4yixKS9Z8s7y2FuLmsbQL5RQ__&Key-Pair-Id=APKAJM7FVRD2EPOYUXBQ",
+          "valid_until": "2022-05-28T08:36:39Z"
+        },
+        "160px": {
+          "url": "https://previews.us-east-1.widencdn.net/preview/36614591/assets/asset-view/a9963004-3bd4-4df3-9faa-7ef5c19e8c77/thumbnail/eyJ3IjoxNjAsImgiOjE2MCwic2NvcGUiOiJhcHAifQ==?Expires=1653728400&Signature=Uk4L0j1RGEEgfwjRkQjCoxyFByMr9SGmIkSGlu0Czvz4KhzWlQ~s7RwPbXX9VlG1sS33nmvRpy15qaIp1rcq05HIKGNim5Mqde1Ct1JJ06faJcCkjBRSpEXjBWsmcVwchcEwerLfox8cEzW2vYcMq1zQly9jv5zP4~VruOGwWag7qmcpvrVL7ecyRZM3wSJbwoxBmbr9MMcu8kOGcCJJfEzXDjs7j1Cl-XFM5m1aW9IBVPTsqhLuY0vArclWBDKb8SA6N~bMOSx5lJoCf7OGfv7Xh7TEqQw2LBLotSFWeGtxomGj6M8kAw547Q7Vs2GEKFo-rkFQIyWBHq2PsiZpyQ__&Key-Pair-Id=APKAJM7FVRD2EPOYUXBQ",
+          "valid_until": "2022-05-28T08:36:39Z"
+        },
+        "2048px": {
+          "url": "https://previews.us-east-1.widencdn.net/preview/36614591/assets/asset-view/a9963004-3bd4-4df3-9faa-7ef5c19e8c77/thumbnail/eyJ3IjoyMDQ4LCJoIjoyMDQ4LCJzY29wZSI6ImFwcCJ9?Expires=1653728400&Signature=gb38aTehVogOiL1ADf5vM2SErFna4QpVOEzKOA7dt8ki8-JZXl9O7B6EjFxOGfhHHbkLL5PPH31wc7NjqUMGw8Oye4eWErMP9BDBE~ieljjrT3BdgR~LLtth8yVeyX0KKaaUbRNOdR5R3cajZCNq-MVAr~3f88bgDyo~9qYwf0eT4JE~uQwqyeD8ANKHeQMpQ4~Tnv2fKtMdMmGBmhM2YwPs5BqT7uBxq5mbj9veCbh1B2i~Exgms4ezBdh8YbeJ57dXlKn7hN3wbhkeHj-kJp8JVwY0rXbXMZdl3WdOUksN1A4ZujiLrV3nH3nvK-HJtdUmprNT915t7Zn~xCwK~Q__&Key-Pair-Id=APKAJM7FVRD2EPOYUXBQ",
+          "valid_until": "2022-05-28T08:36:39Z"
+        },
+        "300px": {
+          "url": "https://previews.us-east-1.widencdn.net/preview/36614591/assets/asset-view/a9963004-3bd4-4df3-9faa-7ef5c19e8c77/thumbnail/eyJ3IjozMDAsImgiOjMwMCwic2NvcGUiOiJhcHAifQ==?Expires=1653728400&Signature=imsevcH-ELhbPC-GKdhHt3oqeRg30VI7AL~HlgX295dQl~vBh3CBJWtWcogA9L~Z96S0z2mje19hA~TUYQeJi9y4zUf5~-6ceSA~Rms61q5UXbHjQKGYu531ZCJyuLknn~6BQEeoqGyKMBcm40CroL3E1iRj-QHPT13~w696hnpo2SQG8qzLpbDrBMSX8rgIfeOKkUVxVEmFsX0dgZ2H6iPx4-fltK-pYxz44JBZs7xOgvDAtICgjq8Zj6tk~u3RKPKtbtEpPrB2wbhMX3Flxeqb40~TOU22XISJmwvfd17I3EY6JUYF2e8HGotuL1svACHEqR-JYofoWCYdsU9jMg__&Key-Pair-Id=APKAJM7FVRD2EPOYUXBQ",
+          "valid_until": "2022-05-28T08:36:39Z"
+        },
+        "600px": {
+          "url": "https://previews.us-east-1.widencdn.net/preview/36614591/assets/asset-view/a9963004-3bd4-4df3-9faa-7ef5c19e8c77/thumbnail/eyJ3Ijo2MDAsImgiOjYwMCwic2NvcGUiOiJhcHAifQ==?Expires=1653728400&Signature=d4Lz42uECYPckza8AaRqFKIM7AYlMwJREKp-J~R~mmvS7k1rKzR4p7UE9GOm4OV0euuR7p6QHB8vY2~Sg4O4jITeoGwT~5d4apSQuLqvQ8aWqN6AR7YwASFIgASGBZl8amKwHAqQj-lp~Qg1YCyPLvOdm5v~-Ma-5yaLRApBFiKpPP3DkmXoVCDXWbb9J21ooMEG~3J4rUfmDujtivivLwvIr2ElISXa1Klx-8hUKh73u3Pf1thk34-MbrXqY2j5gbipsqnmS7O7S3h9FNBCAGXd7R1u4-FBme~3CL7PIA~NAGDTt3F~UJPFmTfngQ1TugMr54gmCc4sjGTy0cxUuw__&Key-Pair-Id=APKAJM7FVRD2EPOYUXBQ",
+          "valid_until": "2022-05-28T08:36:39Z"
+        }
+      },
+      "embeds": null,
+      "expanded": {
+        "asset_properties": false,
+        "embeds": false,
+        "file_properties": true,
+        "metadata": false,
+        "metadata_info": false,
+        "metadata_vocabulary": false,
+        "security": false,
+        "thumbnails": true
+      },
+      "_links": {
+        "download": "https://orders-bb.us-east-1.widencdn.net/download-deferred/originals?asset_wrn=wrn%3Aassets%3Aasset%3A36614591%3Akcnabdscl5&actor=wrn%3Ausers%3Auser%3A36614591%3Amzlh39&tracking=ewogICJkb19ub3RfdHJhY2siOiBmYWxzZSwKICAiYW5vbnltb3VzIjogZmFsc2UsCiAgInZpc2l0b3JfaWQiOiBudWxsLAogICJ1c2VyX3dybiI6ICJ3aWRlbjp1c2Vyczp1c2VyOkxTUlpaOm16bGgzOSIKfQ%3D%3D&custom_metadata=ewogICJhcHBfbmFtZSI6ICJsZW5zIiwKICAiaW50ZW5kZWRfdXNlX2NvZGUiOiBudWxsLAogICJpbnRlbmRlZF91c2VfdmFsdWUiOiBudWxsLAogICJpbnRlbmRlZF91c2VfZW1haWwiOiBudWxsLAogICJjb2xsZWN0aW9uX2lkIjogbnVsbCwKICAicG9ydGFsX2lkIjogbnVsbCwKICAiZGFtX29yZGVyX2lkIjogbnVsbAp9&Expires=1653685200&Signature=KIIQJWA839uFO563RdGlapQQ5qRQ7aU0cYGo5uH3qjhOQadc72SjGW3W016rrIdwPeqJsFwnpGnkOadvxwQ2dduOL~B4I628GWd0~ayc4zD96DRmq1x9IBdd61Xr72xxduX2rxcKX~Q2iTfTQyf8VrPUIE-kjYganOYoGQua9dgvD-IoduLFmFj4M6DB4-0CR2iYoBQp5k-b-aOiulQ1b5wjcJTCweMWWyh31rHJi5pjTlZTKOhetwEf2qp1o3Vd~WRztovcpCM~tEBLzaMsY6T8n34vVFToTJjX9uKC08xAV5mE0aAQRraN6zNZdkATK0GRd9vbnpKd1q-AQawEzg__&Key-Pair-Id=APKAJM7FVRD2EPOYUXBQ",
+        "self": "https://api.widencollective.com/v2/assets/56ff14de-02cd-41b5-9a73-c917eab19abf",
+        "self_all": "https://api.widencollective.com/v2/assets/56ff14de-02cd-41b5-9a73-c917eab19abf?expand=asset_properties%2Cembeds%2Cfile_properties%2Cmetadata%2Cmetadata_info%2Cmetadata_vocabulary%2Csecurity%2Cthumbnails"
+      }
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+name: 'Acquia DAM'
+type: module
+description: 'Provides a media source plugin to integrate various Acquia DAM asset types with Drupal as media types.'
+core_version_requirement: '^9.5 || ^10 || ^11'
+package: Media
+dependencies:
+  - drupal:file
+  - drupal:image
+  - drupal:media
+  - drupal:media_library
+  - drupal:views
+  - token:token
+  - views_remote_data:views_remote_data
+configure: acquia_dam.config
+
+# Information added by Drupal.org packaging script on 2025-05-14
+version: '1.1.2'
+project: 'acquia_dam'
+datestamp: 1747255123

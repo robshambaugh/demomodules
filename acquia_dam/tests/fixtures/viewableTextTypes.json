@@ -1,0 +1,46 @@
+{
+  "fields": [
+    {
+      "display_key": "author",
+      "display_name": "Author",
+      "field_type": "text",
+      "metadata_types": [
+        "DAM assets",
+        "Laser Metadata Type"
+      ]
+    },
+    {
+      "display_key": "byline",
+      "display_name": "By-line",
+      "field_type": "text",
+      "metadata_types": []
+    },
+    {
+      "display_key": "keywords",
+      "display_name": "Keywords",
+      "field_type": "text",
+      "metadata_types": [
+        "DAM assets",
+        "Laser Metadata Type"
+      ]
+    },
+    {
+      "display_key": "description",
+      "display_name": "Description",
+      "field_type": "text_multi_line",
+      "metadata_types": [
+        "DAM assets",
+        "Laser Metadata Type",
+        "Video Metadata Type"
+      ]
+    },
+    {
+      "display_key": "longtext",
+      "display_name": "Long text",
+      "field_type": "text_long",
+      "metadata_types": [
+        "DrupalTestMetadata"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.acquia_dam_audio_asset
+  module:
+    - acquia_dam
+id: media.acquia_dam_audio_asset.default
+targetEntityType: media
+bundle: acquia_dam_audio_asset
+mode: default
+content:
+  acquia_dam_asset_id:
+    type: acquia_dam_embed_code
+    label: hidden
+    settings:
+      embed_style: remote_streaming
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  acquia_dam_managed_file: true
+  created: true
+  langcode: true
+  name: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true

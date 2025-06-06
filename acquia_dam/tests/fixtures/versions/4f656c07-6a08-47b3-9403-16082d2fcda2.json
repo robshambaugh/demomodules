@@ -1,0 +1,16 @@
+{
+  "asset_id": "4f656c07-6a08-47b3-9403-16082d2fcda2",
+  "item_type": "asset_version",
+  "items": [
+    {
+      "_links": {
+        "version_details": "https://api.widencollective.com/v2/assets/4f656c07-6a08-47b3-9403-16082d2fcda2/versions/c6a1d232-4460-43de-afd2-b3bd53ade80f"
+      },
+      "current_version": true,
+      "filename": "test-course-catalog-v2.pdf",
+      "id": "c6a1d232-4460-43de-afd2-b3bd53ade80f",
+      "version_number": 1
+    }
+  ],
+  "total_count": 1
+}

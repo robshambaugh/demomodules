@@ -1,0 +1,11 @@
+services:
+  acquia_dam.sql_sanitize:
+    class: Drupal\acquia_dam\Commands\SqlSanitizeCommands
+    arguments: ['@state', '@user.data']
+    tags:
+      - { name: drush.command }
+  acquia_dam.download_assets:
+    class: Drupal\acquia_dam\Drush\Commands\DownloadAssetsDrushCommands
+    arguments: ['@acquia_dam.asset_repository', '@entity_type.manager']
+    tags:
+      - { name: drush.command }

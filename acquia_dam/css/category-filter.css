@@ -1,0 +1,57 @@
+.category-link {
+  position: relative;
+  width: 100%;
+  padding-left: 20px;
+  text-align: left;
+  border: none;
+  background: inherit;
+  line-height: 200%;
+}
+.category-dropdown {
+  position: relative;
+  width: 100%;
+}
+.category-dropdown-inner {
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  right: 0;
+  left: 0;
+  box-sizing: border-box;
+  width: inherit;
+  margin: 0 !important;
+  border-style: ridge;
+  background: white;
+}
+.container-dropdown {
+  display: flex;
+  flex-direction: column;
+}
+.widen-category-menu li:hover {
+  background: #003ecc;
+}
+.widen-category-menu li:hover button {
+  color: white;
+}
+.widen-categories-chevron-right {
+  padding-right: calc(2rem);
+  background-image: url("data:image/svg+xml,%3Csvg%20width%3D%229%22%20height%3D%2214%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M1.71.314L.29%201.723l5.302%205.353L.289%2012.43l1.422%201.408%206.697-6.762z%22%20fill%3D%22%23545560%22%2F%3E%3C%2Fsvg%3E");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 20px) center;
+}
+.widen-category-menu li:hover .widen-categories-chevron-right {
+  background-image: url("data:image/svg+xml,%3Csvg%20width%3D%229%22%20height%3D%2214%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M1.71.314L.29%201.723l5.302%205.353L.289%2012.43l1.422%201.408%206.697-6.762z%22%20fill%3D%22%23FFFFFF%22%2F%3E%3C%2Fsvg%3E");
+}
+.widen-categories-chevron-left {
+  padding-left: 3rem;
+  background-image: url("data:image/svg+xml,%3Csvg%20width%3D%229%22%20height%3D%2214%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M6.986.314l1.422%201.409-5.303%205.353%205.303%205.354-1.422%201.408L.29%207.076z%22%20fill%3D%22%23545560%22%2F%3E%3C%2Fsvg%3E");
+  background-repeat: no-repeat;
+  background-position: 20px center;
+}
+.widen-category-menu li:hover .widen-categories-chevron-left {
+  background-image: url("data:image/svg+xml,%3Csvg%20width%3D%229%22%20height%3D%2214%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M6.986.314l1.422%201.409-5.303%205.353%205.303%205.354-1.422%201.408L.29%207.076z%22%20fill%3D%22%23FFFFFF%22%2F%3E%3C%2Fsvg%3E");
+}
+.widen-categories-category-select {
+  float: none !important;
+  margin: 0 !important;
+}

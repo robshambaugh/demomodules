@@ -1,0 +1,6 @@
+acquia_dam.config:
+  title: 'Acquia DAM'
+  description: 'Configure Acquia DAM access credentials.'
+  route_name: acquia_dam.config
+  menu_name: admin
+  parent: system.admin_config_media

@@ -1,0 +1,292 @@
+{
+  "id": "f2a9c03d-3664-477c-8013-e84504ed5adc",
+  "version_id": "9a5d5c65-0260-43d4-9e24-404862c91cbf",
+  "current_version": true,
+  "external_id": "m2x3z2j9ou",
+  "filename": "An asset with many versions.png",
+  "created_date": "2024-05-03T16:32:20Z",
+  "last_update_date": "2024-10-28T11:01:59Z",
+  "file_upload_date": "2024-05-03T16:33:15Z",
+  "deleted_date": null,
+  "released_and_not_expired": true,
+  "asset_properties": {
+    "favorite": true,
+    "popularity": 0,
+    "cutline_caption": ""
+  },
+  "file_properties": {
+    "format": "PNG",
+    "format_type": "image",
+    "size_in_kbytes": 55,
+    "size_in_bytes": 56905,
+    "image_properties": {
+      "width": 1920,
+      "height": 1080,
+      "aspect_ratio": 1.777777777778
+    },
+    "video_properties": null
+  },
+  "metadata": {
+    "fields": {
+      "altText": [
+        "This is the ALT TEXT field."
+      ],
+      "assettype": [
+        "Image"
+      ],
+      "author": [],
+      "captionAbstract": [
+        "This is the CAPTION/ABSTRACT field."
+      ],
+      "Color": [],
+      "containsFnords": [],
+      "dateCreated": [],
+      "dateSent": [],
+      "description": [
+        "This is the DESCRIPTION field."
+      ],
+      "keywords": [
+        "key, words"
+      ],
+      "numbers": [
+        "1644.37"
+      ],
+      "usagerightdetails": [],
+      "visualsShotSize": []
+    }
+  },
+  "metadata_info": {
+    "field_set": "DAM assets",
+    "field_set_fields": [
+      {
+        "key": "altText",
+        "label": "Alt Text",
+        "type": "text",
+        "field_type": "text",
+        "controlled_vocabulary": false,
+        "required": false,
+        "editable": true,
+        "vocabulary": null
+      },
+      {
+        "key": "assettype",
+        "label": "Asset Type",
+        "type": "selection_list",
+        "field_type": "selection_list",
+        "controlled_vocabulary": true,
+        "required": false,
+        "editable": true,
+        "vocabulary": [
+          "Document",
+          "Graphic",
+          "Other",
+          "Image",
+          "Video",
+          "Test"
+        ]
+      },
+      {
+        "key": "author",
+        "label": "Author",
+        "type": "text",
+        "field_type": "text",
+        "controlled_vocabulary": false,
+        "required": false,
+        "editable": true,
+        "vocabulary": null
+      },
+      {
+        "key": "captionAbstract",
+        "label": "Caption/Abstract",
+        "type": "text_short",
+        "field_type": "text_short",
+        "controlled_vocabulary": false,
+        "required": false,
+        "editable": true,
+        "vocabulary": null
+      },
+      {
+        "key": "Color",
+        "label": "Color",
+        "type": "selection_list",
+        "field_type": "selection_list",
+        "controlled_vocabulary": true,
+        "required": false,
+        "editable": true,
+        "vocabulary": [
+          "Red",
+          "Orange",
+          "Yellow",
+          "Green"
+        ]
+      },
+      {
+        "key": "containsFnords",
+        "label": "Contains Fnords",
+        "type": "selection_list",
+        "field_type": "selection_list",
+        "controlled_vocabulary": true,
+        "required": false,
+        "editable": true,
+        "vocabulary": [
+          "Yes",
+          "No"
+        ]
+      },
+      {
+        "key": "dateCreated",
+        "label": "Date Created",
+        "type": "date",
+        "field_type": "date",
+        "controlled_vocabulary": false,
+        "required": false,
+        "editable": true,
+        "vocabulary": null
+      },
+      {
+        "key": "dateSent",
+        "label": "Date Sent",
+        "type": "date",
+        "field_type": "date",
+        "controlled_vocabulary": false,
+        "required": false,
+        "editable": true,
+        "vocabulary": null
+      },
+      {
+        "key": "description",
+        "label": "Description",
+        "type": "text_multi_line",
+        "field_type": "text_multi_line",
+        "controlled_vocabulary": false,
+        "required": false,
+        "editable": true,
+        "vocabulary": null
+      },
+      {
+        "key": "keywords",
+        "label": "Keywords",
+        "type": "text",
+        "field_type": "text",
+        "controlled_vocabulary": false,
+        "required": false,
+        "editable": true,
+        "vocabulary": null
+      },
+      {
+        "key": "numbers",
+        "label": "Numbers",
+        "type": "numeric",
+        "field_type": "numeric",
+        "controlled_vocabulary": false,
+        "required": false,
+        "editable": true,
+        "vocabulary": null
+      },
+      {
+        "key": "usagerightdetails",
+        "label": "Usage Rights Details",
+        "type": "text_multi_line",
+        "field_type": "text_multi_line",
+        "controlled_vocabulary": false,
+        "required": false,
+        "editable": true,
+        "vocabulary": null
+      },
+      {
+        "key": "visualsShotSize",
+        "label": "Visuals: Shot Size",
+        "type": "selection_list_multi",
+        "field_type": "selection_list_multi",
+        "controlled_vocabulary": true,
+        "required": false,
+        "editable": true,
+        "vocabulary": [
+          "Extreme Wide Shot",
+          "Wide Shot",
+          "Full shot",
+          "Medium Full Shot",
+          "Cowboy Shot",
+          "Medium Shot",
+          "Medium Close-up",
+          "Close-up",
+          "Extreme Close-up",
+          "Establishing Shot"
+        ]
+      }
+    ]
+  },
+  "security": {
+    "expiration_date": null,
+    "release_date": "2024-05-03T16:32:20Z",
+    "asset_groups": [
+      "GLO",
+      "public"
+    ]
+  },
+  "status": null,
+  "thumbnails": {
+    "125px": {
+      "url": "https://previews.us-east-1.widencdn.net/preview/36614591/assets/asset-view/509a62d7-9e7f-49c3-b0a8-fce61a7ff23f/thumbnail/eyJ3IjoxMjUsImgiOjEyNSwic2NvcGUiOiJhcHAifQ==?sig.ver=1&sig.keyId=us-east-1.20240821&sig.expires=1730203200&sig=DUIc6yY45ua9ivJ9G1AeyLPyBH5i4Up04XlD1wKEbow",
+      "valid_until": "2024-10-29T11:17:07Z"
+    },
+    "160px": {
+      "url": "https://previews.us-east-1.widencdn.net/preview/36614591/assets/asset-view/509a62d7-9e7f-49c3-b0a8-fce61a7ff23f/thumbnail/eyJ3IjoxNjAsImgiOjE2MCwic2NvcGUiOiJhcHAifQ==?sig.ver=1&sig.keyId=us-east-1.20240821&sig.expires=1730203200&sig=7vJkNotFAn60xWKFeeElE-bMdLIcyk1A5nJhg1TwyRI",
+      "valid_until": "2024-10-29T11:17:07Z"
+    },
+    "2048px": {
+      "url": "https://previews.us-east-1.widencdn.net/preview/36614591/assets/asset-view/509a62d7-9e7f-49c3-b0a8-fce61a7ff23f/thumbnail/eyJ3IjoyMDQ4LCJoIjoyMDQ4LCJzY29wZSI6ImFwcCJ9?sig.ver=1&sig.keyId=us-east-1.20240821&sig.expires=1730203200&sig=qDPTSFZMC1laoGM05Vj1tl3LaZUhm43G-EDBF3b5M6A",
+      "valid_until": "2024-10-29T11:17:07Z"
+    },
+    "300px": {
+      "url": "https://previews.us-east-1.widencdn.net/preview/36614591/assets/asset-view/509a62d7-9e7f-49c3-b0a8-fce61a7ff23f/thumbnail/eyJ3IjozMDAsImgiOjMwMCwic2NvcGUiOiJhcHAifQ==?sig.ver=1&sig.keyId=us-east-1.20240821&sig.expires=1730203200&sig=d7nMOPIwPj8XdSO-hE5xSl3VgoWxLzNUySAgoZd1Xoo",
+      "valid_until": "2024-10-29T11:17:07Z"
+    },
+    "600px": {
+      "url": "https://previews.us-east-1.widencdn.net/preview/36614591/assets/asset-view/509a62d7-9e7f-49c3-b0a8-fce61a7ff23f/thumbnail/eyJ3Ijo2MDAsImgiOjYwMCwic2NvcGUiOiJhcHAifQ==?sig.ver=1&sig.keyId=us-east-1.20240821&sig.expires=1730203200&sig=Q0-tFNGFTVkGEzH4Iz_5JV3eVcesZenTxalX9IIl2so",
+      "valid_until": "2024-10-29T11:17:07Z"
+    }
+  },
+  "embeds": {
+    "640px-landscape": {
+      "url": "https://laser.widen.net/content/m2x3z2j9ou/jpeg/An%20asset%20with%20many%20versions.jpeg?w=640&keep=c&crop=yes&color=cccccc&quality=80&u=pfexxl",
+      "html": "<img width=\"640\" alt=\"An asset with many versions.jpeg\" src=\"https://laser.widen.net/content/m2x3z2j9ou/jpeg/An%20asset%20with%20many%20versions.jpeg?w=640&keep=c&crop=yes&color=cccccc&quality=80&u=pfexxl\">",
+      "share": "https://laser.widen.net/view/thumbnail/m2x3z2j9ou/An%20asset%20with%20many%20versions.png?w=640&keep=c&crop=yes&color=cccccc&quality=80&t.format=jpeg&u=pfexxl&x.share=t",
+      "apps": []
+    },
+    "640px-portrait": {
+      "url": "https://laser.widen.net/content/m2x3z2j9ou/jpeg/An%20asset%20with%20many%20versions.jpeg?h=640&keep=c&crop=yes&color=cccccc&quality=80&u=pfexxl",
+      "html": "<img height=\"640\" alt=\"An asset with many versions.jpeg\" src=\"https://laser.widen.net/content/m2x3z2j9ou/jpeg/An%20asset%20with%20many%20versions.jpeg?h=640&keep=c&crop=yes&color=cccccc&quality=80&u=pfexxl\">",
+      "share": "https://laser.widen.net/view/thumbnail/m2x3z2j9ou/An%20asset%20with%20many%20versions.png?h=640&keep=c&crop=yes&color=cccccc&quality=80&t.format=jpeg&u=pfexxl&x.share=t",
+      "apps": []
+    },
+    "original": {
+      "url": "https://laser.widen.net/content/m2x3z2j9ou/original/An-asset-with-many-versions.png?u=pfexxl&download=true",
+      "html": "<a href=\"https://laser.widen.net/content/m2x3z2j9ou/original/An-asset-with-many-versions.png?u=pfexxl&download=true\" target=\"_blank\">An-asset-with-many-versions.png</a>",
+      "share": "https://laser.widen.net/content/m2x3z2j9ou/original/An-asset-with-many-versions.png?u=pfexxl&download=true&x.share=t",
+      "apps": []
+    },
+    "templated": {
+      "url": "https://embed.widencdn.net/img/laser/m2x3z2j9ou/{size}px@{scale}x/An-asset-with-many-versions.png?q={quality}&x.template=y",
+      "html": null,
+      "share": "https://embed.widencdn.net/img/laser/m2x3z2j9ou/{size}px@{scale}x/An-asset-with-many-versions.png?q={quality}&x.template=y",
+      "apps": []
+    }
+  },
+  "expanded": {
+    "asset_properties": true,
+    "embeds": true,
+    "file_properties": true,
+    "metadata": true,
+    "metadata_info": true,
+    "metadata_vocabulary": true,
+    "security": true,
+    "status": false,
+    "thumbnails": true
+  },
+  "_links": {
+    "download": "https://orders-bb.us-east-1.widencdn.net/download-deferred/originals?actor=wrn%3Ausers%3Auser%3A36614591%3Apfexxl&tracking=ewogICJkb19ub3RfdHJhY2siOiBmYWxzZSwKICAiYW5vbnltb3VzIjogZmFsc2UsCiAgInZpc2l0b3JfaWQiOiBudWxsLAogICJ1c2VyX3dybiI6ICJ3aWRlbjp1c2Vyczp1c2VyOkxTUlpaOnBmZXh4bCIKfQ%3D%3D&asset_wrn=wrn%3Aassets%3Aasset%3A36614591%3Am2x3z2j9ou&custom_metadata=ewogICJhcHBfbmFtZSI6ICJheGlvbSIsCiAgImludGVuZGVkX3VzZV9jb2RlIjogbnVsbCwKICAiaW50ZW5kZWRfdXNlX3ZhbHVlIjogbnVsbCwKICAiaW50ZW5kZWRfdXNlX2VtYWlsIjogbnVsbCwKICAiY29sbGVjdGlvbl9pZCI6IG51bGwsCiAgInBvcnRhbF9pZCI6IG51bGwsCiAgInBvcnRhbF9hY2Nlc3NfY29kZV9lbWFpbCI6IG51bGwsCiAgImRhbV9vcmRlcl9pZCI6IG51bGwKfQ%3D%3D&Expires=1730160000&Signature=LQlEmBKklHwaAf2yxDzhhvHTqIRlVO7pGA~FSKUQN2D-G9aBdtdoFixR-L7t~n41fHbFimtCljwuqivh0ejlDKhKCAOIaQGIhzJadwesR6uQMfUyp1fxr1ntOZhBQ9iic5u4XW0OsaLx4srP21QUUGK6uxTeIdkrr9tj4DqNolHQQv2x-odL7I7hXtofASN2krD4Ia3utWKTowQEJ-QeiRRaFuX~bYaLuXVAyd-zhXaFKOVuc9D6AJVRerOgGK1gK1MXSNIms7teIuHvF4lHtYE8MmKkCa0dlW5mZ3~KOI-qdqadUeqwOIwQFLduhVOiv-soinAJ2Th~BYTIn6i4ag__&Key-Pair-Id=APKAJM7FVRD2EPOYUXBQ",
+    "self": "https://api.widencollective.com/v2/assets/f2a9c03d-3664-477c-8013-e84504ed5adc",
+    "self_all": "https://api.widencollective.com/v2/assets/f2a9c03d-3664-477c-8013-e84504ed5adc?expand=asset_properties%2Cembeds%2Cfile_properties%2Cmetadata%2Cmetadata_info%2Cmetadata_vocabulary%2Csecurity%2Cthumbnails"
+  }
+}

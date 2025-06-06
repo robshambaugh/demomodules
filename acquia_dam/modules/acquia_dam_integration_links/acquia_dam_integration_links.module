@@ -1,0 +1,41 @@
+<?php
+
+/**
+ * @file
+ * Drupal Module: Acquia DAM - Enhanced integration links.
+ */
+
+declare(strict_types=1);
+
+use Drupal\Core\Entity\EntityInterface;
+
+/**
+ * Implements hook_entity_insert().
+ */
+function acquia_dam_integration_links_entity_insert(EntityInterface $entity): void {
+  \Drupal::service('acquia_dam_integration_links.enhanced_register')->trackAssetUsage($entity);
+}
+
+/**
+ * Implements hook_entity_update().
+ */
+function acquia_dam_integration_links_entity_update(EntityInterface $entity): void {
+  \Drupal::service('acquia_dam_integration_links.enhanced_register')->trackAssetUsage($entity);
+}
+
+/**
+ * Implements hook_entity_delete().
+ */
+function acquia_dam_integration_links_entity_delete(EntityInterface $entity): void {
+  $count = \Drupal::database()
+    ->select('acquia_dam_integration_link_tracking')
+    ->condition('entity_uuid', $entity->uuid())
+    ->countQuery()
+    ->execute()
+    ->fetchField();
+
+  // Do not list for deletion if media or the integration is already deleted.
+  if ($entity->uuid() && $count && $entity->getEntityTypeId() !== 'media') {
+    \Drupal::service('acquia_dam_integration_links.enhanced_register')->removeAssetUsage($entity);
+  }
+}

@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - acquia_dam
+id: acquia_dam_image_asset
+label: 'Acquia DAM: Image'
+description: 'Media assets type of still image in the remote DAM service.'
+source: 'acquia_dam_asset:image'
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: acquia_dam_asset_id
+  download_assets: false
+field_map:
+  filename: name

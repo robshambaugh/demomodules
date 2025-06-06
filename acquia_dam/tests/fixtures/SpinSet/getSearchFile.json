@@ -1,0 +1,262 @@
+{
+  "query": "eudaimonia_spin.zip FileFormat:(spinset)",
+  "sort": "-created_date",
+  "query_explained": "eudaimonia_spin.zip File Format: spinset",
+  "sort_explained": "Created date (descending)",
+  "scroll_id": null,
+  "scroll_timeout": null,
+  "query_syntax_ok": true,
+  "include_archived": false,
+  "include_deleted": false,
+  "item_type": "asset",
+  "total_count": 1,
+  "offset": 0,
+  "limit": 10,
+  "items": [
+    {
+      "id": "eec6d92b-6452-4ab6-894a-b4d0826e65ba",
+      "external_id": "yjezd5iwh5",
+      "filename": "eudaimonia_spin.zip",
+      "created_date": "2021-08-18T11:29:54Z",
+      "last_update_date": "2021-08-18T11:38:41Z",
+      "file_upload_date": "2021-08-18T11:29:54Z",
+      "deleted_date": null,
+      "released_and_not_expired": true,
+      "asset_properties": {
+        "favorite": false,
+        "popularity": 0,
+        "cutline_caption": ""
+      },
+      "file_properties": {
+        "format": "SpinSet",
+        "format_type": "project_archive",
+        "size_in_kbytes": 4179,
+        "image_properties": null,
+        "video_properties": null
+      },
+      "metadata": {
+        "fields": {
+          "assettype": [
+            "Other"
+          ],
+          "author": [],
+          "captionAbstract": [],
+          "colorspace": [],
+          "containsFnords": [],
+          "dateCreated": [],
+          "description": [],
+          "keywords": [],
+          "usagerightdetails": [],
+          "usagerights": [],
+          "vincent": []
+        }
+      },
+      "metadata_info": {
+        "field_set": "Laser Metadata Type",
+        "field_set_fields": [
+          {
+            "key": "assettype",
+            "label": "Asset Type",
+            "type": "selection_list",
+            "field_type": "selection_list",
+            "controlled_vocabulary": true,
+            "required": false,
+            "editable": true,
+            "vocabulary": [
+              "Document",
+              "Graphic",
+              "Image",
+              "Other",
+              "Video"
+            ]
+          },
+          {
+            "key": "author",
+            "label": "Author",
+            "type": "text",
+            "field_type": "text",
+            "controlled_vocabulary": false,
+            "required": false,
+            "editable": true,
+            "vocabulary": null
+          },
+          {
+            "key": "captionAbstract",
+            "label": "Caption/Abstract",
+            "type": "text_short",
+            "field_type": "text_short",
+            "controlled_vocabulary": false,
+            "required": false,
+            "editable": true,
+            "vocabulary": null
+          },
+          {
+            "key": "colorspace",
+            "label": "Colorspace",
+            "type": "text",
+            "field_type": "text",
+            "controlled_vocabulary": false,
+            "required": false,
+            "editable": true,
+            "vocabulary": null
+          },
+          {
+            "key": "containsFnords",
+            "label": "Contains Fnords",
+            "type": "selection_list",
+            "field_type": "selection_list",
+            "controlled_vocabulary": true,
+            "required": false,
+            "editable": true,
+            "vocabulary": [
+              "Yes",
+              "No"
+            ]
+          },
+          {
+            "key": "dateCreated",
+            "label": "Date Created",
+            "type": "date",
+            "field_type": "date",
+            "controlled_vocabulary": false,
+            "required": false,
+            "editable": true,
+            "vocabulary": null
+          },
+          {
+            "key": "description",
+            "label": "Description",
+            "type": "text_multi_line",
+            "field_type": "text_multi_line",
+            "controlled_vocabulary": false,
+            "required": false,
+            "editable": true,
+            "vocabulary": null
+          },
+          {
+            "key": "keywords",
+            "label": "Keywords",
+            "type": "text",
+            "field_type": "text",
+            "controlled_vocabulary": false,
+            "required": false,
+            "editable": true,
+            "vocabulary": null
+          },
+          {
+            "key": "usagerightdetails",
+            "label": "Usage Rights Details",
+            "type": "text_multi_line",
+            "field_type": "text_multi_line",
+            "controlled_vocabulary": false,
+            "required": false,
+            "editable": true,
+            "vocabulary": null
+          },
+          {
+            "key": "usagerights",
+            "label": "Usage Rights",
+            "type": "selection_list",
+            "field_type": "selection_list",
+            "controlled_vocabulary": true,
+            "required": false,
+            "editable": true,
+            "vocabulary": [
+              "No",
+              "Yes",
+              "Another value"
+            ]
+          },
+          {
+            "key": "vincent",
+            "label": "Vincent",
+            "type": "text",
+            "field_type": "text",
+            "controlled_vocabulary": false,
+            "required": false,
+            "editable": true,
+            "vocabulary": null
+          }
+        ]
+      },
+      "security": {
+        "expiration_date": null,
+        "release_date": "2021-08-18T11:29:54Z",
+        "asset_groups": [
+          "Demo Assets",
+          "public"
+        ]
+      },
+      "status": null,
+      "thumbnails": {
+        "125px": {
+          "url": "https://previews.us-east-1.widencdn.net/preview/36614591/assets/asset-view/411cd444-617e-4351-b1b1-9d676888a229/thumbnail/eyJ3IjoxMjUsImgiOjEyNSwic2NvcGUiOiJhcHAifQ==?Expires=1653048000&Signature=CHiSdgIGFk0kBI6QofjkufKHUYNeey2qobmTWXUAVdfsXveFbO9ZqIGe~bQ7Ea9rNSjUJQiW9dcN2vc7-StWI7Qa5CnUPc1AEhyn3TwP45sOyo45G8n1SlwaPgpOK12Mf7lfrs5NsFIntyOXt3ciL~6WXVhxpgtQrxBKnSih4PHiawpjSKoX9jyUXAkpL4pJ5W-OoYwLq8TBJr~CCEl6LScEx45Mxz09x7rDjmlH-XBQy5R0n6Pv7IPyXXcjMvxGjIb1wWdKcYpTle2J0QTHC23VJuiRaNF6iDVunvemU0eJUUfY6TwdCHDx5XHgJ1Y1BEiV1EDiiN4pNYKChDenAg__&Key-Pair-Id=APKAJM7FVRD2EPOYUXBQ",
+          "valid_until": "2022-05-20T11:19:15Z"
+        },
+        "160px": {
+          "url": "https://previews.us-east-1.widencdn.net/preview/36614591/assets/asset-view/411cd444-617e-4351-b1b1-9d676888a229/thumbnail/eyJ3IjoxNjAsImgiOjE2MCwic2NvcGUiOiJhcHAifQ==?Expires=1653048000&Signature=n8ITIB7~dNl83k9Tjrcao3Gj426-x897AKdBXNj5GpD98Gi4Cs1R~x6GYPEelTpEtJnjwPsXB6KB3bojviKUfProMiESxxnXdV-6bR-sJCQQwbLwaYcqnqNqS8YVOyD~janNE7lpaSa3rINEiJCz9JGCXrNIZ98jplGO0uefC42ZGSOFcFcXF4ZPtgxMWs-glrkFqiiuztZqYDA7DwYdod5bTGjfGWMsAtqlmowEh25bNleothhxAe5trV-a7tZHjd~TxafP9T4EgLzvNl8stRmN8QO3pHI3hOqeImIBuY2lNyRc5V~qYUAoQVaDeOycvolka~~NSdAKfYoEq3pGmQ__&Key-Pair-Id=APKAJM7FVRD2EPOYUXBQ",
+          "valid_until": "2022-05-20T11:19:15Z"
+        },
+        "2048px": {
+          "url": "https://previews.us-east-1.widencdn.net/preview/36614591/assets/asset-view/411cd444-617e-4351-b1b1-9d676888a229/thumbnail/eyJ3IjoyMDQ4LCJoIjoyMDQ4LCJzY29wZSI6ImFwcCJ9?Expires=1653048000&Signature=Fe46o6IsMov7~3IwBt~Q-zvlEZN-MW5rX1xXDb~kgJ9UKaYAAVFWXJpAQEHUxH9KHSWoy2QyDa9clx1dTybO9j8MJuud2Mm1CqwxIvq7ZiiYo4ZKJGyze5FfDjjxkvzaLHBsa-KxK~ZTC4SiY1YrE7d6qh1MifbuJ9GGET9wCWMuVQR8loyg9N4Ciy17lKh31HoPkyE7OPfZ5PC9uGaOe0rKhuxrMzwhtFDRSDWBZ3jlhqY3DDVLf7YWKwT6BKT6C4WU4JGMLFolRNainubKvJdtrg0US5FtlG6dVsPwA55efmiHkX-Qe5D0RWAEW4LYN8ycJ04~4A8~u3BrLHXlNw__&Key-Pair-Id=APKAJM7FVRD2EPOYUXBQ",
+          "valid_until": "2022-05-20T11:19:15Z"
+        },
+        "300px": {
+          "url": "https://previews.us-east-1.widencdn.net/preview/36614591/assets/asset-view/411cd444-617e-4351-b1b1-9d676888a229/thumbnail/eyJ3IjozMDAsImgiOjMwMCwic2NvcGUiOiJhcHAifQ==?Expires=1653048000&Signature=p6XEP9K8X~E-npYhxqzUv~uUM1Iv4-oz9qOxA9CR6j9SFYRYSsQcMlyDXY7gh0JUV1yVYtotOnhMJFJrYVoHkCc5OnuffWwa02-v~j45abvp77wdEehhkFmT9yGGBZc~YZlJfZlV-hYFRqF0vYSXcHslI35a89M9chdAkHzifbzcZWEEIZ9auDIXSb8ee4YhnGbUUVgOjpSX9Fpun5INYpC6PF4AKY8ga52kTxNp~T7c7Dd-zB4XwiKAHfIZ0Ie-Q9FBFZY1iEEGMxzHeDfVYvEpveEgPxmmDitpOP2LTpwa-qb-dxUoXQYn4~bdGddaDpwIFqy6PUel9h0SIRF2yw__&Key-Pair-Id=APKAJM7FVRD2EPOYUXBQ",
+          "valid_until": "2022-05-20T11:19:15Z"
+        },
+        "600px": {
+          "url": "https://previews.us-east-1.widencdn.net/preview/36614591/assets/asset-view/411cd444-617e-4351-b1b1-9d676888a229/thumbnail/eyJ3Ijo2MDAsImgiOjYwMCwic2NvcGUiOiJhcHAifQ==?Expires=1653048000&Signature=swrw4FxiemoTU3dOSYj49yfy1eqP3ZSpqLcZeeqE24H9~wXvtZsfj7z9rGIUXooQymsf0OfF042-xfOmExFlNBFf-wswrK09~DJ64WlXsfYMNhNtoefXETtQHs77SwTA2JHYU9pvH99BUYLnsEdApx2ze9Fc6vOIl1L0XkDlMwU8Do83hDt6wObF9Pn7GKdjjysMdNr6Ov3mIu~r0BtnvnVKsnrwKjjP75kl1ABQTW74XmdMFwuKq23CfxOCokTaYgop4eLlm6ySjKNjfJ3TRGT3j4X4vES0DhvVP--u1dSWzH~t9jFFuQAKlaUqdoSoXk8ZgieuEX5WN7m9G5aBMQ__&Key-Pair-Id=APKAJM7FVRD2EPOYUXBQ",
+          "valid_until": "2022-05-20T11:19:15Z"
+        }
+      },
+      "embeds": {
+        "original": {
+          "url": "https://laser.widen.net/content/yjezd5iwh5/original/eudaimonia_spin.zip?u=mzlh39&download=true",
+          "html": "<a href=\"https://laser.widen.net/content/yjezd5iwh5/original/eudaimonia_spin.zip?u=mzlh39&download=true\" target=\"_blank\">eudaimonia_spin.zip</a>",
+          "share": "https://laser.widen.net/content/yjezd5iwh5/original/eudaimonia_spin.zip?u=mzlh39&download=true&x.share=t",
+          "apps": []
+        },
+        "spinset_thumbnail": {
+          "url": "https://laser.widen.net/content/yjezd5iwh5/jpeg/eudaimonia_spin.zip?u=mzlh39",
+          "html": "<img alt=\"eudaimonia_spin.zip\" src=\"https://laser.widen.net/content/yjezd5iwh5/jpeg/eudaimonia_spin.zip?u=mzlh39\">",
+          "share": "https://laser.widen.net/view/thumbnail/yjezd5iwh5/eudaimonia_spin.zip?t.format=jpeg&u=mzlh39&x.share=t",
+          "apps": []
+        },
+        "spinset_viewer": {
+          "url": "https://laser.widen.net/view/spinset/yjezd5iwh5/eudaimonia_spin.zip?u=mzlh39",
+          "html": "<div style=\"position:relative;width:100%;height:0;padding-bottom:56.25%;\"><iframe src=\"https://laser.widen.net/view/spinset/yjezd5iwh5/eudaimonia_spin.zip?u=mzlh39\" webkitallowfullscreen mozallowfullscreen allowfullscreen title=\"Spinset for &quot;eudaimonia_spin.zip&quot;\" frameborder=\"0\" allowtransparency=\"true\" scrolling=\"no\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;\" ></iframe></div>",
+          "share": "https://laser.widen.net/view/spinset/yjezd5iwh5/eudaimonia_spin.zip?u=mzlh39&x.share=t",
+          "apps": []
+        },
+        "spinset_viewer_and_download": {
+          "url": "https://laser.widen.net/view/spinset/yjezd5iwh5/eudaimonia_spin.zip?t.download=true&u=mzlh39",
+          "html": "<div style=\"position:relative;width:100%;height:0;padding-bottom:56.25%;\"><iframe src=\"https://laser.widen.net/view/spinset/yjezd5iwh5/eudaimonia_spin.zip?t.download=true&u=mzlh39\" webkitallowfullscreen mozallowfullscreen allowfullscreen title=\"Spinset for &quot;eudaimonia_spin.zip&quot;\" frameborder=\"0\" allowtransparency=\"true\" scrolling=\"no\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;\" ></iframe></div>",
+          "share": "https://laser.widen.net/view/spinset/yjezd5iwh5/eudaimonia_spin.zip?t.download=true&u=mzlh39&x.share=t",
+          "apps": []
+        },
+        "templated": {
+          "url": "https://embed.widencdn.net/img/laser/yjezd5iwh5/{size}px@{scale}x/eudaimonia_spin.zip?q={quality}&x.template=y",
+          "html": null,
+          "share": null,
+          "apps": []
+        }
+      },
+      "expanded": {
+        "asset_properties": true,
+        "embeds": true,
+        "file_properties": true,
+        "metadata": true,
+        "metadata_info": true,
+        "metadata_vocabulary": true,
+        "security": true,
+        "thumbnails": true
+      },
+      "_links": {
+        "download": "https://orders-bb.us-east-1.widencdn.net/download-deferred/originals?asset_wrn=wrn%3Aassets%3Aasset%3A36614591%3Ayjezd5iwh5&actor=wrn%3Ausers%3Auser%3A36614591%3Amzlh39&tracking=ewogICJkb19ub3RfdHJhY2siOiBmYWxzZSwKICAiYW5vbnltb3VzIjogZmFsc2UsCiAgInZpc2l0b3JfaWQiOiBudWxsLAogICJ1c2VyX3dybiI6ICJ3aWRlbjp1c2Vyczp1c2VyOkxTUlpaOm16bGgzOSIKfQ%3D%3D&custom_metadata=ewogICJhcHBfbmFtZSI6ICJsZW5zIiwKICAiaW50ZW5kZWRfdXNlX2NvZGUiOiBudWxsLAogICJpbnRlbmRlZF91c2VfdmFsdWUiOiBudWxsLAogICJpbnRlbmRlZF91c2VfZW1haWwiOiBudWxsLAogICJjb2xsZWN0aW9uX2lkIjogbnVsbCwKICAicG9ydGFsX2lkIjogbnVsbCwKICAiZGFtX29yZGVyX2lkIjogbnVsbAp9&Expires=1653004800&Signature=JAxeN1N2r0GqBltlDw4xn1Rc8Xm1b1hqr7iP6XbAHPidVvLJuRUsHY47ELzBmOut-rUCRtnjdvF5Se8j6fF4qKGQ4vXSuVhNjdV6tgNXSgYEzN9GB3K1Aom6LaVMKdtBiapdVnDI~OaiJYEOCgtR-h1eFhhHZzaXYOpGw0N09~uJ8nE0fXtsfDZ727TYVDeJAKELPpvjfq2T3CqpHMv7KZYGZfEnKMX8AsOWDAjLJ9Y8VNtZgWTx1Z~hb9doqWzJWBZhMW9Y-r550q-dKdmz6FFqYSt-WSprE30nY1-wm4gUA7hEyg3pW7wywf8re524PLJYJpZ5PLzWsp~yGVTYTA__&Key-Pair-Id=APKAJM7FVRD2EPOYUXBQ",
+        "self": "https://api.widencollective.com/v2/assets/eec6d92b-6452-4ab6-894a-b4d0826e65ba",
+        "self_all": "https://api.widencollective.com/v2/assets/eec6d92b-6452-4ab6-894a-b4d0826e65ba?expand=asset_properties%2Cembeds%2Cfile_properties%2Cmetadata%2Cmetadata_info%2Cmetadata_vocabulary%2Csecurity%2Cthumbnails"
+      }
+    }
+  ]
+}

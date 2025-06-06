@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - acquia_dam
+id: acquia_dam_video_asset
+label: 'Acquia DAM: Video'
+description: 'Media assets type of motion picture in the remote DAM service.'
+source: 'acquia_dam_asset:video'
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: acquia_dam_asset_id
+  download_assets: false
+field_map:
+  filename: name

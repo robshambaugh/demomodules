@@ -1,0 +1,16 @@
+{
+  "asset_id": "eec6d92b-6452-4ab6-894a-b4d0826e65ba",
+  "item_type": "asset_version",
+  "items": [
+    {
+      "_links": {
+        "version_details": "https://api.widencollective.com/v2/assets/eec6d92b-6452-4ab6-894a-b4d0826e65ba/versions/f9c371bf-3b2b-49d3-ac23-312d109d8063"
+      },
+      "current_version": true,
+      "filename": "eudaimonia_spin.zip",
+      "id": "f9c371bf-3b2b-49d3-ac23-312d109d8063",
+      "version_number": 1
+    }
+  ],
+  "total_count": 1
+}

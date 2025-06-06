@@ -1,0 +1,8 @@
+acquiadam_asset_import.configuration:
+  path: '/admin/config/acquia-dam/bulk-import'
+  defaults:
+    _form: '\Drupal\acquiadam_asset_import\Form\BulkImportConfigForm'
+    _title: 'Acquia DAM bulk import'
+  requirements:
+    _permission: 'administer site configuration'
+    _custom_access: '\Drupal\acquia_dam\Controller\AuthenticationController::checkAccess'

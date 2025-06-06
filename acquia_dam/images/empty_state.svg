@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="201px" height="161px" viewBox="0 0 201 161" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group</title>
+    <defs>
+        <polygon id="path-1" points="30.375 54.57375 16.30125 40.5 11.50875 45.25875 30.375 64.125 70.875 23.625 66.11625 18.86625"></polygon>
+    </defs>
+    <g id="Post-test-designs" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Empty-state-no-source-selected-Copy" transform="translate(-540.000000, -201.000000)">
+            <g id="Group" transform="translate(541.000000, 202.000000)">
+                <rect id="Rectangle" stroke="#BED9F4" stroke-width="2" x="42" y="0" width="59.8148148" height="59.8148148" rx="6"></rect>
+                <rect id="Rectangle-Copy" stroke="#B6BFCE" stroke-width="2" x="0" y="45.1851852" width="59.8148148" height="59.8148148" rx="6"></rect>
+                <rect id="Rectangle-Copy" stroke="#627693" stroke-width="2" x="85" y="45" width="114" height="114" rx="6"></rect>
+                <g transform="translate(102.000000, 62.000000)" id="Icon/Core-Icons/check">
+                    <polygon id="Shape" points="0 0 81 0 81 81 0 81"></polygon>
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Shape" fill="#3D495C" fill-rule="nonzero" xlink:href="#path-1"></use>
+                    <g id="Group" mask="url(#mask-2)" fill="#2273C3">
+                        <g id="Colors/Gray30">
+                            <rect id="Rectangle-4" x="0" y="0" width="81" height="81"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

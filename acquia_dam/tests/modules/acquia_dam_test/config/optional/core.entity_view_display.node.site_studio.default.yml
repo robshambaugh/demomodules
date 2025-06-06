@@ -1,0 +1,29 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.site_studio.field_layout
+    - node.type.site_studio
+  module:
+    - cohesion_elements
+    - user
+id: node.site_studio.default
+targetEntityType: node
+bundle: site_studio
+mode: default
+content:
+  field_layout:
+    type: cohesion_entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

@@ -1,0 +1,1107 @@
+<?php
+
+/**
+ * @file
+ * Drupal Module: Acquia DAM.
+ */
+
+declare(strict_types=1);
+
+use Drupal\acquia_dam\EmbedCodeFactory;
+use Drupal\acquia_dam\Entity\ComputedEmbedCodesField;
+use Drupal\acquia_dam\Entity\ImageAltTextField;
+use Drupal\acquia_dam\Entity\ManagedFileField;
+use Drupal\acquia_dam\Entity\ManagedImageField;
+use Drupal\acquia_dam\Entity\MediaExpiryDateField;
+use Drupal\acquia_dam\Entity\MediaSourceField;
+use Drupal\acquia_dam\Form\FocalPointMediaEditFormAlter;
+use Drupal\acquia_dam\Form\MediaEmbedFormAlter;
+use Drupal\acquia_dam\Form\MediaTypeFormAlter;
+use Drupal\acquia_dam\FormatAllowedHtmlModifier;
+use Drupal\acquia_dam\Plugin\Field\FieldType\AssetItem;
+use Drupal\acquia_dam\Plugin\media\acquia_dam\AssetMediaSourceManager;
+use Drupal\acquia_dam\Plugin\media\Source\Asset;
+use Drupal\acquia_dam\Plugin\Validation\Constraint\DamAssetMustBeAvailableConstraint;
+use Drupal\acquia_dam\Plugin\views\field\MediaLibrarySelectForm;
+use Drupal\acquia_dam\StreamWrapper\AcquiaDamStreamWrapper;
+use Drupal\Component\Utility\UrlHelper;
+use Drupal\Core\Config\Config;
+use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Entity\EntityTypeInterface;
+use Drupal\Core\Field\BaseFieldDefinition;
+use Drupal\Core\Field\FieldDefinitionInterface;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Link;
+use Drupal\Core\Render\Element;
+use Drupal\Core\Render\Markup;
+use Drupal\Core\StringTranslation\TranslatableMarkup;
+use Drupal\Core\Template\Attribute;
+use Drupal\Core\Url;
+use Drupal\filter\FilterFormatInterface;
+use Drupal\media\Entity\Media;
+use Drupal\media\Entity\MediaType;
+use Drupal\media\MediaInterface;
+use Drupal\media\MediaTypeInterface;
+use Drupal\media_library\MediaLibraryState;
+use Drupal\media_library\Plugin\Field\FieldWidget\MediaLibraryWidget;
+use Drupal\views\Form\ViewsForm;
+use Drupal\views\Plugin\views\cache\CachePluginBase;
+use Drupal\views\ViewExecutable;
+
+/**
+ * Implements hook_theme().
+ */
+function acquia_dam_theme($existing, $type, $theme, $path) {
+  return [
+    'acquia_dam_embed_select_form' => [
+      'render element' => 'form',
+    ],
+    'acquia_dam_iframe_responsive' => [
+      'variables' => [
+        'src' => NULL,
+      ],
+    ],
+    'acquia_dam_video_stream' => [
+      'variables' => [
+        'attributes' => NULL,
+        'source_attributes' => NULL,
+      ],
+    ],
+  ];
+}
+
+/**
+ * Implements hook_entity_field_storage_info().
+ */
+function acquia_dam_entity_field_storage_info(EntityTypeInterface $entity_type): array {
+  $definitions = [];
+  if ($entity_type->id() === 'media') {
+    $definitions[MediaSourceField::SOURCE_FIELD_NAME] = MediaSourceField::getStorageDefinition($entity_type->id());
+    $definitions[MediaExpiryDateField::EXPIRY_DATE_FIELD_NAME] = MediaExpiryDateField::getStorageDefinition($entity_type->id());
+    $definitions[ComputedEmbedCodesField::FIELD_NAME] = ComputedEmbedCodesField::getStorageDefinition($entity_type->id());
+    $definitions[ImageAltTextField::IMAGE_ALT_TEXT_FIELD_NAME] = ImageAltTextField::getStorageDefinition($entity_type->id());
+    $definitions[ManagedFileField::MANAGED_FILE_FIELD_NAME] = ManagedFileField::getStorageDefinition($entity_type->id());
+    $definitions[ManagedImageField::MANAGED_IMAGE_FIELD_NAME] = ManagedImageField::getStorageDefinition($entity_type->id());
+  }
+  return $definitions;
+}
+
+/**
+ * Implements hook_entity_bundle_field_info().
+ */
+function acquia_dam_entity_bundle_field_info(EntityTypeInterface $entity_type, $bundle, array $base_field_definitions) {
+  $definitions = [];
+  if ($entity_type->id() === 'media' && $bundle) {
+    $media_type_storage = Drupal::entityTypeManager()->getStorage('media_type');
+    $media_type = $media_type_storage->load($bundle);
+    // @todo this check vs an `assert` is needed due to MediaLibrarySelectForm.
+    //   It can create media entity stubs with invalid bundles when the view
+    //   is not properly filtered. This should only happen when editing the
+    //   View and the MediaLibrarySelectForm is rendered and non-functional.
+    if (!$media_type instanceof MediaTypeInterface) {
+      return $definitions;
+    }
+    $source = $media_type->getSource();
+    if ($source instanceof Asset) {
+      $definitions[MediaSourceField::SOURCE_FIELD_NAME] = MediaSourceField::getFieldDefinition(
+        $entity_type->id(),
+        $bundle,
+        (string) $media_type->label()
+      );
+      $definitions[MediaExpiryDateField::EXPIRY_DATE_FIELD_NAME] = MediaExpiryDateField::getFieldDefinition(
+        $entity_type->id(),
+        $bundle,
+        (string) $media_type->label()
+      );
+      $definitions[ComputedEmbedCodesField::FIELD_NAME] = ComputedEmbedCodesField::getFieldDefinition(
+        $entity_type->id(),
+        $bundle
+      );
+      if ($source->getDerivativeId() === 'image') {
+        $definitions[ImageAltTextField::IMAGE_ALT_TEXT_FIELD_NAME] = ImageAltTextField::getFieldDefinition(
+          $entity_type->id(),
+          $bundle,
+          (string) $media_type->label()
+        );
+        $definitions[ManagedImageField::MANAGED_IMAGE_FIELD_NAME] = ManagedImageField::getFieldDefinition(
+          $entity_type->id(),
+          $bundle
+        );
+      }
+      else {
+        $definitions[ManagedFileField::MANAGED_FILE_FIELD_NAME] = ManagedFileField::getFieldDefinition(
+          $entity_type->id(),
+          $bundle,
+          '',
+          $source->getFormatterSettings(ManagedFileField::MANAGED_FILE_FIELD_NAME)['file_extensions'] ?? ''
+        );
+      }
+    }
+  }
+  return $definitions;
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function acquia_dam_form_editor_media_dialog_alter(&$form, FormStateInterface $form_state) {
+  $form_alter = \Drupal::classResolver()
+    ->getInstanceFromDefinition(MediaEmbedFormAlter::class);
+  assert($form_alter instanceof MediaEmbedFormAlter);
+  $form_alter->formAlter($form, $form_state);
+}
+
+/**
+ * Implements hook_form_BASE_FORM_ID_alter().
+ */
+function acquia_dam_form_media_type_form_alter(&$form, FormStateInterface $form_state) {
+  $form_alter = \Drupal::classResolver()->getInstanceFromDefinition(MediaTypeFormAlter::class);
+  assert($form_alter instanceof MediaTypeFormAlter);
+  $form_alter->formAlter($form, $form_state);
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function acquia_dam_form_media_acquiadam_config_alter(&$form, FormStateInterface $form_state) {
+  $form['authentication'] = [
+    '#type' => 'fieldset',
+    '#title' => t('Authentication details'),
+  ];
+  $form['authentication']['redirect'] = [
+    "#markup" => "The site credentials to your Acquia DAM account are now under " . Link::createFromRoute(t('Acquia DAM'), 'acquia_dam.config')->toString(),
+  ];
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function acquia_dam_preprocess_media(&$variables) {
+  if ($variables['view_mode'] === 'media_library') {
+    $variables['attributes']['class'][] = 'contextual-region';
+  }
+  // We change how to render only if 'data-embed-code-id' attribute is set.
+  // Otherwise, we let the view mode configuration handle rendering.
+  if (isset($variables['attributes']['data-embed-code-id'])) {
+    $media = $variables['media'];
+    assert($media instanceof MediaInterface);
+    $media_type = MediaType::load($media->bundle());
+    assert($media_type instanceof MediaTypeInterface);
+    $source = $media_type->getSource();
+    if ($source instanceof Asset) {
+      $embeds = $source->getMetadata($media, 'embeds');
+      if (empty($embeds)) {
+        return;
+      }
+      $variables['content'][MediaSourceField::SOURCE_FIELD_NAME][0] =
+        EmbedCodeFactory::renderAsset(
+          $variables['attributes']['data-embed-code-id'],
+          $media
+        );
+      unset($variables['attributes']['data-embed-code-id']);
+    }
+  }
+}
+
+/**
+ * Implements hook_theme_suggestions_HOOK().
+ *
+ * Each theme in Drupal core provides a template for the view provided by Media
+ * Library based on its identifier. We need to provide that theme hook
+ * suggestion for our own view so that it is templated correctly.
+ */
+function acquia_dam_theme_suggestions_views_view_unformatted(array $variables) {
+  $suggestions = [];
+  if ($variables['view']->id() === 'acquia_dam_asset_library') {
+    $suggestions[] = 'views_view_unformatted__media_library';
+  }
+  return $suggestions;
+}
+
+/**
+ * Implements hook_theme_suggestions_HOOK().
+ */
+function acquia_dam_theme_suggestions_views_view(array $variables) {
+  $suggestions = [];
+  if ($variables['view']->id() === 'acquia_dam_asset_library') {
+    $suggestions[] = 'views_view__media_library';
+  }
+  return $suggestions;
+}
+
+/**
+ * Implements hook_views_post_render().
+ *
+ * Media Library comes with few preprocess that takes care of adding necessary
+ * libraries into the page. Unfortunately it is only applicable for
+ * media_library view, this will take extending to acquia_dam_assest_library as
+ * well.
+ */
+function acquia_dam_views_post_render(ViewExecutable $view, &$output, CachePluginBase $cache) {
+  if ($view->id() === 'acquia_dam_asset_library') {
+    $output['#attached']['library'][] = 'media_library/view';
+    if (strpos($view->current_display, 'widget') === 0) {
+      try {
+        $query = MediaLibraryState::fromRequest($view->getRequest())->all();
+      }
+      catch (InvalidArgumentException $e) {
+        // MediaLibraryState::fromRequest() will throw an exception if the view
+        // is being previewed, since not all required query parameters will be
+        // present. In a preview, however, this can be omitted since we're
+        // merely previewing.
+        // @todo Use the views API for checking for the preview mode when it
+        //   lands. https://www.drupal.org/project/drupal/issues/3060855
+        if (empty($view->preview) && empty($view->live_preview)) {
+          throw $e;
+        }
+      }
+      // If the current query contains any parameters we use to contextually
+      // filter the view, ensure they persist across AJAX rebuilds.
+      // The ajax_path is shared for all AJAX views on the page, but our query
+      // parameters are prefixed and should not interfere with any other views.
+      // @todo Rework or remove this in https://www.drupal.org/node/2983451
+      if (!empty($query)) {
+        $ajax_path = &$output['#attached']['drupalSettings']['views']['ajax_path'];
+        $parsed_url = UrlHelper::parse($ajax_path);
+        $query = array_merge($query, $parsed_url['query']);
+        $ajax_path = $parsed_url['path'] . '?' . UrlHelper::buildQuery($query);
+      }
+    }
+  }
+}
+
+/**
+ * Implements hook_views_pre_render().
+ *
+ * This will take care of necessary classes which is added by the media_library
+ * to its view is extended to `acquia_dam_asset_library` as well.
+ */
+function acquia_dam_views_pre_render(ViewExecutable $view) {
+  $add_classes = function (&$option, array $classes_to_add) {
+    $classes = $option ? preg_split('/\s+/', trim($option)) : [];
+    $classes = array_filter($classes);
+    $classes = array_merge($classes, $classes_to_add);
+    $option = implode(' ', array_unique($classes));
+  };
+
+  if ($view->id() === 'acquia_dam_asset_library') {
+    if (isset($view->display_handler->options['defaults']['css_class']) &&
+      $view->display_handler->options['defaults']['css_class']) {
+      $add_classes($view->displayHandlers->get('default')->options['css_class'], ['media-library-view']);
+    }
+    else {
+      $add_classes($view->display_handler->options['css_class'], ['media-library-view']);
+    }
+
+    if (strpos($view->current_display, 'widget') === 0) {
+      // Logic from claro.theme preprocess all of this will be remove once we
+      // can make the view id configurable.
+      if (array_key_exists('thumbnail', $view->field)) {
+        $add_classes($view->field['thumbnail']->options['element_class'], ['media-library-item__content']);
+      }
+      if (array_key_exists('media_library_select_form', $view->field)) {
+        $add_classes($view->field['media_library_select_form']->options['element_wrapper_class'], ['media-library-item__click-to-select-checkbox']);
+      }
+
+      if ($view->display_handler->options['defaults']['css_class']) {
+        $add_classes($view->displayHandlers->get('default')->options['css_class'], ['media-library-view--widget']);
+      }
+      else {
+        $add_classes($view->display_handler->options['css_class'], ['media-library-view--widget']);
+      }
+
+      if (array_key_exists('media_library_select_form', $view->field)) {
+        $add_classes($view->field['media_library_select_form']->options['element_wrapper_class'], ['js-click-to-select-checkbox']);
+      }
+      $add_classes($view->display_handler->options['css_class'], ['js-media-library-view']);
+    }
+
+    $add_classes(
+      $view->style_plugin->options['row_class'],
+      ['js-media-library-item', 'js-click-to-select']
+    );
+
+    // NOTE: modified from core to bypass undefined offset in our View.
+    if (!empty($view->display_handler->options['defaults']['css_class'])) {
+      $add_classes($view->displayHandlers->get('default')->options['css_class'], ['js-media-library-view']);
+    }
+    else {
+      $add_classes($view->display_handler->options['css_class'], ['js-media-library-view']);
+    }
+  }
+}
+
+/**
+ * Implements hook_preprocess_views_view_fields().
+ *
+ * This will take care of necessary classes which is added by the media_library
+ * to its view is extended to `acquia_dam_asset_library` as well.
+ */
+function acquia_dam_preprocess_views_view_fields(&$variables) {
+  // Add classes to media rendered entity field so it can be targeted for
+  // JavaScript mouseover and click events.
+  if ($variables['view']->id() === 'acquia_dam_asset_library' && isset($variables['fields']['rendered_entity'])) {
+    if (isset($variables['fields']['rendered_entity']->wrapper_attributes)) {
+      $variables['fields']['rendered_entity']->wrapper_attributes->addClass('js-click-to-select-trigger');
+      // @see function claro_preprocess_views_view_fields__media_library(array &$variables).
+      $variables['fields']['rendered_entity']->wrapper_attributes->addClass('media-library-item__click-to-select-trigger');
+
+    }
+  }
+}
+
+/**
+ * Alter the bulk form to add a more accessible label.
+ *
+ * @param array $form
+ *   An associative array containing the structure of the form.
+ * @param \Drupal\Core\Form\FormStateInterface $form_state
+ *   The current state of the form.
+ *
+ * @todo Remove in https://www.drupal.org/node/2983454
+ */
+function acquia_dam_form_views_form_acquia_dam_asset_library_page_alter(array &$form, FormStateInterface $form_state) {
+  if (isset($form['media_bulk_form']) && isset($form['output'])) {
+    /** @var \Drupal\views\ViewExecutable $view */
+    $view = $form['output'][0]['#view'];
+    foreach (Element::getVisibleChildren($form['media_bulk_form']) as $key) {
+      if (isset($view->result[$key])) {
+        $media = $view->field['media_bulk_form']->getEntity($view->result[$key]);
+        $form['media_bulk_form'][$key]['#title'] = t('Select @label', [
+          '@label' => $media->label(),
+        ]);
+      }
+    }
+  }
+}
+
+/**
+ * Implements hook_form_BASE_FORM_ID_alter().
+ */
+function acquia_dam_form_media_form_alter(array &$form, FormStateInterface $form_state, $form_id) {
+  $media_item = $form_state->getFormObject()->getEntity();
+  assert($media_item instanceof MediaInterface);
+  $asset = $media_item->getSource();
+
+  if (!$asset instanceof Asset) {
+    return;
+  }
+
+  assert($asset instanceof Asset);
+  // Act only when creating a media item.
+  if (str_ends_with($form_id, '_add_form')) {
+    // Disable the save button with a warning.
+    // @todo figure out a better user experience rather then driving users into a dead-end street.
+    \Drupal::messenger()->addWarning(t('Media items cannot be added from this form, only through the media library when editing content.'));
+    $form['actions']['submit']['#disabled'] = TRUE;
+  }
+
+  // Act only when editing a media item.
+  if (str_ends_with($form_id, '_edit_form')) {
+    $is_asset_available = $asset->getMetadata($media_item, 'is_asset_available');
+
+    if (!$is_asset_available) {
+      // Actualizing the publishing status widget on-the-fly.
+      $constraint = new DamAssetMustBeAvailableConstraint();
+      $constraint_message = str_replace(' %asset_id', '', $constraint->message);
+      $form['status']['#disabled'] = TRUE;
+      $form['status']['widget']['value']['#default_value'] = $is_asset_available;
+      $form['status']['#attributes']['title'] = $constraint_message;
+    }
+
+    // React on when Focal Point is present.
+    $focal_point_installed = \Drupal::moduleHandler()->moduleExists('focal_point');
+    if ($focal_point_installed && $asset->getDerivativeId() === 'image') {
+      $form_alter = \Drupal::classResolver()
+        ->getInstanceFromDefinition(FocalPointMediaEditFormAlter::class);
+      assert($form_alter instanceof FocalPointMediaEditFormAlter);
+      $form_alter->formAlter($form, $form_state);
+    }
+  }
+}
+
+/**
+ * Implements hook_entity_base_field_info_alter().
+ *
+ * The constraint is applied to both non-DAM and DAM-related media types too.
+ * The constraint validator will decide whether to apply restrictions or not.
+ */
+function acquia_dam_entity_base_field_info_alter(&$fields, EntityTypeInterface $entity_type) {
+  if ($entity_type->id() === 'media' && isset($fields['status'])) {
+    $fields['status']->addConstraint('DamAssetMustBeAvailableConstraint');
+  }
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function acquia_dam_form_alter(array &$form, FormStateInterface $form_state, $form_id) {
+  // Add a process callback to ensure that the media library view's exposed
+  // filters submit button is not moved to the modal dialog's button area.
+  $form_object = $form_state->getFormObject();
+
+  // Add class to the Media Library views form.
+  if ($form_object instanceof ViewsForm && strpos($form_object->getBaseFormId(), 'views_form_acquia_dam_asset_library_widget') === 0) {
+    // The conditional below exists because the media-library-views-form class
+    // is currently added by Classy, but Umami will eventually not use Classy as
+    // a base theme.
+    // @todo remove conditional, keep class addition in
+    //   https://drupal.org/node/3110137
+    // @see https://www.drupal.org/node/3109287
+    // @see classy_form_alter()
+    if (!isset($form['#attributes']['class']) || !in_array('media-library-views-form', $form['#attributes']['class'])) {
+      $form['#attributes']['class'][] = 'media-library-views-form';
+    }
+  }
+
+  if ($form_id === 'views_exposed_form' && strpos($form['#id'], 'views-exposed-form-acquia-dam-asset-library-widget') === 0) {
+    $form['#after_build'][] = '_acquia_dam_views_form_media_library_after_build';
+    // Button or action #type won't work because that might trigger their own
+    // request. Thereby breaking the view with empty conditions.
+    // @see Drupal.views.ajaxView.prototype.attachExposedFormAjax.
+    // @see https://www.drupal.org/project/drupal/issues/2804277.
+    $form['clear'] = [
+      '#type' => 'markup',
+      '#markup' => '<a href="#" class="button views-exposed-form__item views-exposed-form__item--actions  acquia-dam-clear-filter">Clear Filter</a>',
+    ];
+  }
+
+  elseif ($form_id === 'user_form') {
+    // Reverting the changes set in media_acquiadam_form_user_form_alter.
+    if (\Drupal::moduleHandler()->moduleExists('media_acquiadam')) {
+      unset($form['media_acquiadam']);
+      if (in_array('media_acquiadam_unauthorize', $form['actions']['submit']['#submit'])) {
+        $key = array_search('media_acquiadam_unauthorize', $form['actions']['submit']['#submit']);
+        unset($form['actions']['submit']['#submit'][$key]);
+      }
+    }
+  }
+
+}
+
+/**
+ * Form #after_build callback for media_library view's exposed filters form.
+ */
+function _acquia_dam_views_form_media_library_after_build(array $form, FormStateInterface $form_state) {
+  // Remove .form-actions from the view's exposed filter actions. This prevents
+  // the "Apply" submit button from being moved into the dialog's
+  // button area.
+  // @see \Drupal\Core\Render\Element\Actions::processActions
+  // @see Drupal.behaviors.dialog.prepareDialogButtons
+  // @todo Remove this after
+  //   https://www.drupal.org/project/drupal/issues/3089751 is fixed.
+  if (($key = array_search('form-actions', $form['actions']['#attributes']['class'])) !== FALSE) {
+    unset($form['actions']['#attributes']['class'][$key]);
+  }
+  return $form;
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_presave().
+ *
+ * Ensures `data-embed-code-id` is present for filter_html and drupal-media.
+ *
+ * We use hook_presave due to ConfigEntityBase::preSave crashing on re-save
+ * during the hook_insert hook.
+ */
+function acquia_dam_filter_format_presave(FilterFormatInterface $filter_format) {
+  \Drupal::classResolver()
+    ->getInstanceFromDefinition(FormatAllowedHtmlModifier::class)
+    ->process($filter_format);
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_presave().
+ */
+function acquia_dam_entity_view_display_presave(EntityViewDisplayInterface $view_display) {
+  if ($view_display->getTargetEntityTypeId() !== 'media' || $view_display->isSyncing()) {
+    return $view_display;
+  }
+  $media_type_id = $view_display->getTargetBundle();
+  /** @var MediaTypeInterface $media_type */
+  $media_type = \Drupal::service('entity_type.manager')->getStorage('media_type')->load($media_type_id);
+  $source = $media_type->getSource();
+  if (!($source instanceof Asset)) {
+    return $view_display;
+  }
+
+  // Ensure the correct embed code formatter is being used on the display.
+  if ($view_display->isNew()) {
+    return $source->updateViewDisplay($view_display);
+
+  }
+
+  return $view_display;
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_presave().
+ */
+function acquia_dam_media_type_presave(MediaTypeInterface $media_type) {
+  // Update the field formatters and settings for acquia_dam
+  // media type only and the media type is not syncing.
+  if (!($media_type->getSource() instanceof Asset) || $media_type->isSyncing()) {
+    return;
+  }
+
+  $media_type_id = $media_type->id();
+  $source_configuration = $media_type->get('source_configuration');
+  $download_assets = $source_configuration['download_assets'];
+
+  // Bail out early if there are no changes in the download feature of existing media types.
+  if (property_exists($media_type, 'original')
+    && isset($media_type->get('original')->get('source_configuration')['download_assets'])
+    && $media_type->get('original')->get('source_configuration')['download_assets'] == $download_assets) {
+    return;
+  }
+  $entity_field_manager = \Drupal::service('entity_field.manager');
+  $context = 'view';
+  $fields = array_filter($entity_field_manager->getFieldDefinitions('media', $media_type->getOriginalId()), function (FieldDefinitionInterface $field_definition) use ($context) {
+    return ($field_definition->isDisplayConfigurable($context) && $field_definition instanceof BaseFieldDefinition && $field_definition->getProvider() === 'acquia_dam');
+  });
+
+  $config_factory = \Drupal::service('config.factory');
+  // The media_library view mode uses a different rendering system,
+  // so changes to the media type, such as enabling the download & sync option,
+  // do not require updates to the media_library view mode.
+  $config_names = array_filter($config_factory->listAll('core.entity_view_display.media.' . $media_type_id), fn($config_names) => substr($config_names, -14) != '.media_library');
+
+  $updated_view_modes = [];
+  foreach ($config_names as $config_name) {
+    $view_mode_config = $config_factory->getEditable($config_name);
+    assert($view_mode_config instanceof Config);
+
+    // Update all fields that match acquia DAM fields.
+    $content_region = $view_mode_config->get('content');
+
+    // If there isn't exactly one acquia_dam field in the content region, bail out.
+    $existing_field = array_intersect(array_keys($fields), array_keys($content_region));
+    if (count($existing_field) !== 1) {
+      continue;
+    }
+
+    // Get active field settings & field to display/hide.
+    $source = $media_type->getSource();
+    assert($source instanceof Asset);
+    $active_field_name = $source->getActiveFieldName();
+    $active_field = $source->getFormatterSettings($active_field_name);
+    $existing_field = array_shift($existing_field);
+    if ($existing_field == $active_field_name) {
+      continue;
+    }
+    $view_mode_config = $source->swapAssetFields($view_mode_config, $existing_field, $active_field_name, $active_field);
+
+    $view_mode_config->save();
+    // Get the list of updated view modes.
+    $updated_view_modes[] = preg_replace('/^(.*)\.(\w+)$/', '$2', $config_name);
+  }
+
+  // No update was necessary, nothing has changed, so we are done.
+  if (empty($updated_view_modes)) {
+    return;
+  }
+
+  if (\Drupal::moduleHandler()->moduleExists('field_ui') && \Drupal::currentUser()->hasPermission('administer media display')) {
+    // Inform the user about view mode change done for the media types.
+    \Drupal::messenger()->addMessage(t('The media <em>@media</em> and its associated <a href="@url">view modes</a> has been updated.', [
+      '@url' => Url::fromRoute('entity.entity_view_display.media.default', ['media_type' => $media_type_id])->toString(),
+      '@media' => $media_type->label(),
+    ]));
+  }
+
+  // Finally leave some trace in watchdog.
+  \Drupal::service('logger.channel.acquia_dam')
+    ->info('The formatter of old fields have been replaced with the one of %field_new on all view modes of %media_type which were necessary to update: @list_of_updated_view_modes', [
+      '%field_new' => $active_field,
+      '%media_type' => $media_type_id,
+      '@list_of_updated_view_modes' => implode(', ', $updated_view_modes),
+    ]);
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_insert().
+ *
+ * This hook runs once the entity has been stored. Note that its
+ * implementations may not alter the stored entity data.
+ *   - Register integration link on Acquia DAM.
+ */
+function acquia_dam_media_insert(MediaInterface $media_entity) {
+  $source = $media_entity->getSource();
+  if (!str_starts_with($source->getPluginId(), 'acquia_dam_asset')) {
+    return;
+  }
+  // Do not attempt to insert media if there's no asset_id, e.g., when layout
+  // builder is generating a sample.
+  if (empty($media_entity->get('acquia_dam_asset_id')->first())) {
+    return;
+  }
+
+  $asset_id = $media_entity->get('acquia_dam_asset_id')->first()->getValue();
+
+  if (empty($asset_id['asset_id'])) {
+    return;
+  }
+
+  /** @var \Drupal\acquia_dam\IntegrationLinkRegister $register */
+  $register = \Drupal::service('acquia_dam.integration_link_register');
+  $register->addIntegrationLinksList($asset_id['asset_id'], $media_entity);
+}
+
+/**
+ * Implements hook_cron().
+ *
+ * Refresh acquia_dam versions.
+ */
+function acquia_dam_cron() {
+  \Drupal::service('acquia_dam.cron')->run();
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_delete().
+ *
+ * Respond to entity deletion of a particular type. This hook runs once the
+ * entity has been deleted from the storage.
+ *   - Remove integration link from Acquia DAM when media gets deleted.
+ *   - Delete the associated managed file / image entities.
+ */
+function acquia_dam_media_delete(MediaInterface $media_entity) {
+  /** @var \Drupal\acquia_dam\Plugin\media\Source\Asset $source */
+  $source = $media_entity->getSource();
+
+  if (!$source instanceof Asset) {
+    return;
+  }
+
+  $asset_id = $media_entity->get(MediaSourceField::SOURCE_FIELD_NAME)->first()->asset_id;
+
+  if (!$asset_id) {
+    return;
+  }
+
+  \Drupal::cache('acquia_dam')->invalidateMultiple([
+    'asset:' . $asset_id,
+    'asset_versions:' . $asset_id,
+  ],
+  );
+
+  $module_handler = \Drupal::service('module_handler');
+
+  if ($source->getDerivativeId() === 'image' && $module_handler->moduleExists('crop')) {
+    /** @var \Drupal\acquia_dam\ImageStyleHelper $image_style_helper */
+    $image_style_helper = \Drupal::service('acquia_dam.image_style_support');
+    if ($crops = $image_style_helper->getCrops($media_entity)) {
+      foreach ($crops as $crop) {
+        $crop->delete();
+      }
+    }
+  }
+
+  /** @var \Drupal\acquia_dam\IntegrationLinkRegister $register */
+  $register = \Drupal::service('acquia_dam.integration_link_register');
+  foreach ($register->getAllEntityUuuidsIntegratingAsset($asset_id) as $entity_uuid) {
+    $register->addIntegrationToDeleteList($entity_uuid);
+  }
+
+  // Delete the associated managed file / image entities as well.
+  foreach ([ManagedFileField::MANAGED_FILE_FIELD_NAME, ManagedImageField::MANAGED_IMAGE_FIELD_NAME] as $field_name) {
+
+    if (!$media_entity->hasField($field_name)) {
+      continue;
+    }
+
+    $field_item = $media_entity->get($field_name)->first();
+
+    if (!$field_item || $field_item->isEmpty()) {
+      continue;
+    }
+
+    $storage_service = \Drupal::service('entity_type.manager')->getStorage('file');
+    $file_entity = $storage_service->load($field_item->getValue()['target_id']);
+    $file_usage_service = \Drupal::service('file.usage');
+    $file_usage_data = $file_usage_service->listUsage($file_entity);
+
+    // Check if someone else also refers to the file: first remove our usage
+    // from the array then compare the remainder.
+    $module_name = 'acquia_dam';
+    unset($file_usage_data[$module_name]);
+    if (!empty($file_usage_data)) {
+      $file_usage_service->delete($file_entity, $module_name);
+      continue;
+    }
+
+    $storage_service->delete([$file_entity]);
+  }
+}
+
+/**
+ * Implements hook_menu_links_discovered_alter().
+ */
+function acquia_dam_menu_links_discovered_alter(array &$links) {
+  if (isset($links['media_acquiadam.config'])) {
+    $links['media_acquiadam.config']['title'] = new TranslatableMarkup('Acquia DAM Entity Browser');
+    $links['media_acquiadam.config']['description'] = new TranslatableMarkup('Configure Acquia DAM for the Entity Browser module.');
+    $links['media_acquiadam.config']['weight'] = 0;
+    $links['acquia_dam.config']['weight'] = -1;
+  }
+}
+
+/**
+ * Implements hook_module_implements_alter().
+ */
+function acquia_dam_module_implements_alter(&$implementations, $hook) {
+  if ($hook == 'form_alter') {
+    // Move acquia_dam_form_alter() to the end of the list.
+    $group = $implementations['acquia_dam'];
+    unset($implementations['acquia_dam']);
+    $implementations['acquia_dam'] = $group;
+  }
+}
+
+/**
+ * Implements hook_preprocess_media_library_wrapper().
+ */
+function acquia_dam_preprocess_media_library_wrapper(array &$variables) {
+  $variables['attributes']['class'][] = 'acquia-dam-media-library';
+}
+
+/**
+ * Implements hook_library_info_alter().
+ */
+function acquia_dam_library_info_alter(&$libraries, $extension) {
+  if ($extension === 'acquia_dam') {
+    $admin_theme = \Drupal::configFactory()->get('system.theme')->get('admin');
+    if ($admin_theme === 'acquia_claro') {
+      $libraries['media_library.style']['css']['theme']['css/media-library-acquia-claro.css'] = [];
+    }
+    elseif ($admin_theme === 'gin') {
+      $libraries['media_library.style']['css']['theme']['css/media-library-gin.css'] = [];
+    }
+  }
+}
+
+/**
+ * Implements hook_views_plugins_field_alter().
+ */
+function acquia_dam_views_plugins_field_alter(array &$plugins) {
+  if (isset($plugins['media_library_select_form'])) {
+    $plugins['media_library_select_form']['class'] = MediaLibrarySelectForm::class;
+  }
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_presave().
+ *
+ * Act on a specific type of entity before it is created or updated.
+ *   - Sets 'version_id' and 'external_id' properties.
+ *   - Initiates downloading asset files locally.
+ */
+function acquia_dam_media_presave(MediaInterface $media_entity) {
+  $source = $media_entity->getSource();
+
+  // Skip if the source is not an Acquia DAM asset.
+  if (!$source instanceof Asset) {
+    return;
+  }
+
+  // Handle unavailable assets during presave.
+  // When an asset is no longer available in Acquia DAM (deleted),
+  // we need to unpublish the associated Drupal media entity to prevent it from
+  // being accessed.
+  $is_asset_available = $source->getMetadata($media_entity, 'is_asset_available');
+  if (!$media_entity->isNew() || !$is_asset_available) {
+    // Check if the asset is unavailable AND
+    // the media entity is currently published.
+    if (!$is_asset_available && $media_entity->isPublished()) {
+      // Get the asset ID.
+      $asset_id = $media_entity->getSource()->getMetadata($media_entity, 'asset_id');
+
+      // Unpublish the media entity.
+      $media_entity->setUnpublished();
+
+      // Log the unpublish action.
+      \Drupal::service('logger.channel.acquia_dam')->warning(
+        'Asset %asset_id is unavailable in Acquia DAM. Media entity @mid has been unpublished.',
+        [
+          '%asset_id' => $asset_id,
+          '@mid' => $media_entity->id(),
+        ]
+      );
+    }
+
+    return;
+  }
+
+  $source_field = $media_entity->get(MediaSourceField::SOURCE_FIELD_NAME);
+
+  if ($source_field->isEmpty()) {
+    return;
+  }
+
+  $source_field_item = $source_field->first();
+  assert($source_field_item instanceof AssetItem);
+
+  if (empty($source_field_item->version_id)) {
+    $source_field_item->version_id = \Drupal::service('acquia_dam.asset_version_resolver')
+      ->getFinalizedVersion($source_field_item->asset_id);
+  }
+
+  if (empty($source_field_item->external_id)) {
+    $source_field_item->external_id = $source->getMetadata($media_entity, 'external_id');
+  }
+
+  $source->getLocalThumbnailUri(
+    $source_field_item->asset_id,
+    $source_field_item->version_id,
+    $source_field_item->external_id,
+  );
+
+  // If the media type specifies downloading the asset file itself too, then
+  // fetch and save them locally in Drupal as managed file.
+  $media_type = MediaType::load($media_entity->bundle());
+  $bundle_source_config = $media_type->get('source_configuration');
+
+  if (isset($bundle_source_config['download_assets']) && $bundle_source_config['download_assets'] === TRUE) {
+    if (!$source->getMetadata($media_entity, 'file')) {
+      \Drupal::service('logger.channel.acquia_dam')->warning('Unable to create the local file of the asset for %media_id.', [
+        '%media_id' => $media_entity->id(),
+      ]);
+    }
+  }
+}
+
+/**
+ * Implements hook_preprocess_links__media_library_menu().
+ *
+ * This targets the menu of available media types in the media library's modal
+ * dialog.
+ *
+ * @todo Do this in the relevant template once
+ *   https://www.drupal.org/project/drupal/issues/3088856 is resolved.
+ */
+function acquia_dam_preprocess_links__media_library_menu(array &$variables) {
+  foreach ($variables['links'] as &$link) {
+    // Add a class to the Media Library menu items.
+    $link['attributes']->addClass('media-library-menu__item');
+
+    // This conditional exists because the media-library-menu__link class is
+    // currently added by Classy, but Claro will eventually not use Classy as a
+    // base theme.
+    // @todo remove conditional, keep class addition in
+    //   https://drupal.org/node/3110137
+    // @see classy_preprocess_links__media_library_menu()
+    if (!isset($link['link']['#options']['attributes']['class']) || !in_array('media-library-menu__link', $link['link']['#options']['attributes']['class'])) {
+      $link['link']['#options']['attributes']['class'][] = 'media-library-menu__link';
+    }
+  }
+}
+
+/**
+ * Implements hook_filter_info_alter().
+ */
+function acquia_dam_filter_info_alter(array &$info) {
+  if (isset($info['media_embed'])) {
+    $info['media_embed']['class'] = '\Drupal\acquia_dam\Plugin\Filter\DamMediaEmbed';
+  }
+
+}
+
+/**
+ * Implements hook_editor_js_settings_alter().
+ */
+function acquia_dam_editor_js_settings_alter(array &$settings) {
+  // CKEditor always sorts plugins and does not have a mechanism for altering
+  // dependencies. This makes it impossible for our `mediarevisions` plugin
+  // to add its hooks before `drupalmedia` is loaded.
+  if (isset($settings['editor']['formats']) && !is_array($settings['editor']['formats'])) {
+    return;
+  }
+  foreach ($settings['editor']['formats'] as $editor => $setting) {
+    if (!is_array($setting) || !isset($setting['editor'])) {
+      continue;
+    }
+    if (!isset($setting['editorSettings']) || !is_array($setting['editorSettings'])) {
+      continue;
+    }
+    $editor_settings = $setting['editorSettings'];
+    // Remove asset media types from the viewMode dropdown.
+    // @note the button isn't completely hidden
+    // @see https://www.drupal.org/project/drupal/issues/3300568
+    $media_types = MediaType::loadMultiple();
+    $asset_media_types = array_filter($media_types, static function (MediaTypeInterface $media_type) {
+      return $media_type->getSource() instanceof Asset;
+    });
+    if (!isset($editor_settings['config']['drupalElementStyles']['viewMode']) || !is_array($editor_settings['config']['drupalElementStyles']['viewMode'])) {
+      continue;
+    }
+    $view_mode_items = $editor_settings['config']['drupalElementStyles']['viewMode'];
+    foreach ($view_mode_items as $key => $view_mode_item) {
+      $view_mode_items[$key]['modelAttributes']['drupalMediaType'] = array_values(array_diff(
+        $view_mode_item['modelAttributes']['drupalMediaType'],
+        array_keys($asset_media_types)
+      ));
+    }
+    $settings['editor']['formats'][$editor]['editorSettings']['config']['drupalElementStyles']['viewMode'] = $view_mode_items;
+  }
+}
+
+/**
+ * Implements hook_entity_operation().
+ */
+function acquia_dam_entity_operation(EntityInterface $media_item) {
+  $operations = [];
+
+  if ($media_item->getEntityTypeId() !== 'media' || !$media_item->getSource() instanceof Asset) {
+    return $operations;
+  }
+
+  $operations['version_update'] = [
+    'title' => t('Check for update'),
+    'url' => Url::fromRoute('acquia_dam.asset_update_check_route', ['media' => $media_item->id()]),
+    'weight' => -1,
+  ];
+
+  $operations['metadata_sync'] = [
+    'title' => t('Sync metadata'),
+    'url' => Url::fromRoute('acquia_dam.metadata_sync', ['media' => $media_item->id()]),
+  ];
+
+  return $operations;
+}
+
+/**
+ * Implements hook_field_widget_single_element_form_alter().
+ */
+function acquia_dam_field_widget_single_element_form_alter(array &$element, FormStateInterface $form_state, array $context) {
+  if ($context['widget'] instanceof MediaLibraryWidget && is_array($element['selection'])) {
+    $selections = Element::children($element['selection']);
+    $element['#attached']['library'][] = 'acquia_dam/acquia_dam.expired_assets';
+    $current_time = \Drupal::time()->getCurrentTime();
+    $svg = file_get_contents(\Drupal::service('extension.list.module')->getPath('acquia_dam') . '/images/alert-red.svg');
+    foreach ($selections as $selection) {
+      /** @var \Drupal\media\Entity\Media $media*/
+      $media = $element['selection'][$selection]['rendered_entity']['#media'];
+      $media = $media->isLatestRevision() ? $media : Media::load($media->id());
+      if (!$media->getSource() instanceof Asset) {
+        continue;
+      }
+      $expiry_date = $media->get('acquia_dam_expiry_date')->getValue();
+      if (!$expiry_date) {
+        continue;
+      }
+      if ((int) $expiry_date[0]['value'] < $current_time) {
+        $expiry_build = [
+          '#type' => 'inline_template',
+          '#template' => '<div class="acquia-dam-expired-asset-container"><div class="acquia-dam-expired-asset">{{ svg }}<div class="acquia-dam-asset-expired__popper">{{ description }}</div></div></div>',
+          '#context' => [
+            'description' => t("The media is expired and won't be seen by content viewers. Please remove existing media and add new media."),
+            'svg' => Markup::create($svg),
+          ],
+        ];
+        array_unshift($element['selection'][$selection], $expiry_build);
+      }
+    }
+  }
+}
+
+/**
+ * Implements hook_preprocess_responsive_image().
+ */
+function acquia_dam_preprocess_responsive_image(&$variables) {
+  $wrapper = \Drupal::service('stream_wrapper_manager')->getViaUri($variables['uri']);
+  if ($wrapper instanceof AcquiaDamStreamWrapper) {
+    // The `acquia-dam://` URI does not append an extension, since the format
+    // may be optimized on the CDN (`web` format.) We need to remove the default
+    // `type` attribute when uses `application/octet-stream` when an extension
+    // is not part of the URI.
+    foreach ($variables['sources'] as $source) {
+      /** @var \Drupal\Core\Template\Attribute $source */
+      $source->removeAttribute('type');
+    }
+  }
+}
+
+/**
+ * Prepares variables for acquia_dam_video_stream templates.
+ *
+ * Default template: acquia-dam-video-stream.html.twig.
+ *
+ * @param array $variables
+ *   An associative array containing:
+ *   - attributes: An array of HTML attributes, intended to be added to the
+ *     video tag.
+ *   - source_attributes: An array of HTML attributes for to be added to the
+ *     source tag.
+ */
+function template_preprocess_acquia_dam_video_stream(array &$variables) {
+  if (!isset($variables['source_attributes']) || empty($variables['source_attributes'])) {
+    return;
+  }
+
+  $variables['source_attributes'] = new Attribute($variables['source_attributes']);
+}
+
+/**
+ * Implements hook_field_formatter_info_alter().
+ */
+function acquia_dam_field_formatter_info_alter(array &$formatters) {
+  // Alter definition of media_thumbnail formatter and
+  // use the one provided by this module.
+  if (isset($formatters['media_thumbnail'])) {
+    $formatters['media_thumbnail']['class'] = 'Drupal\acquia_dam\Plugin\Field\FieldFormatter\AcquiaDamMediaThumbnailFormatter';
+  }
+}
+
+/**
+ * Implements hook_entity_extra_field_info().
+ */
+function acquia_dam_entity_extra_field_info() {
+  $fields = [];
+
+  foreach (MediaType::loadMultiple() as $media_type_name => $media_type) {
+    if (!$media_type->getSource() instanceof Asset) {
+      continue;
+    }
+
+    $fields['media'][$media_type_name]['display']['availability_publishing_status_comparison'] = [
+      'label' => t('Availability/Publishing status'),
+      'description' => t('Displays the results of comparing the availability flag of the remote DAM asset with the publishing status of its associated local media item.'),
+      'weight' => 100,
+      'visible' => FALSE,
+    ];
+  }
+
+  return $fields;
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_view().
+ */
+function acquia_dam_media_view(array &$build, EntityInterface $entity, EntityViewDisplayInterface $display, string $view_mode) {
+  $pseudo_field_name = 'availability_publishing_status_comparison';
+
+  if (!$display->getComponent($pseudo_field_name)) {
+    return;
+  }
+
+  $build[$pseudo_field_name] = [
+    'label' => [
+      '#type' => 'container',
+      '#attributes' => [
+        'class' => ['field__label'],
+      ],
+      'children' => [
+        '#markup' => t('This media item compared to its associated DAM asset:'),
+      ],
+    ],
+    'value' => [
+      '#type' => 'container',
+      '#attributes' => [
+        'class' => ['field', 'field--name-availability-publishing-status-comparison', 'field--type-text', 'field__item'],
+      ],
+      'children' => [
+        '#markup' => (\Drupal::service('acquia_dam.asset_update_checker')->checkAssets($entity)) ? t('Up-to-date') : t('Outdated'),
+      ],
+    ],
+  ];
+}

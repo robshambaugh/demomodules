@@ -1,0 +1,14 @@
+.acquia-dam-media-library .media-library-menu__link {
+  border-color: transparent;
+}
+
+.ui-dialog.media-library-widget-modal.ui-widget .button,
+.ui-dialog.media-library-widget-modal.ui-widget  .button:not(:focus) {
+  /* Gin itself has !important */
+  border: 0 !important;
+  box-shadow: none;
+}
+
+.ui-dialog.media-library-widget-modal.ui-widget .button--primary {
+  box-shadow: none;
+}

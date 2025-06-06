@@ -1,0 +1,77 @@
+{
+  "query": "keywords:(bicycle)",
+  "sort": "-created_date",
+  "query_explained": "Keywords: bicycle",
+  "sort_explained": "Created date (descending)",
+  "scroll_id": null,
+  "scroll_timeout": null,
+  "query_syntax_ok": true,
+  "include_archived": false,
+  "include_deleted": false,
+  "item_type": "asset",
+  "total_count": 1,
+  "offset": 0,
+  "limit": 10,
+  "items": [
+    {
+      "id": "0324b0b2-5293-4aa0-b0aa-c85b003395e2",
+      "external_id": "8a1ouvfchk",
+      "filename": "Explorer owner's manual.pdf",
+      "created_date": "2021-08-18T11:37:19Z",
+      "last_update_date": "2022-03-29T13:00:11Z",
+      "file_upload_date": "2021-08-18T11:37:19Z",
+      "deleted_date": null,
+      "released_and_not_expired": true,
+      "asset_properties": null,
+      "file_properties": {
+        "format": "PdfDocument",
+        "format_type": "pdf",
+        "size_in_kbytes": 2666,
+        "image_properties": null,
+        "video_properties": null
+      },
+      "metadata": null,
+      "metadata_info": null,
+      "security": null,
+      "status": null,
+      "thumbnails": {
+        "125px": {
+          "url": "https://previews.us-east-1.widencdn.net/preview/36614591/assets/asset-view/56768476-748a-46c1-ad40-ac23f16654ec/thumbnail/eyJ3IjoxMjUsImgiOjEyNSwic2NvcGUiOiJhcHAifQ==?Expires=1649271600&Signature=MXfZGjpKm-lEOMsEis3DTUX-5NU6oofBGDqb~CAFLL8hKfNvxotb2mbEksNNoJ6deknfib5v20KujpnLAM79Z7WbfUlDgYqdkGSlzBYYEbN-VwcFEhdglOovwcePfmV7vtz-pI4PdTVKv87FYNdzRubWrR66wwXY2PWrYHveKOn9tU2BLvDaZhh5eg~Ibu4RLBW0N-POZDzAT16DPaqCNb1ckkOkRvVMa8wZW-49~LHjJofic5mEr06w-EPft5HSc6EIedUZ5ZjaOYyTWGLtAYuC1rf2-C1UuY9XJOT31N2dUhoBQon~sAI9Cxo4eMTNJoerVsxEpiKHkIyMQvwDlg__&Key-Pair-Id=APKAJM7FVRD2EPOYUXBQ",
+          "valid_until": "2022-04-06T18:26:38Z"
+        },
+        "160px": {
+          "url": "https://previews.us-east-1.widencdn.net/preview/36614591/assets/asset-view/56768476-748a-46c1-ad40-ac23f16654ec/thumbnail/eyJ3IjoxNjAsImgiOjE2MCwic2NvcGUiOiJhcHAifQ==?Expires=1649271600&Signature=nNq-ZCm59eLPviw7NkPL~EhzZ0arkKt43W-JFDD4HC00DkLHEP8R7QL5ZLxvWc~hEoYQbKoTwHaXb7Kei4Z8oneLeU5TeD4n3th1KN2RTR333eQcPYY91iZAnGrOAwwRDXhuPpX5JdiTMdgiRt5iMfliVzwicbec~2E3XD-YmahnSNObghXRHqvPNZS7pqmA9bU7lYTC6tnYlGZknQnpU0SBaB~EQqS5T~sZPYWFknY-01oud7DWUL16uy9qIpAn4~BjwoJZFcJH-yc55M8pvA-ytIQi7awEqnvDnJYu~JkdHZ5Z8chnoyFIcxhFx8XVt5tNt-8CY4jFlbHdnm~epA__&Key-Pair-Id=APKAJM7FVRD2EPOYUXBQ",
+          "valid_until": "2022-04-06T18:26:38Z"
+        },
+        "2048px": {
+          "url": "https://previews.us-east-1.widencdn.net/preview/36614591/assets/asset-view/56768476-748a-46c1-ad40-ac23f16654ec/thumbnail/eyJ3IjoyMDQ4LCJoIjoyMDQ4LCJzY29wZSI6ImFwcCJ9?Expires=1649271600&Signature=THgAtohD12j8uSsJwH8lPzducJ9Uqd~TB0cZ8tsOHf~FjD9f9e~i19FDEJ3Zd-SHFT0FrsIdnkaA3PvD8v64cxfR0YMjsPLljL3Hevz2TsvnbcuxDaLYEaIn1H9OVj54AFDRWWMF3rBgOtoOTjuDuDy2H0z3eMpCCZTLgexkN7lhPWgwDGC9gDFJxO70XO3Bx3u8lXeUOGL0ejHR-hxsw8O8eKDsy3GpO~lXYQtxYvJPGVOAyGYuwvdRtSz-7gLGnnm7p0VtVlAoJKi4-c1h51R0SdlnYFR5wBDh5lKX0PEyxSd3YmCF3sNEYSj8S~lfZ0f0nqVqfC3wvmbnK10f5A__&Key-Pair-Id=APKAJM7FVRD2EPOYUXBQ",
+          "valid_until": "2022-04-06T18:26:38Z"
+        },
+        "300px": {
+          "url": "https://previews.us-east-1.widencdn.net/preview/36614591/assets/asset-view/56768476-748a-46c1-ad40-ac23f16654ec/thumbnail/eyJ3IjozMDAsImgiOjMwMCwic2NvcGUiOiJhcHAifQ==?Expires=1649271600&Signature=FRTSmFQF963pzkPqVUXfPt9xYhvIcG3X-GIbvD3GnlKAJj~dK70rvQi0Uqie5qR~dmrxIhclOVFzHKMvU9aGPeoGEqtFyqcEhABCXhMSnbm8awpJA0pExMnsHmbzutmEdZoYzvcb-5TJbqY~b8HgK7jdt2MLVij8GW8~meono0XfnS4mbh7Dfv3wuDHcvwZ7UHCGGTFg3uHy18BhuCfB94kakixGqeWM0SZnhLlV8ZNbnU1LuTJiEk7z~wzbzHM2QZRf9Vk-9S~DHreZtAXuG5tVLmAfYnW-wlpK4zgWOLA2Y7PY6VFQwZ7-PJ07-bCjlvw6cWYpEeT5UUk3I2ikFQ__&Key-Pair-Id=APKAJM7FVRD2EPOYUXBQ",
+          "valid_until": "2022-04-06T18:26:38Z"
+        },
+        "600px": {
+          "url": "https://previews.us-east-1.widencdn.net/preview/36614591/assets/asset-view/56768476-748a-46c1-ad40-ac23f16654ec/thumbnail/eyJ3Ijo2MDAsImgiOjYwMCwic2NvcGUiOiJhcHAifQ==?Expires=1649271600&Signature=gs85M4S9WTvSSXIWVfk9avDHHoAE3GzE3zjdezQhfri9tLGPVMVjM3MRnCsdbZkGm2XHHsqgc3QJG6-WxkxwgAkO4Ig-xqbzIdo7xhc7~3JuhZqbuU7-MHdD5julPCrLyVTkFF9b0xRnvjPrkTwl41pztCiiAEfa7cJraysNMjNNMXvJaAk9tykIBaXMc6pp3DzT9lp5QXpDt4ZeV1xCpu0kZd7P6GwU~rmbU6CpGMimFJTJS8mK~PC6L59hDO-mUmrVoMmajob3hc-sWWz-iTA2fUYEmp6R2WGSUYNX~x5--g7I-D83qo9~Q2AwNpNDGHxFqllH~YiFkPFNnGQz3A__&Key-Pair-Id=APKAJM7FVRD2EPOYUXBQ",
+          "valid_until": "2022-04-06T18:26:38Z"
+        }
+      },
+      "embeds": null,
+      "expanded": {
+        "asset_properties": false,
+        "embeds": false,
+        "file_properties": true,
+        "metadata": false,
+        "metadata_info": false,
+        "metadata_vocabulary": false,
+        "security": false,
+        "thumbnails": true
+      },
+      "_links": {
+        "download": "https://orders-bb.us-east-1.widencdn.net/download-deferred/originals?asset_wrn=wrn%3Aassets%3Aasset%3A36614591%3A8a1ouvfchk&actor=wrn%3Ausers%3Auser%3A36614591%3Axgdchd&tracking=ewogICJkb19ub3RfdHJhY2siOiBmYWxzZSwKICAiYW5vbnltb3VzIjogZmFsc2UsCiAgInZpc2l0b3JfaWQiOiBudWxsLAogICJ1c2VyX3dybiI6ICJ3aWRlbjp1c2Vyczp1c2VyOkxTUlpaOnhnZGNoZCIKfQ%3D%3D&custom_metadata=ewogICJhcHBfbmFtZSI6ICJsZW5zIiwKICAiaW50ZW5kZWRfdXNlX2NvZGUiOiBudWxsLAogICJpbnRlbmRlZF91c2VfdmFsdWUiOiBudWxsLAogICJpbnRlbmRlZF91c2VfZW1haWwiOiBudWxsLAogICJjb2xsZWN0aW9uX2lkIjogbnVsbCwKICAicG9ydGFsX2lkIjogbnVsbCwKICAiZGFtX29yZGVyX2lkIjogbnVsbAp9&Expires=1649228400&Signature=a6GZ3z3bMNBLIKvdL1QIWfQ6vIObeUa1FOd50IDo7MN52Ho~BG-RKuSuhw~biymRoFOJuQ0fiEzIZ9gstrZRc2NhP~O2Srg-grPXqkrLtkXpOkfQASLjTYGqNGRW2ClJ85HdHpTprh4661dz~LhjDaANPvDVIMficioh2x6ilNeA~cwoAC50YmFz9XZUaQ8wqHTl0k4P~Qeal09m07ER3qUJ~aA4XP18GVJ1wRDQJvQwUS3Enx6y5SMaDmrctAjE0DXaIEtz8KFICSR-16dP6G1uQLDQDd1CalglqLLacXY5jjsU6in008hPq77ip0Yfet2~v4P7EGVgl4Adirqrjg__&Key-Pair-Id=APKAJM7FVRD2EPOYUXBQ",
+        "self": "https://api.widencollective.com/v2/assets/0324b0b2-5293-4aa0-b0aa-c85b003395e2",
+        "self_all": "https://api.widencollective.com/v2/assets/0324b0b2-5293-4aa0-b0aa-c85b003395e2?expand=asset_properties%2Cembeds%2Cfile_properties%2Cmetadata%2Cmetadata_info%2Cmetadata_vocabulary%2Csecurity%2Cthumbnails"
+      }
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "vocabulary": [
+    "Document",
+    "Graphic",
+    "Image",
+    "Other",
+    "Video"
+  ],
+  "_links": {
+    "self": "https://api.widencollective.com/v2/metadata/assettype/vocabulary"
+  }
+}

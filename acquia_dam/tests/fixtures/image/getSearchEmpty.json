@@ -1,0 +1,16 @@
+{
+  "query":"failedquery FileType:image",
+  "sort":"-created",
+  "query_explained":"failedquery File Type: image",
+  "sort_explained":"Metadata: created (descending)",
+  "scroll_id":null,
+  "scroll_timeout":null,
+  "query_syntax_ok":true,
+  "include_archived":false,
+  "include_deleted":false,
+  "item_type":"asset",
+  "total_count":0,
+  "offset":0,
+  "limit":10,
+  "items":[]
+}

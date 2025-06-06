@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- https://github.com/squizlabs/PHP_CodeSniffer/wiki/Annotated-Ruleset -->
+<ruleset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="vendor/squizlabs/php_codesniffer/phpcs.xsd"
+>
+
+  <description>PHP CodeSniffer configuration for analyzing packages with ORCA.</description>
+
+  <arg name="colors"/>
+  <arg name="parallel" value="10"/>
+  <config name="ignore_warnings_on_exit" value="1"/>
+
+  <file>.</file>
+
+  <exclude-pattern>.idea/</exclude-pattern>
+  <exclude-pattern>var/</exclude-pattern>
+  <exclude-pattern>vendor/</exclude-pattern>
+
+  <rule ref="DrupalPractice"/>
+
+</ruleset>

@@ -1,0 +1,15 @@
+services:
+  acquiadam_asset_import.asset_queue:
+    class: Drupal\acquiadam_asset_import\Services\AssetQueueService
+    arguments:
+      - '@acquia_dam.client.factory'
+      - '@queue'
+      - '@config.factory'
+      - '@entity_type.manager'
+      - '@logger.channel.acquiadam_asset_import'
+      - '@current_user'
+      - '@acquia_dam.media_type_resolver'
+      - '@database'
+  logger.channel.acquiadam_asset_import:
+    parent: logger.channel_base
+    arguments: [ 'acquiadam_asset_import' ]

@@ -1,0 +1,6 @@
+acquiadam_asset_import.configuration:
+  title: 'Bulk import'
+  description: 'Configure and schedule bulk importing DAM assets'
+  route_name: acquiadam_asset_import.configuration
+  menu_name: admin
+  parent: acquia_dam.config

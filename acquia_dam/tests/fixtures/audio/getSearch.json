@@ -1,0 +1,107 @@
+{
+  "query": "FileType:audio",
+  "sort": "-created",
+  "query_explained": "File Type: audio",
+  "sort_explained": "Metadata: created (descending)",
+  "scroll_id": null,
+  "scroll_timeout": null,
+  "query_syntax_ok": true,
+  "include_archived": false,
+  "include_deleted": false,
+  "item_type": "asset",
+  "total_count": 1,
+  "offset": 0,
+  "limit": 10,
+  "items": [
+    {
+      "id": "fcc13282-d569-44bc-a992-2ff2b405ce59",
+      "external_id": "ionoxpl5s6",
+      "filename": "Linus-linux.ogg.mp3",
+      "created_date": "2024-01-10T01:44:12Z",
+      "last_update_date": "2024-04-05T10:07:46Z",
+      "file_upload_date": "2024-01-10T01:44:12Z",
+      "deleted_date": null,
+      "released_and_not_expired": true,
+      "asset_properties": {
+        "cutline_caption": "",
+        "favorite": true,
+        "popularity": 0
+      },
+      "file_properties": {
+        "format": "MP3",
+        "format_type": "audio",
+        "image_properties": null,
+        "size_in_kbytes": 34,
+        "video_properties": null
+      },
+      "metadata": null,
+      "metadata_info": null,
+      "security": {
+        "asset_groups": [
+          "public"
+        ],
+        "expiration_date": null,
+        "release_date": "2024-01-10T01:44:12Z"
+      },
+      "status": null,
+      "thumbnails": {
+        "125px": {
+          "url": "https://previews.us-east-1.widencdn.net/preview/36614591/assets/asset-view/77b3dd66-e590-4259-82db-25e7f4e62774/thumbnail/eyJ3IjoxMjUsImgiOjEyNSwic2NvcGUiOiJhcHAifQ==?Expires=1714838400&Signature=MZESXILaPNJwtH54LeQiN8FDP5-f6z3mhI13HYpFtr3C0p7zA2Lrfw9As1afv5J3UebDNKnHAkQAQexL6sZba~h3uuUCUbiYspiG9xhoHYmOOMr9qBTTKi3EbDM9gFcufRxXA5OIBWOLhXTcNuRFUk1ZG0d94FTk-G1GXmFFts~9kUuOjIDH5FawTJscLwd~ViRYbBiJ538XxqVwvEQ0mR4jeDih~e65X5kVBJADhkfjXqXwbyhEFYjA1q8h~JDLhecezMty9iwzTWWmdZ9FPO6WAwvAS3pChtisKMcd~tg973Hc-4BA5L8d9j9J1HsQ8eBnPr9JG4m3M6SSC4Hh3Q__&Key-Pair-Id=APKAJM7FVRD2EPOYUXBQ",
+          "valid_until": "2024-05-04T15:10:56Z"
+        },
+        "160px": {
+          "url": "https://previews.us-east-1.widencdn.net/preview/36614591/assets/asset-view/77b3dd66-e590-4259-82db-25e7f4e62774/thumbnail/eyJ3IjoxNjAsImgiOjE2MCwic2NvcGUiOiJhcHAifQ==?Expires=1714838400&Signature=fAVHOZeSLZIMIxw6SLKK3RAkudqIv2KZ1GKESJpD4lB9CShQL~1Ow3tJKTEsM2BlJ~T9mm3TIN-QusgsS72B2E-5d11LhkhqwuYUO5NudTmX5Ij-ogpVb1KnNy1Vm0xHNJLmhQJLGb-STlfvqTRfbxNzxxHS4kDiXHiuL4t4cnxNPsqvo-~4pFv7qXxTAnw3hYq3o1fLxrrT34aVnvkGae7kLG6vLKpebb-qSS9cOy8ziLDm3a5nHddDjO32d46DAkH1NRaBjemqzoy0ap1WiM2~Oha6S4QxQ7pVZZ0fkebk058eRqvBYvJDu8qcCUuPu5V-QCFfZyu3xZMxr4qygg__&Key-Pair-Id=APKAJM7FVRD2EPOYUXBQ",
+          "valid_until": "2024-05-04T15:10:56Z"
+        },
+        "2048px": {
+          "url": "https://previews.us-east-1.widencdn.net/preview/36614591/assets/asset-view/77b3dd66-e590-4259-82db-25e7f4e62774/thumbnail/eyJ3IjoyMDQ4LCJoIjoyMDQ4LCJzY29wZSI6ImFwcCJ9?Expires=1714838400&Signature=WQZx8SqKFL~kwsSgq025Vtidj6YgrTpJlJWEOR4qZ1iU6io6sMhPj5~a7E4LfLuw9NltpaDAU60m2bIw~VKX8kV342m64mK7Ffe6upu5hLZc-~wsBvxeQaw0YCiTb1LOyQhEvqzpQ8Nq-pbWM0TioWadRyd54uH3zEO17cVxEo79P9wdjtetvvrG6SZkeO-h~SLZTlmio8iAAd5UzjP8q1r4WkFHwxa5a2DmJLhqAXZ738BYS9gtfZ3EjJCiLMKo3MESINZckNdqww9Cw92d~ufzQpSTNR9de12u11tg9eLQc2vSMWmhdSKjePJYLAMXQfibbyFQo4Ly~hgcFDdPqQ__&Key-Pair-Id=APKAJM7FVRD2EPOYUXBQ",
+          "valid_until": "2024-05-04T15:10:56Z"
+        },
+        "300px": {
+          "url": "https://previews.us-east-1.widencdn.net/preview/36614591/assets/asset-view/77b3dd66-e590-4259-82db-25e7f4e62774/thumbnail/eyJ3IjozMDAsImgiOjMwMCwic2NvcGUiOiJhcHAifQ==?Expires=1714838400&Signature=DDd~FzqeIeV2LOFGQ3~P-WmZ2eJyo5hqE9t8EknIYLi1PnDL1Xg~BLNJqBhewRhcCerFe2HNzoL9eJ-jdm76wgHAQvEkV6doH5QjYwgghXdivZ4Aw9f5mxjrHjUpfEuagS4pk5BRRPs6x70AyAgN7G4TC2qVxqUo52XXrA6CRrehOAGiZNJs8Rrj38hh6nvt31torI8L3d6p7Gr7gjyREP975yu88M6zgYgRXjPTl9cVxcE6~vaXXfxZQQOb~eBB0x77wVcmEhkvlCZsyiMNwAheIKJ~FHZ3WUe5JyRDiKIw-oufebVr3Xw63ycTPBZiyrFedqlQJvTrNd-m7Ti8nA__&Key-Pair-Id=APKAJM7FVRD2EPOYUXBQ",
+          "valid_until": "2024-05-04T15:10:56Z"
+        },
+        "600px": {
+          "url": "https://previews.us-east-1.widencdn.net/preview/36614591/assets/asset-view/77b3dd66-e590-4259-82db-25e7f4e62774/thumbnail/eyJ3Ijo2MDAsImgiOjYwMCwic2NvcGUiOiJhcHAifQ==?Expires=1714838400&Signature=AwAuncxNiNeN9Jre1dQB7Lsa-BT4xZVXWwR1ArrPuUdsKnTr91rWUyut77g5Y8FNR72mVFa7O~ozCoYqDZLlr1QXPHNFOoXmi8SoT8APhEdQxYmi-xN9XC4yZP315b8PGVMo8Blj21E4sNb2ZcnU-GmJxzqDTlKSDE9e1lY9ZurJvR4vuCQAq4iBVbbVUbRrmfnsZjpR1ywe34Mkaum3eR6Qd0M6Njr2391syOwU4iKBdySGov9Qvrk5P8n1CxRxRdMCWKWo5HH-ndv8ccqSvdmI5SAO2n5BE6VnBnh1VMG5TzW0N7nj87Uw4012EW~RMhV0~TiZLYf0Lfx1wbHPOA__&Key-Pair-Id=APKAJM7FVRD2EPOYUXBQ",
+          "valid_until": "2024-05-04T15:10:56Z"
+        }
+      },
+      "embeds": {
+        "original": {
+          "apps": [],
+          "html": "<a href=\"https://laser.widen.net/content/ionoxpl5s6/original/Linus-linux.ogg.mp3?u=pfexxl&download=true\" target=\"_blank\">Linus-linux.ogg.mp3</a>",
+          "share": "https://laser.widen.net/content/ionoxpl5s6/original/Linus-linux.ogg.mp3?u=pfexxl&download=true&x.share=t",
+          "url": "https://laser.widen.net/content/ionoxpl5s6/original/Linus-linux.ogg.mp3?u=pfexxl&download=true"
+        },
+        "streaming_mp3": {
+          "apps": [],
+          "html": "<audio controls oncontextmenu=\"return false;\" preload=\"metadata\" controlsList=\"nodownload\"><source src=\"https://laser.widen.net/content/ionoxpl5s6/mp3/Linus-linux.ogg.mp3?u=pfexxl\" type=\"audio/mpeg\"></audio>",
+          "share": "https://laser.widen.net/view/audio/ionoxpl5s6/Linus-linux.ogg.mp3?u=pfexxl&x.share=t",
+          "url": "https://laser.widen.net/content/ionoxpl5s6/mp3/Linus-linux.ogg.mp3?u=pfexxl"
+        },
+        "templated": {
+          "apps": [],
+          "html": null,
+          "share": "https://embed.widencdn.net/img/laser/ionoxpl5s6/{size}px@{scale}x/Linus-linux.ogg.mp3?q={quality}&x.template=y",
+          "url": "https://embed.widencdn.net/img/laser/ionoxpl5s6/{size}px@{scale}x/Linus-linux.ogg.mp3?q={quality}&x.template=y"
+        }
+      },
+      "expanded": {
+        "asset_properties": true,
+        "embeds": true,
+        "file_properties": true,
+        "metadata": true,
+        "metadata_info": true,
+        "metadata_vocabulary": true,
+        "security": true,
+        "status": false,
+        "thumbnails": true
+      },
+      "_links": {
+        "download": "https://orders-bb.us-east-1.widencdn.net/download-deferred/originals?actor=wrn%3Ausers%3Auser%3A36614591%3Apfexxl&tracking=ewogICJkb19ub3RfdHJhY2siOiBmYWxzZSwKICAiYW5vbnltb3VzIjogZmFsc2UsCiAgInZpc2l0b3JfaWQiOiBudWxsLAogICJ1c2VyX3dybiI6ICJ3aWRlbjp1c2Vyczp1c2VyOkxTUlpaOnBmZXh4bCIKfQ%3D%3D&asset_wrn=wrn%3Aassets%3Aasset%3A36614591%3Aionoxpl5s6&custom_metadata=ewogICJhcHBfbmFtZSI6ICJheGlvbSIsCiAgImludGVuZGVkX3VzZV9jb2RlIjogbnVsbCwKICAiaW50ZW5kZWRfdXNlX3ZhbHVlIjogbnVsbCwKICAiaW50ZW5kZWRfdXNlX2VtYWlsIjogbnVsbCwKICAiY29sbGVjdGlvbl9pZCI6IG51bGwsCiAgInBvcnRhbF9pZCI6IG51bGwsCiAgImRhbV9vcmRlcl9pZCI6IG51bGwKfQ%3D%3D&Expires=1714795200&Signature=Jpvd5ps2f5wIqZUetscaRNaQSYYaOzCibKh8LTgasEK7PyMGD7QccWMO8AJh3vj16oUvJ3mINDek6~hUj5EOSHbE3PYBPPFQnrw7xAS8vpJNGpkP5aO4dTFFbgaWWn825aStYvpLmUAzqjBSFI9Ga7GV9j~5YCeNSjM~5rSJERBZDXfY-lxMcZVYvc0yOOmLyYMpKgzVGJYzGLD16hIsL746sZmYas7vR59YP5zBheBEHjeh9jDERwJBHvs7y1te6fAUSY9XHzXFj2nuPyW7n24HU7eBqyMrbH1tqhxNMtW57q1ConD8drzfeXFOrscKQ4OidvZe2DM9anqu1WYKgw__&Key-Pair-Id=APKAJM7FVRD2EPOYUXBQ",
+        "self": "https://api.widencollective.com/v2/assets/fcc13282-d569-44bc-a992-2ff2b405ce59",
+        "self_all": "https://api.widencollective.com/v2/assets/fcc13282-d569-44bc-a992-2ff2b405ce59?expand=asset_properties%2Cembeds%2Cfile_properties%2Cmetadata%2Cmetadata_info%2Cmetadata_vocabulary%2Csecurity%2Cthumbnails"
+      }
+    }
+  ]
+}

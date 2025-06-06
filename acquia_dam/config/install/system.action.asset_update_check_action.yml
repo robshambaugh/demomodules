@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - acquia_dam
+id: asset_update_check_action
+label: 'Check for asset update'
+type: media
+plugin: asset_update_check_action
+configuration: {  }

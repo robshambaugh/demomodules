@@ -1,0 +1,25 @@
+{
+  "asset_id": "fcc13282-d569-44bc-a992-2ff2b405ce59",
+  "item_type": "asset_version",
+  "items": [
+    {
+      "_links": {
+        "version_details": "https://api.widencollective.com/v2/assets/fcc13282-d569-44bc-a992-2ff2b405ce59/versions/4d336083-537c-4558-b8cc-48ce1a75c32a"
+      },
+      "current_version": true,
+      "filename": "Linus-linux.ogg.mp3",
+      "id": "4d336083-537c-4558-b8cc-48ce1a75c32a",
+      "version_number": 1
+    },
+    {
+      "_links": {
+        "version_details": "https://api.widencollective.com/v2/assets/fcc13282-d569-44bc-a992-2ff2b405ce59/versions/da80d7f2-09d0-4b30-9d5b-47b842fa74ac"
+      },
+      "current_version": false,
+      "filename": "Linus-linux.ogg.mp3",
+      "id": "da80d7f2-09d0-4b30-9d5b-47b842fa74ac",
+      "version_number": 2
+    }
+  ],
+  "total_count": 2
+}

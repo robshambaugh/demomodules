@@ -1,0 +1,25 @@
+{
+  "asset_id": "a56fb261-8ad5-4e0d-8323-0e8a3659ed39",
+  "item_type": "asset_version",
+  "items": [
+    {
+      "_links": {
+        "version_details": "https://api.widencollective.com/v2/assets/a56fb261-8ad5-4e0d-8323-0e8a3659ed39/versions/ed84ab8e-a822-471d-b2f4-21b7353e4d0c"
+      },
+      "current_version": false,
+      "filename": "bobsCarsAgileExercises.md",
+      "id": "ed84ab8e-a822-471d-b2f4-21b7353e4d0c",
+      "version_number": 1
+    },
+    {
+      "_links": {
+        "version_details": "https://api.widencollective.com/v2/assets/a56fb261-8ad5-4e0d-8323-0e8a3659ed39/versions/e37312f5-e761-4ec4-92f2-8f0407f57bc7"
+      },
+      "current_version": true,
+      "filename": "bobsCarsAgileExercises.md",
+      "id": "e37312f5-e761-4ec4-92f2-8f0407f57bc7",
+      "version_number": 2
+    }
+  ],
+  "total_count": 2
+}

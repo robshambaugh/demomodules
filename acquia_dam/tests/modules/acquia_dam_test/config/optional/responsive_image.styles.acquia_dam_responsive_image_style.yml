@@ -1,0 +1,35 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.max_1300x1300
+    - image.style.max_2600x2600
+    - image.style.max_325x325
+    - image.style.max_650x650
+  module:
+    - acquia_dam_test
+id: acquia_dam_responsive_image_style
+label: 'Acquia DAM Responsive Image Style'
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: max_2600x2600
+    breakpoint_id: acquia_dam_test.xl
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: max_1300x1300
+    breakpoint_id: acquia_dam_test.lg
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: max_650x650
+    breakpoint_id: acquia_dam_test.md
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: max_325x325
+    breakpoint_id: acquia_dam_test.sm
+    multiplier: 1x
+breakpoint_group: acquia_dam_test
+fallback_image_style: max_325x325

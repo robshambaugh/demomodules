@@ -1,0 +1,68 @@
+{
+  "query": "ag:(WidenQA)",
+  "sort": "-created_date",
+  "query_explained": "Asset Group: WidenQA",
+  "sort_explained": "Created date (descending)",
+  "scroll_id": null,
+  "scroll_timeout": null,
+  "query_syntax_ok": true,
+  "include_archived": false,
+  "include_deleted": false,
+  "facets": null,
+  "item_type": "asset",
+  "total_count": 1,
+  "offset": 0,
+  "limit": 100,
+  "items": [
+    {
+      "id": "5360d404-4144-42bb-b43c-d20d18c9cea2",
+      "version_id": "0f32545a-334b-4a67-96cd-1ad5b46df11a",
+      "current_version": true,
+      "external_id": "hd9yjq1gao",
+      "filename": "status.png",
+      "created_date": "2024-09-18T10:51:10Z",
+      "last_update_date": "2025-03-19T07:20:25Z",
+      "file_upload_date": "2024-09-18T10:51:10Z",
+      "deleted_date": null,
+      "released_and_not_expired": true,
+      "asset_properties": {
+        "favorite": false,
+        "popularity": 0,
+        "cutline_caption": ""
+      },
+      "file_properties": {
+        "format": "PNG",
+        "format_type": "image",
+        "size_in_kbytes": 57,
+        "size_in_bytes": 59144,
+        "image_properties": {
+          "width": 1416.0,
+          "height": 464.0,
+          "aspect_ratio": 3.051724137931
+        },
+        "video_properties": null
+      },
+      "metadata": null,
+      "metadata_info": null,
+      "security": null,
+      "status": null,
+      "thumbnails": null,
+      "embeds": null,
+      "expanded": {
+        "asset_properties": true,
+        "embeds": true,
+        "file_properties": true,
+        "metadata": true,
+        "metadata_info": true,
+        "metadata_vocabulary": true,
+        "security": true,
+        "thumbnails": true
+      },
+      "_links": {
+        "download": "https://orders-bb.us-east-1.widencdn.net/download-deferred/originals?actor=wrn%3Ausers%3Auser%3A17385587%3A17p2we&tracking=ewogICJkb19ub3RfdHJhY2siOiBmYWxzZSwKICAiYW5vbnltb3VzIjogZmFsc2UsCiAgInZpc2l0b3JfaWQiOiBudWxsLAogICJ1c2VyX3dybiI6ICJ3aWRlbjp1c2Vyczp1c2VyOkFDTVNaOjE3cDJ3ZSIKfQ%3D%3D&asset_wrn=wrn%3Aassets%3Aasset%3A17385587%3Ahd9yjq1gao&custom_metadata=ewogICJhcHBfbmFtZSI6ICJsZW5zIiwKICAiaW50ZW5kZWRfdXNlX2NvZGUiOiBudWxsLAogICJpbnRlbmRlZF91c2VfdmFsdWUiOiBudWxsLAogICJpbnRlbmRlZF91c2VfZW1haWwiOiBudWxsLAogICJjb2xsZWN0aW9uX2lkIjogbnVsbCwKICAicG9ydGFsX2lkIjogbnVsbCwKICAicG9ydGFsX2FjY2Vzc19jb2RlX2VtYWlsIjogbnVsbCwKICAiZGFtX29yZGVyX2lkIjogbnVsbAp9&Expires=1745532000&Signature=SzZEytYVaRFop2JAH1KmZiRCStVTxvZAuWWF0VU4-Wb537Kb9npRtXO-RmXjm-O7bFpb3LEm9JENEQp~qO9JbxBKp5Cwb8dgKz49wSKtghtmj3Q61LXLEFL3btrs8RY7I9DtwdX4~l7DyYFVmBC61cDf7SomwtapTKTLIoudUokS2hRfM2bnUkvOhv6EsWk4A8Tr3Jb5XNMemYlOmYXXLU4JGDm0l19A9XNP2~Axqs4hYWYjbrGgHVjDqYEGAzgv0z9nLLvuC8qzLMswsmFCMBP-chMfjZEAJlWkL9qzF0ZXHlVKLI2N5LPbKO9zdXO9o3o2wZSj6-8V-rWFBkxJsQ__&Key-Pair-Id=APKAJM7FVRD2EPOYUXBQ",
+        "self": "https://api.widencollective.com/v2/assets/5360d404-4144-42bb-b43c-d20d18c9cea2",
+        "self_all": "https://api.widencollective.com/v2/assets/5360d404-4144-42bb-b43c-d20d18c9cea2?expand=asset_properties%2Cembeds%2Cfile_properties%2Cmetadata%2Cmetadata_info%2Cmetadata_vocabulary%2Csecurity%2Cthumbnails"
+      }
+    }
+  ]
+}

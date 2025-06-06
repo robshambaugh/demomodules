@@ -1,0 +1,23 @@
+services:
+  acquia_dam_integration_links.enhanced_register:
+    class: Drupal\acquia_dam_integration_links\EnhancedIntegrationLinkRegister
+    arguments: [ '@entity_field.manager', '@acquia_dam_integration_links.tracker', '@acquia_dam.integration_link_register', '@logger.channel.acquia_dam' ]
+  acquia_dam_integration_links.tracker:
+    class: Drupal\acquia_dam_integration_links\AssetTracker
+    arguments: ['@entity_field.manager', '@event_dispatcher', '@acquia_dam.integration_link_register']
+    tags:
+      - { name: service_collector, tag: asset_detector, call: addAssetDetector }
+  acquia_dam_integration_links.media_reference_detector:
+    class: Drupal\acquia_dam_integration_links\AssetDetector\MediaReferenceAssetDetector
+    tags:
+      - { name: asset_detector }
+  acquia_dam_integration_links.text_embed_detector:
+    class: Drupal\acquia_dam_integration_links\AssetDetector\EntityEmbedTextDetector
+    arguments: ['@entity_type.manager']
+    tags:
+      - { name: asset_detector }
+  acquia_dam_integration_links.paragraphs_detector:
+    class: Drupal\acquia_dam_integration_links\AssetDetector\ParagraphsAssetDetector
+    arguments: [ '@acquia_dam_integration_links.tracker', '@entity_field.manager']
+    tags:
+      - { name: asset_detector }

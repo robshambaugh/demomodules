@@ -1,0 +1,82 @@
+{
+  "query": "SD-Social FileType:video",
+  "sort": "-created",
+  "query_explained": "SD-Social File Type: video",
+  "sort_explained": "Metadata: created (descending)",
+  "scroll_id": null,
+  "scroll_timeout": null,
+  "query_syntax_ok": true,
+  "include_archived": false,
+  "include_deleted": false,
+  "item_type": "asset",
+  "total_count": 1,
+  "offset": 0,
+  "limit": 10,
+  "items": [
+    {
+      "id": "efb03f75-3c42-497b-baa9-5ec79d1f56af",
+      "external_id": "mnmc58hipn",
+      "filename": "SD-Social Promo.mp4",
+      "created_date": "2021-08-18T11:37:06Z",
+      "last_update_date": "2021-10-26T14:26:10Z",
+      "file_upload_date": "2021-08-18T11:37:06Z",
+      "deleted_date": null,
+      "released_and_not_expired": true,
+      "asset_properties": null,
+      "file_properties": {
+        "format": "MPEG4",
+        "format_type": "video",
+        "size_in_kbytes": 12681,
+        "image_properties": null,
+        "video_properties": {
+          "width": 1080.0,
+          "height": 1080.0,
+          "aspect_ratio": 1.0,
+          "duration": 9.958
+        }
+      },
+      "metadata": null,
+      "metadata_info": null,
+      "security": null,
+      "status": null,
+      "thumbnails": {
+        "125px": {
+          "url": "https://previews.us-east-1.widencdn.net/preview/36614591/assets/asset-view/9c90ff4c-f41f-44a5-b0a0-7e4ddbfc61d8/thumbnail/eyJ3IjoxMjUsImgiOjEyNSwic2NvcGUiOiJhcHAifQ==?Expires=1645088400&Signature=evYN9h~M1y~YCgPiWjTzaf5tkh4~fYccwC6mouVM7prmJk1u3WqWgKbbFAezjCFt3DDnC~V5wXDXKMMpRhA2SxAcGwcqx97O-Ntg82c63xgywr8Dwc0mrDV2rFcFi-mVZJfyrX9Qzgrwzb4gFwO2h2OeXdBJ1AgO0Pwf4lz0~wzuUQ8gzARo46pYi~lL649BG96fnUYKTKlUGHL8N22SS1UT6-RBqiwCKE4SRPb6C4Gmy53XID76gfZsyK0FMSuj9hmvDrgtllDTD0h8Sw6-KHKY3pNyE4TnPMWuspGHedx3oVNsma4nLj66o45qwf1i0dl1yNL7lwjEE81gV4sBrg__&Key-Pair-Id=APKAJM7FVRD2EPOYUXBQ",
+          "valid_until": "2022-02-17T08:17:13Z"
+        },
+        "160px": {
+          "url": "https://previews.us-east-1.widencdn.net/preview/36614591/assets/asset-view/9c90ff4c-f41f-44a5-b0a0-7e4ddbfc61d8/thumbnail/eyJ3IjoxNjAsImgiOjE2MCwic2NvcGUiOiJhcHAifQ==?Expires=1645088400&Signature=UkWppk48tWaZGbC-mbtzBG6iDopS33~2tnKJeAVU5u2aeUPA3S1rZNiwM1C7VztQHRV-UAsjT4VgqEEABVbR~CjLJBxkQCteE-4ARhZUuWWpIof8XneMllrjyFx~lIXc9~bkA13OwdERJaldPoyyAwqczKfP5Kq0sqb7A3Nx8gl-9HUOtAW-foMJo0ew1gMRm3gOPd0vXSX-XwRRtwqjfSC5gLrRalvk9M2XGYIWz1uFCit-etQ3S26jAC2DfgjuFTwyDSqZc2wGVqyUe6BKBNmvbw0pWGOI5AYEUILblCP4~L6AdOKM91bVOoed4Z54PO-XlPlXTn0iD0ds40tU4w__&Key-Pair-Id=APKAJM7FVRD2EPOYUXBQ",
+          "valid_until": "2022-02-17T08:17:13Z"
+        },
+        "2048px": {
+          "url": "https://previews.us-east-1.widencdn.net/preview/36614591/assets/asset-view/9c90ff4c-f41f-44a5-b0a0-7e4ddbfc61d8/thumbnail/eyJ3IjoyMDQ4LCJoIjoyMDQ4LCJzY29wZSI6ImFwcCJ9?Expires=1645088400&Signature=YMnwQdqmZ7LRsCN36XAblzTRu5MH~QC7NkQ09vC4NSVzF4QD8ZA1XiEjYZqLyjRTvgK-HGByN31E~3RHhV9ZxVPYkeQIBmA9TLMM8HXNW2HxIRVNm6th659tZs1t4e7Z4oj8tMZQG8Gxdul1oOwns9kWeCgYwTOFTuHdBs7-r2y5N72l4~R4WuJLZzFKppCmNHetPDiIMSrTkw~x~inE4TCz7lxDqEjKJuQRql2smuvv90ocZGuxb949sp11gVycmdGjTlUikMlXt9uEMyGspdjuQclny9JddNREs8eWv-SGQBbEPnpKhCb0N~WNxN2QvOa55Cz~zD3n4FSCyvvR8Q__&Key-Pair-Id=APKAJM7FVRD2EPOYUXBQ",
+          "valid_until": "2022-02-17T08:17:13Z"
+        },
+        "300px": {
+          "url": "https://previews.us-east-1.widencdn.net/preview/36614591/assets/asset-view/9c90ff4c-f41f-44a5-b0a0-7e4ddbfc61d8/thumbnail/eyJ3IjozMDAsImgiOjMwMCwic2NvcGUiOiJhcHAifQ==?Expires=1645088400&Signature=BRhoG86wCAwnvwFHAz1UhtFScA3Vszazjmj3Uar3RDnmMO90tHpSJ7cxsny7Jq~mtGjhUEwri7oLfUhJUPBQGWM0V5F8MfqvfDAxHquWertWBUt~Y5BaswA9DUPMUrXYaqtn1kd4yINOT7qEXaZOoV~j66HZ7U1vbcNO8mvUgl~NDtj~WBabSo6G-IItoVpFWoPOcIbc~plgl947LXifH5r--oqZm-kjEKDyoI~2~7VQbq7L3iZf~6BgGLVHN~mnYYq58sx4EIVLMeEM~yylwRwIo-PG~67atNJTwkJ2HIc5LiEFuZHVEOjzjw0Xhyrx3VPKQNTEagpQxmI7Em~2Yg__&Key-Pair-Id=APKAJM7FVRD2EPOYUXBQ",
+          "valid_until": "2022-02-17T08:17:13Z"
+        },
+        "600px": {
+          "url": "https://previews.us-east-1.widencdn.net/preview/36614591/assets/asset-view/9c90ff4c-f41f-44a5-b0a0-7e4ddbfc61d8/thumbnail/eyJ3Ijo2MDAsImgiOjYwMCwic2NvcGUiOiJhcHAifQ==?Expires=1645088400&Signature=cu6pU6Tf0aNe49xKgigjxtLX1L1w2utxl3QtuEBhVIUNwicq6340Tp7Ht0nPo0dS8QgEe6r8a5nbQ3MZpfqwBaIAnnRRtKv39Xag94XACMVa5Fr0X5Xq~Hqu58ZBoOl96ga3urj0nJbqCvBrI51CSZB6VQCodjtpR08HZk8uWQxfqS9zyyItmnK~2rO-zxNA-9p5bZDAkZ-gaodd5yS8TxG0MR~sY2lmmf259z6958dit6phceK5EYbP59AhzDzCejvVtLAj0ZAlqrLC71fLHJPJibqcGQgB7acw1oqmBdMz~mx5g4Un8Vv5b59UshfZNCLhF71Pbx~L1jDtt839mA__&Key-Pair-Id=APKAJM7FVRD2EPOYUXBQ",
+          "valid_until": "2022-02-17T08:17:13Z"
+        }
+      },
+      "embeds": null,
+      "expanded": {
+        "asset_properties": false,
+        "embeds": false,
+        "file_properties": true,
+        "metadata": false,
+        "metadata_info": false,
+        "metadata_vocabulary": false,
+        "security": false,
+        "thumbnails": true
+      },
+      "_links": {
+        "download": "https://orders-bb.us-east-1.widencdn.net/download-deferred/originals?asset_wrn=wrn%3Aassets%3Aasset%3A36614591%3Amnmc58hipn&actor=wrn%3Ausers%3Auser%3A36614591%3At3nxzh&tracking=ewogICJkb19ub3RfdHJhY2siOiBmYWxzZSwKICAiYW5vbnltb3VzIjogZmFsc2UsCiAgInZpc2l0b3JfaWQiOiBudWxsLAogICJ1c2VyX3dybiI6ICJ3aWRlbjp1c2Vyczp1c2VyOkxTUlpaOnQzbnh6aCIKfQ%3D%3D&custom_metadata=ewogICJhcHBfbmFtZSI6ICJsZW5zIiwKICAiaW50ZW5kZWRfdXNlX2NvZGUiOiBudWxsLAogICJpbnRlbmRlZF91c2VfdmFsdWUiOiBudWxsLAogICJpbnRlbmRlZF91c2VfZW1haWwiOiBudWxsLAogICJjb2xsZWN0aW9uX2lkIjogbnVsbCwKICAicG9ydGFsX2lkIjogbnVsbCwKICAiZGFtX29yZGVyX2lkIjogbnVsbAp9&Expires=1645045200&Signature=ZdE~uPfm--22CHGwLNIVgR~6wR6o6BSCsB7-MfYxfOpebFMKOfPcT9zrhh9neRWqJBU-m9gmYKSkrURLklB9qY~I9xi9bUt4zr2vcR1Kyxfp6QM1EgbTKViCk3wfiUDzVmkzx5CE~ACjitBvqHD48ZdBSDWMieqWB519NIeB4COrvVF2X2ckOngNVjlvQFykTJJUXtksHP5kSoT5rq93VB8oMm9TWntOiT5R1T3cp7SHdU8uSSyk1inBDG5Ztr~3Vcxlf2BsW4SmKxJLwDrioQkuuZRz5IoBUEdSGYSJ3lcEb5kFYlXdM3oUNqSHNi-2ml3F~HSLsG7ZfSxFm47nJw__&Key-Pair-Id=APKAJM7FVRD2EPOYUXBQ",
+        "self": "https://api.widencollective.com/v2/assets/efb03f75-3c42-497b-baa9-5ec79d1f56af",
+        "self_all": "https://api.widencollective.com/v2/assets/efb03f75-3c42-497b-baa9-5ec79d1f56af?expand=asset_properties%2Cembeds%2Cfile_properties%2Cmetadata%2Cmetadata_info%2Cmetadata_vocabulary%2Csecurity%2Cthumbnails"
+      }
+    }
+  ]
+}

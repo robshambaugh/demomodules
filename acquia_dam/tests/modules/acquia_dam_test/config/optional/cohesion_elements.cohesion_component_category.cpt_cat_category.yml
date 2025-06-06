@@ -1,0 +1,14 @@
+status: true
+dependencies:
+  module:
+    - cohesion
+label: Test Category
+id: cpt_cat_category
+json_values: '{}'
+json_mapper: '{}'
+last_entity_update: entityupdate_0033
+locked: false
+modified: false
+selectable: true
+class: category-1
+weight: 1

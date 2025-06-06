@@ -1,0 +1,16 @@
+{
+  "asset_id": "02377366-11bf-4204-812d-38d02b7847f6",
+  "item_type": "asset_version",
+  "items": [
+    {
+      "_links": {
+        "version_details": "https://api.widencollective.com/v2/assets/02377366-11bf-4204-812d-38d02b7847f6/versions/b7466e94-99e9-43c9-b994-b534ab386bc5"
+      },
+      "current_version": true,
+      "filename": "422-lake-shore-drive.webp",
+      "id": "b7466e94-99e9-43c9-b994-b534ab386bc5",
+      "version_number": 1
+    }
+  ],
+  "total_count": 1
+}

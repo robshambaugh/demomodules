@@ -1,0 +1,79 @@
+.acquia-dam-expired-asset-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.views-table .acquia-dam-asset-expired__label {
+  color: #fd0000;
+}
+.views-table .acquia-dam-expired-asset svg>path {
+  fill: #fd0000;
+}
+.views-table .acquia-dam-expired-asset-container:hover svg>path {
+  fill: #9b0000;
+}
+.views-table .acquia-dam-expired-asset-container:hover .acquia-dam-asset-expired__label {
+  color: #9b0000;
+}
+.acquia-dam-asset-expired__popper {
+  padding: 4px 8px;
+  color: white;
+  border-radius: 4px;
+  background: #333;
+  font-size: 13px;
+  font-weight: bold;
+}
+.views-table .acquia-dam-asset-expired__popper {
+  width: 20%;
+}
+
+.acquia-dam-asset-expired__arrow,
+.acquia-dam-asset-expired__arrow::before {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: inherit;
+}
+
+.acquia-dam-asset-expired__arrow {
+  visibility: hidden;
+}
+
+.acquia-dam-asset-expired__arrow::before {
+  visibility: visible;
+  content: '';
+  transform: rotate(45deg);
+}
+
+.acquia-dam-asset-expired__popper[data-popper-placement^='top'] > .acquia-dam-asset-expired__arrow {
+  bottom: -4px;
+}
+.cke_editable .acquia-dam-expired-asset {
+  display: block;
+  width: 28px;
+  height: 28px;
+  background: url("../images/alert-triangle.svg") no-repeat center 4px;
+  background-size: 19px;
+}
+
+.cke_editable .acquia-dam-ck-editor {
+  position: absolute;
+  display: inline-block;
+  padding-left: 8px;
+  color: #9b0000;
+  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+.cke_editable .acquia-dam-asset-expired__popper {
+  position: absolute;
+  width: 100%;
+  margin-top: 1.5rem;
+  padding: 4px 8px;
+  color: white;
+  border-radius: 4px;
+  background: #333;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 1.2;
+}

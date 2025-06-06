@@ -1,0 +1,77 @@
+{
+  "query": "Best ft:(office) (rd:[before 05/31/2022) AND ed:((isEmpty) OR [after 05/31/2022])",
+  "sort": "-created_date",
+  "query_explained": "Best File Type: office Release Date: is before 05/31/2022",
+  "sort_explained": "Created date (descending)",
+  "scroll_id": null,
+  "scroll_timeout": null,
+  "query_syntax_ok": true,
+  "include_archived": false,
+  "include_deleted": false,
+  "item_type": "asset",
+  "total_count": 1,
+  "offset": 0,
+  "limit": 11,
+  "items": [
+    {
+      "id": "abab96ac-c2ed-40b1-aaf7-56a52f898230",
+      "external_id": "rfnwimkigc",
+      "filename": "Best Practice - Content Architecture - v2.1.pptx",
+      "created_date": "2021-09-30T15:20:36Z",
+      "last_update_date": "2021-09-30T15:20:36Z",
+      "file_upload_date": "2021-09-30T15:20:36Z",
+      "deleted_date": null,
+      "released_and_not_expired": true,
+      "asset_properties": null,
+      "file_properties": {
+        "format": "MicrosoftPowerpointOoXmlDocument",
+        "format_type": "office",
+        "size_in_kbytes": 5702,
+        "image_properties": null,
+        "video_properties": null
+      },
+      "metadata": null,
+      "metadata_info": null,
+      "security": null,
+      "status": null,
+      "thumbnails": {
+        "125px": {
+          "url": "https://previews.us-east-1.widencdn.net/preview/36614591/assets/asset-view/d3ca58df-62b8-42be-a21b-19196a66eb2b/thumbnail/eyJ3IjoxMjUsImgiOjEyNSwic2NvcGUiOiJhcHAifQ==?Expires=1654084800&Signature=SgoRhCMIDk7T4nXrBxFWgfyE94m0LQfVjYq7RDC7r6rBcXIQgB8Ve8ct2y08FexVfVLUTWKRTgU0owMThjllIaurTy2KANNJvKcG4yee7N19VnBf8ATh3wDHC-XHpJXZNCu8-rTRvvDAFzsB-K96RbMQ7vsDJ8d4V9FegNU4NKlZRdLSewI~1otTmteMfo8CWGiwY2E0FInwZnvCUMqLxWwbxWOTFY7X43thHtUoyUyMyP3x1YRx0-JgCGCh7t723K-FZNFpLPcHlR5zzJU3oxOO0kOYxSeBpQf-ZEatNPqHllNd3QmkqubiI8vrVMWtKFUL-SROvuJdEBVFnMZQsw__&Key-Pair-Id=APKAJM7FVRD2EPOYUXBQ",
+          "valid_until": "2022-06-01T11:17:56Z"
+        },
+        "160px": {
+          "url": "https://previews.us-east-1.widencdn.net/preview/36614591/assets/asset-view/d3ca58df-62b8-42be-a21b-19196a66eb2b/thumbnail/eyJ3IjoxNjAsImgiOjE2MCwic2NvcGUiOiJhcHAifQ==?Expires=1654084800&Signature=kTH9ezIFRSrlMQ3Af5O0Q091B5p0AnLtFnA6hTwPhqB5DK4oWiQTdvIgT4gMOzy2UTF-sOdG-sHKnZu1A6U8nIAEdWnZsEDSz11kU8usO6AJuZJD8PpXxfevmdFEtLJTuSBMwu7XxrY9QJNszv5Q5lqmx7KYPOudeedHepH4D1-98MfV~U-pn-~EDWrBSZJFNqNXuBx5kSmp0rSc2BPRhXgMExbEdUZEZywNzag-JSBdUKPGeF1ogdenAwdniUDz28260QlEu9zaEiTK~w1k4nXr~ZgZsCpoYL1abENRlp8p5U2rQ28RtclR~N95W4w5mCNOjny3GZAJTxuonkw9nA__&Key-Pair-Id=APKAJM7FVRD2EPOYUXBQ",
+          "valid_until": "2022-06-01T11:17:56Z"
+        },
+        "2048px": {
+          "url": "https://previews.us-east-1.widencdn.net/preview/36614591/assets/asset-view/d3ca58df-62b8-42be-a21b-19196a66eb2b/thumbnail/eyJ3IjoyMDQ4LCJoIjoyMDQ4LCJzY29wZSI6ImFwcCJ9?Expires=1654084800&Signature=DwV09nQaDmZtXaiJrTRY0wJrT69t-oFbkZznAHoPFhaIAMGq0t8gK5vk19wrcpIIvFkvtWafk3vAHEvdgQEoDjHlu9bPfyPZKEpfO4XNVDV5vBzbxpDRcmOIewXf-T6IW~AyhyDuttAdIjkOY09U40-iAPX64dHavJbXHnTLKbICtLESBTRSG4wrB2F~5c~q5R00zqgbLj08NbbzQba76iXPdXEbWu-uYUsvgk02pXbWH~9Qo1wWi1-NFNdVuGfIvbXVYHnWpNONqQwfFDd7kEyD9gGXNLL-lCCw8jTf4-Qu8GckFiuVGqINDfwA3zsXl4ldO7ZgfOuYrdW9rGRmfw__&Key-Pair-Id=APKAJM7FVRD2EPOYUXBQ",
+          "valid_until": "2022-06-01T11:17:56Z"
+        },
+        "300px": {
+          "url": "https://previews.us-east-1.widencdn.net/preview/36614591/assets/asset-view/d3ca58df-62b8-42be-a21b-19196a66eb2b/thumbnail/eyJ3IjozMDAsImgiOjMwMCwic2NvcGUiOiJhcHAifQ==?Expires=1654084800&Signature=LrqIxqSB5BUTtAgdvlZhLhX6gzpeBcbZQ3O~g6nr3cDKyTzWfEso6ODC1vpgb0iq0SCoENya35lYaojLQldnrsDewHPzqP3bvbJDKUnEDnaTmI0tws81qAV2CvlP9HHR63-VPBVa0hJGNNWRk5uD3RupBRoZglx4Y-eeY~70YDLukBZbqGKPnFywzZ73cW4RJmDvtGIS2XAVyAgsbw6Qa0xsfFQf3Ur48j5JWm9KdCUu5yFGmA6wnQGpoKVU9stTbj8~mRlMwx9kB-iB2ok88s4M7-kMSj-YBscptFpkoPM6sM~1G0UF0zcrh-Qik60cFmwiWCKhDmUXIeYBTUzEzQ__&Key-Pair-Id=APKAJM7FVRD2EPOYUXBQ",
+          "valid_until": "2022-06-01T11:17:56Z"
+        },
+        "600px": {
+          "url": "https://previews.us-east-1.widencdn.net/preview/36614591/assets/asset-view/d3ca58df-62b8-42be-a21b-19196a66eb2b/thumbnail/eyJ3Ijo2MDAsImgiOjYwMCwic2NvcGUiOiJhcHAifQ==?Expires=1654084800&Signature=MIwimjLk0cMLKY2pyySHsthGEJ~qKN8QEZXhFn~66Df8ZRdvbuPJ3jyHoiuOImgLS06GUMGO29Xb5NRfg8uokJQ0K63zQ0a26YJX0SIFLAdnM0ODVTHm5gP2Y-3T9~e4h5nYRsaA4D5yh7gjkCit6D8BhDcWKty8WPweBkh6QUoAcXwpTa3iaavIyklv8fBdRRFUjZt1E~u2qH2sboThWRw6MU-g4f63LO1HVTCylbPk0jMwMi~8X0g7Om9usE8LhlNieV1xsQF4WfRwaUv68XSZlSq~F4dpnTzM60e-gDI1fvXh4mCtjFwVxq0gf5vX-1pK4W~tVfaBroVlexSSuw__&Key-Pair-Id=APKAJM7FVRD2EPOYUXBQ",
+          "valid_until": "2022-06-01T11:17:56Z"
+        }
+      },
+      "embeds": null,
+      "expanded": {
+        "asset_properties": false,
+        "embeds": false,
+        "file_properties": true,
+        "metadata": false,
+        "metadata_info": false,
+        "metadata_vocabulary": false,
+        "security": false,
+        "thumbnails": true
+      },
+      "_links": {
+        "download": "https://orders-bb.us-east-1.widencdn.net/download-deferred/originals?asset_wrn=wrn%3Aassets%3Aasset%3A36614591%3Arfnwimkigc&actor=wrn%3Ausers%3Auser%3A36614591%3At3nxzh&tracking=ewogICJkb19ub3RfdHJhY2siOiBmYWxzZSwKICAiYW5vbnltb3VzIjogZmFsc2UsCiAgInZpc2l0b3JfaWQiOiBudWxsLAogICJ1c2VyX3dybiI6ICJ3aWRlbjp1c2Vyczp1c2VyOkxTUlpaOnQzbnh6aCIKfQ%3D%3D&custom_metadata=ewogICJhcHBfbmFtZSI6ICJsZW5zIiwKICAiaW50ZW5kZWRfdXNlX2NvZGUiOiBudWxsLAogICJpbnRlbmRlZF91c2VfdmFsdWUiOiBudWxsLAogICJpbnRlbmRlZF91c2VfZW1haWwiOiBudWxsLAogICJjb2xsZWN0aW9uX2lkIjogbnVsbCwKICAicG9ydGFsX2lkIjogbnVsbCwKICAiZGFtX29yZGVyX2lkIjogbnVsbAp9&Expires=1654041600&Signature=Fw1vv08zJ~K1YEDgmKi706IX5UJKb~f12ftMYxLWMQeBd~kBrYiRW-LHowr2GVqw5ChHda3cyhSOuCT3fVAvvOBP8JlPQM2oUh6WfHOV86QsvDm~9oV4Fn-lyTPRu0~Y8-IWurppysUHQlqbN5QEs2bbwHecQKMxt-1uOQBxrYkFSmZZ4zGXUz1vzXeYAy8wtEriqTx6ELi3AUzJhLBN~P3d1Qp3JzjYrY5BnWWItpMr~w9WGKF87dNJGV8Q6zTaw1wRdBqAF5DR~DWdPVMa4e0zfH~BG387PFxeteKMS7MxkA3q3f7USQWx8UPy377thM8rpTOs7oH5467AM6wjlw__&Key-Pair-Id=APKAJM7FVRD2EPOYUXBQ",
+        "self": "https://api.widencollective.com/v2/assets/abab96ac-c2ed-40b1-aaf7-56a52f898230",
+        "self_all": "https://api.widencollective.com/v2/assets/abab96ac-c2ed-40b1-aaf7-56a52f898230?expand=asset_properties%2Cembeds%2Cfile_properties%2Cmetadata%2Cmetadata_info%2Cmetadata_vocabulary%2Csecurity%2Cthumbnails"
+      }
+    }
+  ]
+}

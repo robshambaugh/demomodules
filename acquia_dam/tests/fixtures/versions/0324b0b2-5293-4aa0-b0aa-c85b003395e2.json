@@ -1,0 +1,16 @@
+{
+  "asset_id": "0324b0b2-5293-4aa0-b0aa-c85b003395e2",
+  "item_type": "asset_version",
+  "items": [
+    {
+      "_links": {
+        "version_details": "https://api.widencollective.com/v2/assets/0324b0b2-5293-4aa0-b0aa-c85b003395e2/versions/9b0212fb-fd51-4a7f-b94c-a7bb3419dfef"
+      },
+      "current_version": true,
+      "filename": "Explorer owner's manual.pdf",
+      "id": "9b0212fb-fd51-4a7f-b94c-a7bb3419dfef",
+      "version_number": 1
+    }
+  ],
+  "total_count": 1
+}

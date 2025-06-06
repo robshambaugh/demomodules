@@ -1,0 +1,19 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for DAM integration links module.
+ */
+
+/**
+ * Implements hook_uninstall().
+ */
+function acquia_dam_integration_links_uninstall() {
+  // If this module is uninstalled set every value higher than 1 back to 1.
+  // That would be the reference for the media entity.
+  \Drupal::database()
+    ->update('acquia_dam_integration_link_aggregate')
+    ->fields(['usage_count' => 1])
+    ->condition('usage_count', 1, '>')
+    ->execute();
+}

@@ -1,0 +1,16 @@
+{
+  "asset_id": "abab96ac-c2ed-40b1-aaf7-56a52f898230",
+  "item_type": "asset_version",
+  "items": [
+    {
+      "_links": {
+        "version_details": "https://api.widencollective.com/v2/assets/abab96ac-c2ed-40b1-aaf7-56a52f898230/versions/504c368a-9111-45be-b769-c3bb6810ce94"
+      },
+      "current_version": true,
+      "filename": "Best Practice - Content Architecture - v2.1.pptx",
+      "id": "504c368a-9111-45be-b769-c3bb6810ce94",
+      "version_number": 1
+    }
+  ],
+  "total_count": 1
+}

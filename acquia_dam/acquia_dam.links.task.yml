@@ -1,0 +1,17 @@
+entity.user.acquiadam:
+  title: 'Acquia DAM'
+  route_name: entity.user.acquia_dam_auth
+  weight: 2
+  base_route: entity.user.canonical
+
+acquia_dam.config:
+  route_name : acquia_dam.config
+  title: Configuration
+  base_route: acquia_dam.config
+  weight: 0
+
+acquia_dam.metadata_config:
+  route_name: acquia_dam.metadata_config
+  title: Metadata
+  base_route: acquia_dam.config
+  weight: 1

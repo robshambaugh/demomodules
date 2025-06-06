@@ -1,0 +1,81 @@
+media_library.style:
+  version: VERSION
+  css:
+    theme:
+      css/media-library.css: { }
+media_library.style.non_admin:
+  version: VERSION
+  css:
+    theme:
+      css/media-library-non_admin.css: { }
+acquia_dam.embed_form.style:
+  version: VERSION
+  css:
+    theme:
+      css/embed-form.css: { }
+acquia_dam.media_library.source_menu:
+  js:
+    js/acquia_dam.media_library.source_menu.js: { }
+  dependencies:
+    - core/drupal.ajax
+    - core/once
+acquia_dam.authorization:
+  js:
+    js/acquia-dam-authorization.js: { }
+acquia_dam.media_library.reset_filter:
+  js:
+    js/acquia_dam.media_library.reset_filter.js: { }
+  dependencies:
+    - core/once
+    - core/drupal
+acquia_dam.widen_categories:
+  version: VERSION
+  css:
+    theme:
+      css/category-filter.css: { }
+  js:
+    js/acquia-dam-categories.js: { }
+  dependencies:
+    - core/drupal
+
+media_revisions_dialog:
+  css:
+    theme:
+      css/media-revisions-dialog.css: { }
+
+ckeditor5.media_embed_code:
+  js:
+    js/build/mediaEmbedCode.js: { minified: true }
+  dependencies:
+    - core/ckeditor5
+    - core/drupal
+
+ckeditor5.media_revisions:
+  css:
+    theme:
+      css/plugins/ckeditor5.mediarevisions.css: { }
+  js:
+    js/build/mediaRevisions.js: { minified: true }
+  dependencies:
+    - core/ckeditor5
+    - core/drupal
+
+ckeditor5.media_expired:
+  css:
+    theme:
+      css/plugins/ckeditor5.mediaexpired.css: { }
+  js:
+    js/build/mediaExpired.js: { minified: true }
+  dependencies:
+    - core/ckeditor5
+    - core/drupal
+
+acquia_dam.expired_assets:
+  css:
+    theme:
+      css/acquia-dam-expired-assets.css: { }
+  js:
+    js/acquia-dam-expired-assets.js: { }
+  dependencies:
+    - core/once
+    - core/popperjs

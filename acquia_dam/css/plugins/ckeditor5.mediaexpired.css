@@ -1,0 +1,15 @@
+.ck .drupal-media__mediaexpired-alert {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 28px;
+  height: 28px;
+}
+
+.ck .drupal-media__mediaexpired-alert-icon {
+  display: block;
+  width: 28px;
+  height: 28px;
+  background: url("../../images/alert-red.svg") no-repeat center 4px;
+  background-size: 28px;
+}

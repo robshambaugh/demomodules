@@ -1,0 +1,88 @@
+{
+  "item_type": "asset_version",
+  "total_count": 9,
+  "asset_id": "f2a9c03d-3664-477c-8013-e84504ed5adc",
+  "items": [
+    {
+      "id": "e43bde3a-be80-418e-a69e-6de9285afbbf",
+      "filename": "1.png",
+      "current_version": true,
+      "version_number": 1,
+      "_links": {
+        "version_details": "https://api.widencollective.com/v2/assets/f2a9c03d-3664-477c-8013-e84504ed5adc/versions/e43bde3a-be80-418e-a69e-6de9285afbbf"
+      }
+    },
+    {
+      "id": "bc752771-451c-4bd3-b80b-72aa94e52d09",
+      "filename": "2.png",
+      "current_version": false,
+      "version_number": 2,
+      "_links": {
+        "version_details": "https://api.widencollective.com/v2/assets/f2a9c03d-3664-477c-8013-e84504ed5adc/versions/bc752771-451c-4bd3-b80b-72aa94e52d09"
+      }
+    },
+    {
+      "id": "a1b8ed95-1ec2-425e-ba58-ca34d3a07c9d",
+      "filename": "3.png",
+      "current_version": false,
+      "version_number": 3,
+      "_links": {
+        "version_details": "https://api.widencollective.com/v2/assets/f2a9c03d-3664-477c-8013-e84504ed5adc/versions/a1b8ed95-1ec2-425e-ba58-ca34d3a07c9d"
+      }
+    },
+    {
+      "id": "9a5d5c65-0260-43d4-9e24-404862c91cbf",
+      "filename": "4.png",
+      "current_version": false,
+      "version_number": 4,
+      "_links": {
+        "version_details": "https://api.widencollective.com/v2/assets/f2a9c03d-3664-477c-8013-e84504ed5adc/versions/9a5d5c65-0260-43d4-9e24-404862c91cbf"
+      }
+    },
+    {
+      "id": "e15a5104-eee2-4383-9e4a-04748d556561",
+      "filename": "5.png",
+      "current_version": false,
+      "version_number": 5,
+      "_links": {
+        "version_details": "https://api.widencollective.com/v2/assets/f2a9c03d-3664-477c-8013-e84504ed5adc/versions/e15a5104-eee2-4383-9e4a-04748d556561"
+      }
+    },
+    {
+      "id": "dd8b0932-b2f4-4d52-89b9-a20427302111",
+      "filename": "6.png",
+      "current_version": false,
+      "version_number": 6,
+      "_links": {
+        "version_details": "https://api.widencollective.com/v2/assets/f2a9c03d-3664-477c-8013-e84504ed5adc/versions/dd8b0932-b2f4-4d52-89b9-a20427302111"
+      }
+    },
+    {
+      "id": "60ed7c72-1135-4e0f-b2fc-f1f301e44335",
+      "filename": "7.png",
+      "current_version": false,
+      "version_number": 7,
+      "_links": {
+        "version_details": "https://api.widencollective.com/v2/assets/f2a9c03d-3664-477c-8013-e84504ed5adc/versions/60ed7c72-1135-4e0f-b2fc-f1f301e44335"
+      }
+    },
+    {
+      "id": "5f50e0c3-a3d8-47c3-8df4-fac173103ddd",
+      "filename": "An asset with many versions_v8.png",
+      "current_version": false,
+      "version_number": 8,
+      "_links": {
+        "version_details": "https://api.widencollective.com/v2/assets/f2a9c03d-3664-477c-8013-e84504ed5adc/versions/5f50e0c3-a3d8-47c3-8df4-fac173103ddd"
+      }
+    },
+    {
+      "id": "1456b405-0b71-4f27-b376-1aa16e62b1dc",
+      "filename": "v9.png",
+      "current_version": false,
+      "version_number": 9,
+      "_links": {
+        "version_details": "https://api.widencollective.com/v2/assets/f2a9c03d-3664-477c-8013-e84504ed5adc/versions/1456b405-0b71-4f27-b376-1aa16e62b1dc"
+      }
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+name: 'Acquia DAM Bulk Asset Import'
+type: module
+description: 'Enables users to create media entities for all – or filtered by some arbitrary media types – DAM assets in certain categories of Widen.'
+core_version_requirement: '^9.5 || ^10 || ^11'
+package: Media
+dependencies:
+  - acquia_dam:acquia_dam
+configure: acquiadam_asset_import.configuration
+
+# Information added by Drupal.org packaging script on 2025-05-14
+version: '1.1.2'
+project: 'acquia_dam'
+datestamp: 1747255123

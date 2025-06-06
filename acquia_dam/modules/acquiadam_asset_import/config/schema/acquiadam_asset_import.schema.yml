@@ -1,0 +1,25 @@
+acquiadam_asset_import.settings:
+  type: config_object
+  label: 'Acquia DAM bulk import settings'
+  mapping:
+    categories:
+      type: sequence
+      label: 'List of remote Widen category UUIDs' #  with local media bundles assigned, keyed by category UUID
+      sequence:
+        type: sequence
+        label: 'List of local media type names'
+        sequence:
+          type: string
+          label: 'A DAM-related media type existing on the site'
+          constraints:
+            NotBlank: []
+            ConfigExists: {}
+    asset_groups:
+      type: sequence
+      label: 'List of remote Widen asset groups UUIDs' #  with local media bundles assigned, keyed by asset groups UUID
+      sequence:
+        type: sequence
+        label: 'List of local media type names'
+        sequence:
+          type: string
+          label: 'A DAM-related media type existing on the site'

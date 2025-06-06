@@ -1,0 +1,6 @@
+{
+  "error": true,
+  "response_code": 404,
+  "error_message": "Asset with id 'c2bbed58-427f-43f7-91d8-c380307dac67' was not found.",
+  "stack_trace": null
+}

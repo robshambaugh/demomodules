@@ -1,0 +1,15 @@
+<?php
+
+/**
+ * @file
+ * Import assets from Acquia DAM.
+ */
+
+/**
+ * Implements hook_cron().
+ *
+ * Add assets to queue from Acquia DAM.
+ */
+function acquiadam_asset_import_cron() {
+  \Drupal::service('acquiadam_asset_import.asset_queue')->addAssetsToQueue();
+}

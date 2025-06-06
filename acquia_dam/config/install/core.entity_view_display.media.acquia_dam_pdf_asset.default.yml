@@ -1,0 +1,26 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.acquia_dam_pdf_asset
+  module:
+    - acquia_dam
+id: media.acquia_dam_pdf_asset.default
+targetEntityType: media
+bundle: acquia_dam_pdf_asset
+mode: default
+content:
+  acquia_dam_asset_id:
+    type: acquia_dam_embed_code
+    label: hidden
+    settings:
+      embed_style: link_thumbnail_download
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  acquia_dam_managed_file: true
+  created: true
+  name: true
+  thumbnail: true
+  uid: true

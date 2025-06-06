@@ -1,0 +1,16 @@
+{
+  "asset_id": "a2c863d0-3db8-4eeb-86c2-83aaac112d14",
+  "item_type": "asset_version",
+  "items": [
+    {
+      "_links": {
+        "version_details": "https://api.widencollective.com/v2/assets/a2c863d0-3db8-4eeb-86c2-83aaac112d14/versions/ea14d72f-9b36-4bcd-9c70-cbfa7c67a809"
+      },
+      "current_version": true,
+      "filename": "Attributes Set.docx",
+      "id": "ea14d72f-9b36-4bcd-9c70-cbfa7c67a809",
+      "version_number": 1
+    }
+  ],
+  "total_count": 1
+}

@@ -1,0 +1,105 @@
+services:
+  cache.acquia_dam:
+    class: Drupal\Core\Cache\CacheBackendInterface
+    tags:
+      - { name: cache.bin }
+    factory: ['@cache_factory', 'get']
+    arguments: [acquia_dam]
+  acquia_dam.route_subscriber:
+    class: Drupal\acquia_dam\Routing\RouteSubscriber
+    tags:
+      - { name: event_subscriber }
+  acquia_dam.client.factory:
+    class: Drupal\acquia_dam\Client\AcquiaDamClientFactory
+    arguments: ['@http_handler_stack', '@extension.list.module', '@cache.acquia_dam', '@acquia_dam.authentication_service', '@current_user', '@logger.channel.acquia_dam', '@datetime.time', '@config.factory', '@messenger']
+  acquia_dam.authentication_service:
+    class: Drupal\acquia_dam\AcquiadamAuthService
+    arguments: ['@user.data', '@config.factory', '@http_client', '@state', '@module_handler', '@logger.channel.acquia_dam', '@cache_tags.invalidator']
+  acquia_dam.asset_library_builder:
+    class: Drupal\acquia_dam\AssetLibraryBuilder
+    calls:
+      - [ setExtensionList, [ '@extension.list.module' ]]
+      - [ setMessenger, [ '@messenger' ] ]
+      - [ setAuthService, [ '@acquia_dam.authentication_service' ] ]
+      - [ setUserData, ['@user.data']]
+      - [ setCurrentUser, [ '@current_user' ] ]
+      - [ setLogger, [ '@logger.channel.acquia_dam' ] ]
+      - [ setFileUrlGenerator, [ '@file_url_generator' ] ]
+    parent: 'media_library.ui_builder'
+    decorates: 'media_library.ui_builder'
+  acquia_dam.asset_repository:
+    class: Drupal\acquia_dam\AssetRepository
+    arguments: ['@entity_type.manager', '@acquia_dam.client.factory', '@acquia_dam.media_type_resolver']
+  acquia_dam.remote_data_query_subscriber:
+    class: Drupal\acquia_dam\EventSubscriber\RemoteDataSubscriber
+    arguments: ['@acquia_dam.client.factory', '@messenger', '@logger.channel.acquia_dam', '@datetime.time', '@date.formatter', '@acquia_dam.media_type_resolver']
+    tags:
+      - { name: 'event_subscriber' }
+  acquia_dam.integration_link_register:
+    class: Drupal\acquia_dam\IntegrationLinkRegister
+    arguments: ['@acquia_dam.client.factory', '@database', '@logger.channel.acquia_dam', '@entity_type.bundle.info', '@queue', '@entity.repository']
+    tags:
+      - { name: needs_destruction}
+  acquia_dam.media_library_editor_opener:
+    class: Drupal\acquia_dam\AcquiaDamMediaLibraryEditorOpener
+    calls:
+      - [ setEntityTypeManager, [ '@entity_type.manager' ]]
+      - [ setImageStyleHelper, [ '@acquia_dam.image_style_support' ]]
+    parent: 'media_library.opener.editor'
+    decorates: 'media_library.opener.editor'
+  acquia_dam.media_library_field_widget_opener:
+    class: Drupal\acquia_dam\AcquiaDamMediaLibraryFieldWidgetOpener
+    decorates: 'media_library.opener.field_widget'
+    arguments: [ '@entity_type.manager', '@entity_field.manager', '@acquia_dam.media_library_field_widget_opener.inner']
+  logger.channel.acquia_dam:
+    parent: logger.channel_base
+    arguments: ['acquia_dam']
+  acquia_dam.system_theme_config_subscriber:
+    class: Drupal\acquia_dam\EventSubscriber\SystemThemeConfigSubscriber
+    arguments: ['@library.discovery']
+    tags:
+      - { name: 'event_subscriber' }
+  acquia_dam.site_studio_route_subscriber:
+    class: Drupal\acquia_dam\Routing\SiteStudioRouteSubscriber
+    tags:
+      - { name: event_subscriber }
+  acquia_dam.media_type_resolver:
+    class: Drupal\acquia_dam\MediaTypeResolver
+    arguments: ['@entity_type.manager']
+  stream_wrapper.acquia_dam:
+    class: Drupal\acquia_dam\StreamWrapper\AcquiaDamStreamWrapper
+    tags:
+      - { name: stream_wrapper, scheme: acquia-dam }
+  acquia_dam.image_style_support:
+    class: Drupal\acquia_dam\ImageStyleHelper
+    arguments: ['@config.factory', '@entity_type.manager']
+  acquia_dam.cron:
+    class: Drupal\acquia_dam\Cron
+    arguments: ['@entity_type.manager', '@acquia_dam.client.factory', '@datetime.time', '@state', '@queue', '@logger.factory', '@acquia_dam.asset_update_checker']
+  acquia_dam.crop_new_asset_version_subscriber:
+    class: Drupal\acquia_dam\EventSubscriber\CropNewAssetVersionSubscriber
+    arguments: ['@acquia_dam.image_style_support']
+    tags:
+      - { name: 'event_subscriber' }
+  acquia_dam.asset_file_helper:
+    class: Drupal\acquia_dam\AssetFileEntityHelper
+    arguments: ['@entity_type.manager', '@entity_field.manager','@config.factory', '@file_system', '@token', '@logger.channel.acquia_dam', '@file.repository', '@http_client']
+  acquia_dam.site_authenticated_access_check:
+    class: Drupal\acquia_dam\Access\SiteAuthenticatedAccessCheck
+    arguments: ['@acquia_dam.authentication_service']
+    tags:
+      - { name: access_check, applies_to: _acquia_dam_site_authenticated_access_check }
+  acquia_dam.asset_version_resolver:
+    class: Drupal\acquia_dam\AssetVersionResolver
+    arguments: ['@acquia_dam.client.factory', '@messenger']
+  acquia_dam.asset_update_checker:
+    class: Drupal\acquia_dam\AssetUpdateChecker
+    arguments: ['@entity_type.manager', '@datetime.time', '@queue', '@logger.factory', '@messenger', '@acquia_dam.client.factory', '@acquia_dam.asset_version_resolver']
+  acquia_dam.config_import_subscriber:
+    class: Drupal\acquia_dam\EventSubscriber\ConfigImportSubscriber
+    arguments: [ '@acquia_dam.asset_repository', '@entity_type.manager', '@logger.channel.acquia_dam', '@config.storage']
+    tags:
+      - { name: event_subscriber }
+  plugin.manager.acquia_dam.asset_media_source:
+    class: Drupal\acquia_dam\Plugin\media\acquia_dam\AssetMediaSourceManager
+    parent: default_plugin_manager

@@ -1,0 +1,265 @@
+{
+  "id": "56ff14de-02cd-41b5-9a73-c917eab19abf",
+  "external_id": "kcnabdscl5",
+  "filename": "Wheel Illustration.ai",
+  "created_date": "2021-09-23T22:34:29Z",
+  "last_update_date": "2021-09-23T22:35:27Z",
+  "file_upload_date": "2021-09-23T22:34:29Z",
+  "deleted_date": null,
+  "released_and_not_expired": true,
+  "asset_properties": {
+    "favorite": false,
+    "popularity": 0,
+    "cutline_caption": ""
+  },
+  "file_properties": {
+    "format": "IllustratorNative",
+    "format_type": "image",
+    "size_in_kbytes": 305,
+    "image_properties": {
+      "width": 157.0,
+      "height": 120.0,
+      "aspect_ratio": 1.308333333333
+    },
+    "video_properties": null
+  },
+  "metadata": {
+    "fields": {
+      "assettype": [
+        "image"
+      ],
+      "author": [],
+      "captionAbstract": [],
+      "containsFnords": [],
+      "dateCreated": [],
+      "dateSent": [
+        "2022-06-19"
+      ],
+      "description": [
+        "Illustration of a rim, Clorox"
+      ],
+      "longtext": [
+        "laskdjflaskjdflaksjdflkasjdflaksdjflaksjdlaskdjflaskjdflaksjdflkasjdflaksdjflaksjdflaksdjflaksdjflaksjdflaskdjflaskjdflaksjdflkasjdflaksdjflaksjdflaksdjflaksdjflaksjdflaskdjflaskjdflaksjdflkasjdflaksdjflaksjdflaksdjflaksdjflaksjdflaskdjflaskjdflaksjdflkasjdflaksdjflaksjdflaksdjflaksdjflaksjdflaskdjflaskjdflaksjdflkasjdflaksdjflaksjdflaksdjflaksdjflaksjdflaskdjflaskjdflaksjdflkasjdflaksdjflaksjdflaksdjflaksdjflaksjdflaskdjflaskjdflaksjdflkasjdflaksdjflaksjdflaksdjflaksdjflaksjdfflaksdjflaksdjflaksjdfasdfasdfasdfasdfasdfasdf"
+      ],
+      "keywords": [],
+      "usagerightdetails": []
+    }
+  },
+  "metadata_info": {
+    "field_set": "DAM assets",
+    "field_set_fields": [
+      {
+        "key": "assettype",
+        "label": "Asset Type",
+        "type": "selection_list",
+        "field_type": "selection_list",
+        "controlled_vocabulary": true,
+        "required": false,
+        "editable": true,
+        "vocabulary": [
+          "Document",
+          "Graphic",
+          "Image",
+          "Other",
+          "Video"
+        ]
+      },
+      {
+        "key": "author",
+        "label": "Author",
+        "type": "text",
+        "field_type": "text",
+        "controlled_vocabulary": false,
+        "required": false,
+        "editable": true,
+        "vocabulary": null
+      },
+      {
+        "key": "captionAbstract",
+        "label": "Caption/Abstract",
+        "type": "text_short",
+        "field_type": "text_short",
+        "controlled_vocabulary": false,
+        "required": false,
+        "editable": true,
+        "vocabulary": null
+      },
+      {
+        "key": "containsFnords",
+        "label": "Contains Fnords",
+        "type": "selection_list",
+        "field_type": "selection_list",
+        "controlled_vocabulary": true,
+        "required": false,
+        "editable": true,
+        "vocabulary": [
+          "Yes",
+          "No"
+        ]
+      },
+      {
+        "key": "dateCreated",
+        "label": "Date Created",
+        "type": "date",
+        "field_type": "date",
+        "controlled_vocabulary": false,
+        "required": false,
+        "editable": true,
+        "vocabulary": null
+      },
+      {
+        "key": "dateSent",
+        "label": "Date Sent",
+        "type": "date",
+        "field_type": "date",
+        "controlled_vocabulary": false,
+        "required": false,
+        "editable": true,
+        "vocabulary": null
+      },
+      {
+        "key": "description",
+        "label": "Description",
+        "type": "text_multi_line",
+        "field_type": "text_multi_line",
+        "controlled_vocabulary": false,
+        "required": false,
+        "editable": true,
+        "vocabulary": null
+      },
+      {
+        "key": "keywords",
+        "label": "Keywords",
+        "type": "text",
+        "field_type": "text",
+        "controlled_vocabulary": false,
+        "required": false,
+        "editable": true,
+        "vocabulary": null
+      },
+      {
+        "key": "longtext",
+        "label": "Long text",
+        "type": "text_long",
+        "field_type": "text_long",
+        "controlled_vocabulary": false,
+        "required": false,
+        "editable": true,
+        "vocabulary": null
+      },
+      {
+        "key": "usagerightdetails",
+        "label": "Usage Rights Details",
+        "type": "text_multi_line",
+        "field_type": "text_multi_line",
+        "controlled_vocabulary": false,
+        "required": false,
+        "editable": true,
+        "vocabulary": null
+      }
+    ]
+  },
+  "security": {
+    "expiration_date": null,
+    "release_date": "2021-09-23T05:00:00Z",
+    "asset_groups": [
+      "Demo Assets",
+      "WidenQA"
+    ]
+  },
+  "status": null,
+  "thumbnails": {
+    "125px": {
+      "url": "https://previews.us-east-1.widencdn.net/preview/36614591/assets/asset-view/a9963004-3bd4-4df3-9faa-7ef5c19e8c77/thumbnail/eyJ3IjoxMjUsImgiOjEyNSwic2NvcGUiOiJhcHAifQ==?Expires=1652972400&Signature=fDP4oH9qQlHwh163gQUhRaHb~3X3uqcK980YdJBUGDFB43inL-Cv5x61IEHwlYC5fQNehbzgZp8ygpy7z2AptiazD1yKNtX9vzspmTJVs3qqS7A9jiJjUTTTkoIBWaFPGzv8yu-V68-Ys-kiqEG7iGFBOJ4FYyjzwPI2654jmGoP730zubkUOPla7L~AXXRqEbF-g0dw205MGzYvcSx6GX5JA~faiAIZVL5PHtqLcc47u9ul~cd42vikalDg57~n6quE8Y64Hpv83JP5nr9VccgKMyonAl3JfbhvSLSAByG61sCAHbHTzfvlartzZzbRVqFPhSKgkztHlbOYwXxDDA__&Key-Pair-Id=APKAJM7FVRD2EPOYUXBQ",
+      "valid_until": "2022-05-19T14:54:38Z"
+    },
+    "160px": {
+      "url": "https://previews.us-east-1.widencdn.net/preview/36614591/assets/asset-view/a9963004-3bd4-4df3-9faa-7ef5c19e8c77/thumbnail/eyJ3IjoxNjAsImgiOjE2MCwic2NvcGUiOiJhcHAifQ==?Expires=1652972400&Signature=h44QYpPgYumBMkCdF9n8Gqd6n9~PTfg9Y9uyhnsWzS9p~t7GrqpGBOM0ZkAm3OVXv5V1c~jANBAPCYBB~R0YbMHSRGFoJRYS~3Ye04EZTwSq60qjmvzzbh4mfPvMFy88WqXBYD~FasgXOJAXD4E9ry1RYrKNKMV92vC-JW26TEHhhWXXMBvN6TLIiTnxNjny0v6Y13qOIf9DZnJah6Khqv1qYIFukVXtomMz87wfboWheqh73625FvmmMaMQ72TFWwdNKYCj3aMPdesZ-0jvJo~7weM6u63C9tY7wRWDi5iMZoNdWyfdVaSPFlbPpv7LY-GCfFpzSPVPCrcP0SmWQw__&Key-Pair-Id=APKAJM7FVRD2EPOYUXBQ",
+      "valid_until": "2022-05-19T14:54:38Z"
+    },
+    "2048px": {
+      "url": "https://previews.us-east-1.widencdn.net/preview/36614591/assets/asset-view/a9963004-3bd4-4df3-9faa-7ef5c19e8c77/thumbnail/eyJ3IjoyMDQ4LCJoIjoyMDQ4LCJzY29wZSI6ImFwcCJ9?Expires=1652972400&Signature=A32p7taHu2XteHEx70TTNV7Ntiekxv72cC4FnKe84oft0n7OPA-dml50b85sTDMvl1io70DBsd8W0glN0PmhTP5NF7dJ7XY6Kgll7TmrSRi4etCmSx~YBtKh4l2utYtzuA0wA5KkvTY4Zp6jxPzxCHMEXlikMPv-AMcqOz4gvZO3vW5qOKdnSEzcy4FPFW6t3PeQa~kLldYG1ja6YnekCMTm1YpYol2EkSTFBYpLEsE4adHnBqyjELhvgGg3XYRWdSBMpKU~Oc0pltktyH9CUZmJtypxLbG5TbQnsMZhA6RE50nKA3NAFETavTAsTi6YqgyfDExe5saJTc8PK5Cuiw__&Key-Pair-Id=APKAJM7FVRD2EPOYUXBQ",
+      "valid_until": "2022-05-19T14:54:38Z"
+    },
+    "300px": {
+      "url": "https://previews.us-east-1.widencdn.net/preview/36614591/assets/asset-view/a9963004-3bd4-4df3-9faa-7ef5c19e8c77/thumbnail/eyJ3IjozMDAsImgiOjMwMCwic2NvcGUiOiJhcHAifQ==?Expires=1652972400&Signature=K-QD9q9tnEX4sy4XW4s6wQrZJgM4aUVkqefN1MsvmLTvnrX13jBjUhEnrpPxYXn5Ij0boSd766bxb8cV9mpQP4VFSmH4xjaKts3sr0ECCQCbbF42ztpv3TbUeTu5OXk3Un0sTXs9THAB9nif64oGjtC2zekihvyX6yYaa1A9tnIM~~JX9QZhCrHmg0pxW0A23TLHbd0mSyudm1qXZEJqow~DzkVE06LRqSRAqcrvRt3aMxiC5L4pJNx8FjJok78RYYiEl~TEqSLoTIOz37Bq7Bt7ruipmv1qwJXq49J~09K6uhCUfw-YVwp7MOJerxPU76g5LN99LX0uu3r1aInbmA__&Key-Pair-Id=APKAJM7FVRD2EPOYUXBQ",
+      "valid_until": "2022-05-19T14:54:38Z"
+    },
+    "600px": {
+      "url": "https://previews.us-east-1.widencdn.net/preview/36614591/assets/asset-view/a9963004-3bd4-4df3-9faa-7ef5c19e8c77/thumbnail/eyJ3Ijo2MDAsImgiOjYwMCwic2NvcGUiOiJhcHAifQ==?Expires=1652972400&Signature=Y9FSSrJR7lNxO4ZfII08QqYLHveTIlCkCwsffwyAW4UlCoCCaCfSEkM5rtWbOykzzsnOa-Qe5kMN8qqx6lLP1EfncIT1IiA6ho8FwMuCZjETK0I0gMlMkWnCpXa68isH6fxz~7vlpm-tRhjbPsHHkgQNWtGU25btqLkDz5K9ntiKScTOQ2EbJJ~6tuAtx7yLUEQLFqAe6JQaVOZxhP-tcTcnPaM5v-cHsug-~9qN1LttZuGSvRKYRTpUjXNTl4zXzBez5cqJklp029b-o2T0fdn2yMuU7mQehO01HYGWOUhT3p1~sl1Q5KtUAnsLarK7qFp4ejPkCoCDs-BNWVUHoA__&Key-Pair-Id=APKAJM7FVRD2EPOYUXBQ",
+      "valid_until": "2022-05-19T14:54:38Z"
+    }
+  },
+  "embeds": {
+    "640px-landscape": {
+      "url": "https://laser.widen.net/content/kcnabdscl5/jpeg/Wheel%20Illustration.jpeg?w=640&keep=c&crop=yes&color=cccccc&quality=80&u=xgdchd",
+      "html": "<img width=\"640\" alt=\"Wheel Illustration.jpeg\" src=\"https://laser.widen.net/content/kcnabdscl5/jpeg/Wheel%20Illustration.jpeg?w=640&keep=c&crop=yes&color=cccccc&quality=80&u=xgdchd\">",
+      "share": "https://laser.widen.net/view/thumbnail/kcnabdscl5/Wheel%20Illustration.ai?w=640&keep=c&crop=yes&color=cccccc&quality=80&t.format=jpeg&u=xgdchd&x.share=t",
+      "apps": []
+    },
+    "640px-portrait": {
+      "url": "https://laser.widen.net/content/kcnabdscl5/jpeg/Wheel%20Illustration.jpeg?h=640&keep=c&crop=yes&color=cccccc&quality=80&u=xgdchd",
+      "html": "<img height=\"640\" alt=\"Wheel Illustration.jpeg\" src=\"https://laser.widen.net/content/kcnabdscl5/jpeg/Wheel%20Illustration.jpeg?h=640&keep=c&crop=yes&color=cccccc&quality=80&u=xgdchd\">",
+      "share": "https://laser.widen.net/view/thumbnail/kcnabdscl5/Wheel%20Illustration.ai?h=640&keep=c&crop=yes&color=cccccc&quality=80&t.format=jpeg&u=xgdchd&x.share=t",
+      "apps": []
+    },
+    "Newpreset": {
+      "url": "https://laser.widen.net/content/kcnabdscl5/jpeg/Wheel%20Illustration.jpeg?w=650&h=650&position=c&color=ffffffff&quality=80&u=xgdchd",
+      "html": "<img width=\"650\" height=\"650\" alt=\"Wheel Illustration.jpeg\" src=\"https://laser.widen.net/content/kcnabdscl5/jpeg/Wheel%20Illustration.jpeg?w=650&h=650&position=c&color=ffffffff&quality=80&u=xgdchd\">",
+      "share": "https://laser.widen.net/view/thumbnail/kcnabdscl5/Wheel%20Illustration.ai?w=650&h=650&position=c&color=ffffffff&quality=80&t.download=true&t.format=jpeg&u=xgdchd&x.share=t",
+      "apps": []
+    },
+    "Shareexercise-customizingimage": {
+      "url": "https://laser.widen.net/content/kcnabdscl5/jpeg/Wheel%20Illustration.jpeg?w=500&position=c&color=ffffffff&quality=80&u=xgdchd",
+      "html": "<img width=\"500\" alt=\"Wheel Illustration.jpeg\" src=\"https://laser.widen.net/content/kcnabdscl5/jpeg/Wheel%20Illustration.jpeg?w=500&position=c&color=ffffffff&quality=80&u=xgdchd\">",
+      "share": "https://laser.widen.net/view/thumbnail/kcnabdscl5/Wheel%20Illustration.ai?w=500&position=c&color=ffffffff&quality=80&t.download=true&t.format=jpeg&u=xgdchd&x.share=t",
+      "apps": []
+    },
+    "TAMtest": {
+      "url": "https://laser.widen.net/content/kcnabdscl5/jpeg/Wheel%20Illustration.jpeg?w=2048&h=1536&position=c&color=ffffffff&quality=80&u=xgdchd",
+      "html": "<img width=\"2048\" height=\"1536\" alt=\"Wheel Illustration.jpeg\" src=\"https://laser.widen.net/content/kcnabdscl5/jpeg/Wheel%20Illustration.jpeg?w=2048&h=1536&position=c&color=ffffffff&quality=80&u=xgdchd\">",
+      "share": "https://laser.widen.net/view/thumbnail/kcnabdscl5/Wheel%20Illustration.ai?w=2048&h=1536&position=c&color=ffffffff&quality=80&t.download=true&t.format=jpeg&u=xgdchd&x.share=t",
+      "apps": []
+    },
+    "is_this_api_restricted_at_all": {
+      "url": "https://laser.widen.net/content/kcnabdscl5/jpeg/Wheel%20Illustration.jpeg?w=2048&h=1236&keep=c&crop=yes&color=ffffffff&quality=75&u=xgdchd",
+      "html": "<img width=\"2048\" height=\"1236\" alt=\"Wheel Illustration.jpeg\" src=\"https://laser.widen.net/content/kcnabdscl5/jpeg/Wheel%20Illustration.jpeg?w=2048&h=1236&keep=c&crop=yes&color=ffffffff&quality=75&u=xgdchd\">",
+      "share": "https://laser.widen.net/view/thumbnail/kcnabdscl5/Wheel%20Illustration.ai?w=2048&h=1236&keep=c&crop=yes&color=ffffffff&quality=75&t.format=jpeg&u=xgdchd&x.share=t",
+      "apps": []
+    },
+    "original": {
+      "url": "https://laser.widen.net/content/kcnabdscl5/original/Wheel-Illustration.ai?u=xgdchd&download=true",
+      "html": "<a href=\"https://laser.widen.net/content/kcnabdscl5/original/Wheel-Illustration.ai?u=xgdchd&download=true\" target=\"_blank\">Wheel-Illustration.ai</a>",
+      "share": "https://laser.widen.net/content/kcnabdscl5/original/Wheel-Illustration.ai?u=xgdchd&download=true&x.share=t",
+      "apps": []
+    },
+    "templated": {
+      "url": "https://embed.widencdn.net/img/laser/kcnabdscl5/{size}px@{scale}x/Wheel-Illustration.ai?q={quality}&x.template=y",
+      "html": null,
+      "share": "https://embed.widencdn.net/img/laser/kcnabdscl5/{size}px@{scale}x/Wheel-Illustration.ai?q={quality}&x.template=y",
+      "apps": []
+    },
+    "testing": {
+      "url": "https://laser.widen.net/content/kcnabdscl5/jpeg/Wheel%20Illustration.jpeg?w=1048&h=1236&keep=c&crop=yes&color=ffffffff&quality=80&r=270&u=xgdchd",
+      "html": "<img width=\"1048\" height=\"1236\" alt=\"Wheel Illustration.jpeg\" src=\"https://laser.widen.net/content/kcnabdscl5/jpeg/Wheel%20Illustration.jpeg?w=1048&h=1236&keep=c&crop=yes&color=ffffffff&quality=80&r=270&u=xgdchd\">",
+      "share": "https://laser.widen.net/view/thumbnail/kcnabdscl5/Wheel%20Illustration.ai?w=1048&h=1236&keep=c&crop=yes&color=ffffffff&quality=80&r=270&t.format=jpeg&u=xgdchd&x.share=t",
+      "apps": []
+    }
+  },
+  "expanded": {
+    "asset_properties": true,
+    "embeds": true,
+    "file_properties": true,
+    "metadata": true,
+    "metadata_info": true,
+    "metadata_vocabulary": true,
+    "security": true,
+    "status": false,
+    "thumbnails": true
+  },
+  "_links": {
+    "download": "https://orders-bb.us-east-1.widencdn.net/download-deferred/originals?asset_wrn=wrn%3Aassets%3Aasset%3A36614591%3Akcnabdscl5&actor=wrn%3Ausers%3Auser%3A36614591%3Axgdchd&tracking=ewogICJkb19ub3RfdHJhY2siOiBmYWxzZSwKICAiYW5vbnltb3VzIjogZmFsc2UsCiAgInZpc2l0b3JfaWQiOiBudWxsLAogICJ1c2VyX3dybiI6ICJ3aWRlbjp1c2Vyczp1c2VyOkxTUlpaOnhnZGNoZCIKfQ%3D%3D&custom_metadata=ewogICJhcHBfbmFtZSI6ICJheGlvbSIsCiAgImludGVuZGVkX3VzZV9jb2RlIjogbnVsbCwKICAiaW50ZW5kZWRfdXNlX3ZhbHVlIjogbnVsbCwKICAiaW50ZW5kZWRfdXNlX2VtYWlsIjogbnVsbCwKICAiY29sbGVjdGlvbl9pZCI6IG51bGwsCiAgInBvcnRhbF9pZCI6IG51bGwsCiAgImRhbV9vcmRlcl9pZCI6IG51bGwKfQ%3D%3D&Expires=1652929200&Signature=D~ja2Aq0q2MqDsooSiec3eJCunLsCX0GKFZpvd68~jDNbVvhYGceeHy2V6qpPC6FsBiBMrbu54WocatKTRQb75owEd9hyleA1lYXk8nOyb4LbHfzcPtQwL1h5c5AUGpD0yOR4yb01r7DZic98hFEavaGDVYz9O1P833Q44KWtaDl0EEqhDuvceYvSntuB8qrt5Uluvqx8uWzqwVriESRgiwHXGXthPCv9W0FcMZV0CrZubRRElbdv-ab1Usfwin7Kf6lvy0ATj2A2wKofhk5GDT2tEsewWQ9-feCIULpeD9oaT8AI6ZjQ52i8yTCQF7mFn3m0O-BiaKuHyf8Ob27Ow__&Key-Pair-Id=APKAJM7FVRD2EPOYUXBQ",
+    "self": "https://api.widencollective.com/v2/assets/56ff14de-02cd-41b5-9a73-c917eab19abf",
+    "self_all": "https://api.widencollective.com/v2/assets/56ff14de-02cd-41b5-9a73-c917eab19abf?expand=asset_properties%2Cembeds%2Cfile_properties%2Cmetadata%2Cmetadata_info%2Cmetadata_vocabulary%2Csecurity%2Cthumbnails"
+  }
+}

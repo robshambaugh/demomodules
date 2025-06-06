@@ -1,0 +1,128 @@
+.ui-dialog.media-library-widget-modal.ui-widget {
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  max-width: 100%;
+  height: 100vh !important;
+  margin: 0 !important;
+}
+.ui-dialog.media-library-widget-modal.ui-widget #drupal-modal {
+  height: 78% !important;
+  max-height: none !important;
+}
+
+.ui-dialog.media-library-widget-modal.ui-widget .ui-dialog-titlebar {
+  background: #154575;
+}
+
+.ui-dialog.media-library-widget-modal.ui-widget .button--primary {
+  background: #154575;
+}
+.ui-dialog.media-library-widget-modal.ui-widget .button--primary:focus {
+  background: #1c5c9c;
+}
+
+.acquia-dam-media-library .views-exposed-form__item--actions .button {
+  color: #1c5c9c;
+  background: #d8e8f8;
+}
+.acquia-dam-media-library .views-exposed-form__item--actions .button:hover {
+  color: #1c5c9c;
+  background: #bed9f4;
+}
+.ui-dialog.media-library-widget-modal.ui-widget .button--primary:hover {
+  background: #1c5c9c;
+  font-weight: bold;
+}
+
+.acquia-dam-media-library.media-library-wrapper {
+  flex-direction: column;
+  margin: 0;
+}
+.acquia-dam-media-library .js-media-library-menu {
+  display: flex;
+  width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+}
+.acquia-dam-media-library .js-media-library-menu li {
+  overflow: visible;
+  margin: 0;
+  padding: 0.5rem 0 0;
+}
+.acquia-dam-media-library .js-media-library-menu li .media-library-menu__link {
+  padding: 0.75rem 1.25rem;
+  box-shadow: none;
+}
+.acquia-dam-media-library .media-library-menu__link.active::before {
+  border-bottom: 4px solid #003cc5;
+  border-left: 0;
+}
+
+.acquia-dam-media-library .media-library-menu__link.active {
+  z-index: 2;
+  color: #003cc5;
+  border-color: #dedfe4 transparent;
+  background: #d8e8f8;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 0.1);
+}
+
+.acquia-dam-media-library .media-library-menu__item::before {
+  display: none;
+}
+.acquia-dam-media-library .media-library-menu__item::after {
+  z-index: 0;
+  display: block;
+  width: 100%;
+  content: "";
+  border-bottom: 1px solid #d3d4d9;
+}
+.acquia-dam-media-library .media-library-item--grid .field--name-thumbnail {
+  background-color: transparent;
+}
+
+.acquia-dam-media-library .js-media-library-menu + .media-library-content {
+  margin-top: 1em;
+  padding: 0;
+  border-left: 0;
+  box-shadow: none;
+}
+.acquia-dam-message-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.disable-select {
+  pointer-events: none;
+  opacity: 0.2;
+}
+
+th.views-field-acquia-dam-media-library-select-form {
+  width: 50px;
+}
+th.views-field-thumbnail {
+  width: 125px;
+}
+
+/* CKEditor launches dialogs with CKEDITOR.config.baseFloatZIndex + 1, which is 1E4. */
+.ajax-progress--fullscreen,
+.ui-dialog .ajax-progress--throbber {
+  z-index: 20000 !important;
+}
+.media-library-widget-modal ul {
+  list-style-type: none;
+}
+
+.acquia-dam-media-library .pager {
+  width: 100%;
+}
+
+.acquia-dam-media-library .view-header {
+  width: 100%;
+}
+
+.acquia-dam-media-library a.views-display-link {
+  float: left;
+}

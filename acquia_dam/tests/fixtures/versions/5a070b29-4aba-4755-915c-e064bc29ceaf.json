@@ -1,0 +1,16 @@
+{
+  "asset_id": "5a070b29-4aba-4755-915c-e064bc29ceaf",
+  "item_type": "asset_version",
+  "items": [
+    {
+      "_links": {
+        "version_details": "https://api.widencollective.com/v2/assets/5a070b29-4aba-4755-915c-e064bc29ceaf/versions/c6a1d232-4460-43de-afd2-b3bd53ade80f"
+      },
+      "current_version": true,
+      "filename": "test-file.webm",
+      "id": "c6a1d232-4460-43de-afd2-b3bd53ade80f",
+      "version_number": 1
+    }
+  ],
+  "total_count": 1
+}

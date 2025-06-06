@@ -1,0 +1,265 @@
+{
+  "id": "a56fb261-8ad5-4e0d-8323-0e8a3659ed39",
+  "external_id": "jwel87liro",
+  "filename": "bobsCarsAgileExercises.md",
+  "created_date": "2021-08-21T13:58:45Z",
+  "last_update_date": "2022-03-29T12:59:23Z",
+  "file_upload_date": "2021-08-21T13:58:45Z",
+  "deleted_date": null,
+  "released_and_not_expired": false,
+  "asset_properties": {
+    "favorite": false,
+    "popularity": 0,
+    "cutline_caption": ""
+  },
+  "file_properties": {
+    "format": "PdfDocument",
+    "format_type": "pdf",
+    "size_in_kbytes": 43,
+    "image_properties": null,
+    "video_properties": null
+  },
+  "metadata": {
+    "fields": {
+      "assettype": [
+        "Document"
+      ],
+      "author": [
+        "Jill Cooper"
+      ],
+      "captionAbstract": [
+        "Bob's agile exercise example"
+      ],
+      "colorspace": [
+        "None"
+      ],
+      "containsFnords": [],
+      "dateCreated": [
+        "2022-03-15"
+      ],
+      "description": [
+        "At sociosqu gravida non hac dapibus primis ac himenaeos pretium, rutrum in molestie magna libero nibh ultricies nostra, duis sagittis sit massa aliquam ornare efficitur faucibus. Dictumst bibendum tincidunt urna nec nam consequat vestibulum nullam est fermentum, suscipit ultrices facilisi habitasse pharetra faucibus turpis tempus sapien vehicula, eget mollis sem purus leo ut auctor facilisis ex. Tempus conubia cursus vitae rutrum lacus natoque quisque, elit eget porttitor ipsum dis porta molestie consequat, faucibus turpis mus condimentum vehicula class. Fringilla vivamus cursus urna at velit iaculis sit nostra consectetur, enim mollis natoque eu sagittis nascetur litora tempor. Ornare egestas hac fusce dignissim litora pretium hendrerit a tortor ac, elit sagittis per facilisis nullam torquent faucibus donec. Magna integer mollis parturient quis mi mauris gravida sagittis nullam, ultrices volutpat natoque venenatis mus semper mattis nunc, convallis aliquet fringilla ultricies porttitor praesent facilisi justo. Felis class vestibulum habitasse feugiat duis malesuada lorem, pellentesque lacus suspendisse consequat dis at quam congue, aenean ornare nullam eget scelerisque sem. Metus odio consectetur etiam congue torquent himenaeos amet, quam sit pellentesque vulputate praesent id diam, ornare ut vel risus mus pretium. Urna aliquam nisi nam ornare est dapibus erat magnis nascetur rhoncus bibendum, penatibus sodales velit tempor fusce eros porttitor risus hac ante, placerat fames rutrum diam varius pharetra cras congue nisl gravida."
+      ],
+      "keywords": [
+        "exercise, agile"
+      ],
+      "usagerightdetails": [],
+      "usagerights": [
+        "No"
+      ],
+      "vincent": []
+    }
+  },
+  "metadata_info": {
+    "field_set": "Laser Metadata Type",
+    "field_set_fields": [
+      {
+        "key": "assettype",
+        "label": "Asset Type",
+        "type": "selection_list",
+        "field_type": "selection_list",
+        "controlled_vocabulary": true,
+        "required": false,
+        "editable": true,
+        "vocabulary": [
+          "Document",
+          "Graphic",
+          "Image",
+          "Other",
+          "Video"
+        ]
+      },
+      {
+        "key": "author",
+        "label": "Author",
+        "type": "text",
+        "field_type": "text",
+        "controlled_vocabulary": false,
+        "required": false,
+        "editable": true,
+        "vocabulary": null
+      },
+      {
+        "key": "captionAbstract",
+        "label": "Caption/Abstract",
+        "type": "text",
+        "field_type": "text",
+        "controlled_vocabulary": false,
+        "required": false,
+        "editable": true,
+        "vocabulary": null
+      },
+      {
+        "key": "colorspace",
+        "label": "Colorspace",
+        "type": "text",
+        "field_type": "text",
+        "controlled_vocabulary": false,
+        "required": false,
+        "editable": true,
+        "vocabulary": null
+      },
+      {
+        "key": "containsFnords",
+        "label": "Contains Fnords",
+        "type": "selection_list",
+        "field_type": "selection_list",
+        "controlled_vocabulary": true,
+        "required": false,
+        "editable": true,
+        "vocabulary": [
+          "Yes",
+          "No"
+        ]
+      },
+      {
+        "key": "dateCreated",
+        "label": "Date Created",
+        "type": "date",
+        "field_type": "date",
+        "controlled_vocabulary": false,
+        "required": false,
+        "editable": true,
+        "vocabulary": null
+      },
+      {
+        "key": "description",
+        "label": "Description",
+        "type": "text_multi_line",
+        "field_type": "text_multi_line",
+        "controlled_vocabulary": false,
+        "required": false,
+        "editable": true,
+        "vocabulary": null
+      },
+      {
+        "key": "keywords",
+        "label": "Keywords",
+        "type": "text",
+        "field_type": "text",
+        "controlled_vocabulary": false,
+        "required": false,
+        "editable": true,
+        "vocabulary": null
+      },
+      {
+        "key": "usagerightdetails",
+        "label": "Usage Rights Details",
+        "type": "text_multi_line",
+        "field_type": "text_multi_line",
+        "controlled_vocabulary": false,
+        "required": false,
+        "editable": true,
+        "vocabulary": null
+      },
+      {
+        "key": "usagerights",
+        "label": "Usage Rights",
+        "type": "selection_list",
+        "field_type": "selection_list",
+        "controlled_vocabulary": true,
+        "required": false,
+        "editable": true,
+        "vocabulary": [
+          "No",
+          "Yes",
+          "Another value"
+        ]
+      },
+      {
+        "key": "vincent",
+        "label": "Vincent",
+        "type": "text",
+        "field_type": "text",
+        "controlled_vocabulary": false,
+        "required": false,
+        "editable": true,
+        "vocabulary": null
+      }
+    ]
+  },
+  "security": {
+    "expiration_date": null,
+    "release_date": null,
+    "asset_groups": [
+      "public"
+    ]
+  },
+  "status": null,
+  "thumbnails": {
+    "125px": {
+      "url": "https://previews.us-east-1.widencdn.net/preview/36614591/assets/asset-view/5de5419a-05d7-46c0-9171-f1dface11acb/thumbnail/eyJ3IjoxMjUsImgiOjEyNSwic2NvcGUiOiJhcHAifQ==?Expires=1649257200&Signature=UZA4TRXEj2TWBtrQr89es3gQbH8eCek-cj36KdfmAGNTkwhtNkfxnBL7XlfPuykhFIcjBAHJ8xBD6nMqsVq64aiKn72iRfIE4rrbUNHTCFkK8PZXIwlcnjwdfC0qNQ24yVVSolKr6eV40W2jLfVcKH6QCt-PbZvvrv19rzL9bsek2f5CSo6qZlmGSjMrHpoJpA~j-orUFRgm9eZT-kIenu8nxJF2vZWIn7Rk89vxh2R66vpDEy1YK48IcLJ-lbYfbzbtvjY0uHcXMHjp0RozmJYkZQZU4Rp414~Zglv9spCQIpujcIc1zi4gEeuFHoBytoT7FzF8GKTJZKe3fQfUTg__&Key-Pair-Id=APKAJM7FVRD2EPOYUXBQ",
+      "valid_until": "2022-04-06T14:54:24Z"
+    },
+    "160px": {
+      "url": "https://previews.us-east-1.widencdn.net/preview/36614591/assets/asset-view/5de5419a-05d7-46c0-9171-f1dface11acb/thumbnail/eyJ3IjoxNjAsImgiOjE2MCwic2NvcGUiOiJhcHAifQ==?Expires=1649257200&Signature=fJn9POkGKsP9MCj~4rFEIJD0OjsvGOASNA3zQn45MMhck-ppTA8CQz104Unc2jyezSCNr64u-G3HrK9yLOOuLVE4ONBNdW9MxusToaAOM9izQNP3frppMEwkNATWWbN7~bK2SRFa6NPbA8h6on8wZWoVPKMOoVSCiG60LiymVQtOOj7TF8KhZ~SLMOsQczZ7ZqiBKPoz0~7~Hkuh3D~kvtEw9LG~fHcR15BwOa4DV~xkgBaZF3cSsLjN~GcfOpaZBaD2N7lmSXm-QbbvuX6voXXrBxc9Jz-k0nzB3LZI8Zg2uhEfBJkfhJyKLSI0q-XpjG2N6978eTw2h3dah80D-w__&Key-Pair-Id=APKAJM7FVRD2EPOYUXBQ",
+      "valid_until": "2022-04-06T14:54:24Z"
+    },
+    "2048px": {
+      "url": "https://previews.us-east-1.widencdn.net/preview/36614591/assets/asset-view/5de5419a-05d7-46c0-9171-f1dface11acb/thumbnail/eyJ3IjoyMDQ4LCJoIjoyMDQ4LCJzY29wZSI6ImFwcCJ9?Expires=1649257200&Signature=u87Xr4stpxQPRQ~yCQzefBsZkuXeOcenFRMWs1AlZLRO9CeNM98N7X2nTCO9~mcWYCBxNJnGX0owimpetMgjmJoxVGsIHxs~cXTMzHpbg-cRLR5n6aP88TKXRYKjCvTnzpFzmT31Sethx6wxAeir4dG5BLZ5aKeShoq-eXe2vL8QphP6CWhwmzJ~WWLyeDi1pvLgNFKSchu4kCNKt2A5T4LM3fhEmN46UY8DfgpCLJsqzcHWnAaxnCerelxd9HD7XYdpeW-WGDwJN5xYVgWCUBYF7544AbeApxYgcd6I~BDR8xcYhYONnamSe4BHZ7L0wirxRVGv3mSqpw1IeODz7w__&Key-Pair-Id=APKAJM7FVRD2EPOYUXBQ",
+      "valid_until": "2022-04-06T14:54:24Z"
+    },
+    "300px": {
+      "url": "https://previews.us-east-1.widencdn.net/preview/36614591/assets/asset-view/5de5419a-05d7-46c0-9171-f1dface11acb/thumbnail/eyJ3IjozMDAsImgiOjMwMCwic2NvcGUiOiJhcHAifQ==?Expires=1649257200&Signature=CQQvgDXLAQT1Vj0hPg65e2cyibIZc4N0Akbw9VNK22jVQhTXh5c16C25hH9MGCFH5jVsoJNiCg66GnaCsPGOQn6xuK6bxvIE2mNDuxtugpuSweCJIVPyt~5sDb0OGWjZouTnrymTXpaY9l06HeA3UdP6D5xeeasWqAa3tzB2FnzdJP3NNsv2ZbCxA2f5o10NQFlp~c-nMB9qy8rx9R31RcdEIYGYX526mDzMBJlXdycaz1IYfoJOMOaWctTLVLOoqSepfrla6OVIsClI9wikbiSU9ZlKuGtAXe9RSjZD4rfPQKbi88f8DJhE24UeMZ2lyuFOmb-gyZeboocZPr57Cg__&Key-Pair-Id=APKAJM7FVRD2EPOYUXBQ",
+      "valid_until": "2022-04-06T14:54:24Z"
+    },
+    "600px": {
+      "url": "https://previews.us-east-1.widencdn.net/preview/36614591/assets/asset-view/5de5419a-05d7-46c0-9171-f1dface11acb/thumbnail/eyJ3Ijo2MDAsImgiOjYwMCwic2NvcGUiOiJhcHAifQ==?Expires=1649257200&Signature=p6HpXYibfBA9FDKHGivO2MbkeepYTEandn-Win2UhY6G46mTdTZhbTY6eVriqM0kCvkwdo1onE4Mum4mOiK2-1V2lkzBFAbzlOIet1hWIDNAkQpyUNjbNdV4ewGw8YORCPZeNBZmY~ctItiGwvcCLYe1C~EiIlDyXOgc8Wrntysz-2D8e3uT5a--Ao85KGs4j2ghLO3leh5kMIJW9vF5CIg2SLp8l-1SEiVbMAF7dLl5XqIPpyLYE~svVGPBxkz3-zXG57iR6k6ZeqoWVohaszuIbemruqOZV8XRwj2MLMB6yn-lQ1VV5U3kDVR5dtxJkMqK8t1yt3N01EYU~xte8A__&Key-Pair-Id=APKAJM7FVRD2EPOYUXBQ",
+      "valid_until": "2022-04-06T14:54:24Z"
+    }
+  },
+  "embeds": {
+    "document_html5_viewer": {
+      "url": "https://laser.widen.net/view/pdf/jwel87liro/bobsCarsAgileExercises.pdf?u=xgdchd",
+      "html": "<iframe src=\"https://laser.widen.net/view/pdf/jwel87liro/bobsCarsAgileExercises.pdf?u=xgdchd\" webkitallowfullscreen mozallowfullscreen allowfullscreen title=\"Document for &quot;bobsCarsAgileExercises.md&quot;\" ></iframe>",
+      "share": "https://laser.widen.net/view/pdf/jwel87liro/bobsCarsAgileExercises.pdf?u=xgdchd&x.share=t",
+      "apps": []
+    },
+    "document_thumbnail": {
+      "url": "https://laser.widen.net/content/jwel87liro/jpeg/bobsCarsAgileExercises.jpg?u=xgdchd",
+      "html": "<img alt=\"bobsCarsAgileExercises.jpg\" src=\"https://laser.widen.net/content/jwel87liro/jpeg/bobsCarsAgileExercises.jpg?u=xgdchd\">",
+      "share": "https://laser.widen.net/view/thumbnail/jwel87liro/bobsCarsAgileExercises.pdf?t.format=jpeg&u=xgdchd&x.share=t",
+      "apps": []
+    },
+    "document_viewer": {
+      "url": "https://laser.widen.net/content/jwel87liro/pdf/bobsCarsAgileExercises.pdf?u=xgdchd",
+      "html": "<iframe src=\"https://laser.widen.net/content/jwel87liro/pdf/bobsCarsAgileExercises.pdf?u=xgdchd\" webkitallowfullscreen mozallowfullscreen allowfullscreen title=\"bobsCarsAgileExercises.pdf\" ></iframe>",
+      "share": "https://laser.widen.net/content/jwel87liro/pdf/bobsCarsAgileExercises.pdf?u=xgdchd&x.share=t",
+      "apps": []
+    },
+    "document_viewer_with_download": {
+      "url": "https://laser.widen.net/view/pdf/jwel87liro/bobsCarsAgileExercises.pdf?t.download=true&u=xgdchd",
+      "html": "<iframe src=\"https://laser.widen.net/view/pdf/jwel87liro/bobsCarsAgileExercises.pdf?t.download=true&u=xgdchd\" webkitallowfullscreen mozallowfullscreen allowfullscreen title=\"Document for &quot;bobsCarsAgileExercises.md&quot;\" ></iframe>",
+      "share": "https://laser.widen.net/view/pdf/jwel87liro/bobsCarsAgileExercises.pdf?t.download=true&u=xgdchd&x.share=t",
+      "apps": []
+    },
+    "original": {
+      "url": "https://laser.widen.net/content/jwel87liro/original/bobsCarsAgileExercises.pdf?u=xgdchd&download=true",
+      "html": "<a href=\"https://laser.widen.net/content/jwel87liro/original/bobsCarsAgileExercises.pdf?u=xgdchd&download=true\" target=\"_blank\">bobsCarsAgileExercises.pdf</a>",
+      "share": "https://laser.widen.net/content/jwel87liro/original/bobsCarsAgileExercises.pdf?u=xgdchd&download=true&x.share=t",
+      "apps": []
+    },
+    "templated": {
+      "url": "https://embed.widencdn.net/img/laser/jwel87liro/{size}px@{scale}x/bobsCarsAgileExercises.pdf?q={quality}&x.template=y",
+      "html": null,
+      "share": "https://embed.widencdn.net/img/laser/jwel87liro/{size}px@{scale}x/bobsCarsAgileExercises.pdf?q={quality}&x.template=y",
+      "apps": []
+    }
+  },
+  "expanded": {
+    "asset_properties": true,
+    "embeds": true,
+    "file_properties": true,
+    "metadata": true,
+    "metadata_info": true,
+    "metadata_vocabulary": true,
+    "security": true,
+    "status": false,
+    "thumbnails": true
+  },
+  "_links": {
+    "download": "https://orders-bb.us-east-1.widencdn.net/download-deferred/originals?asset_wrn=wrn%3Aassets%3Aasset%3A36614591%3Ajwel87liro&actor=wrn%3Ausers%3Auser%3A36614591%3Axgdchd&tracking=ewogICJkb19ub3RfdHJhY2siOiBmYWxzZSwKICAiYW5vbnltb3VzIjogZmFsc2UsCiAgInZpc2l0b3JfaWQiOiBudWxsLAogICJ1c2VyX3dybiI6ICJ3aWRlbjp1c2Vyczp1c2VyOkxTUlpaOnhnZGNoZCIKfQ%3D%3D&custom_metadata=ewogICJhcHBfbmFtZSI6ICJheGlvbSIsCiAgImludGVuZGVkX3VzZV9jb2RlIjogbnVsbCwKICAiaW50ZW5kZWRfdXNlX3ZhbHVlIjogbnVsbCwKICAiaW50ZW5kZWRfdXNlX2VtYWlsIjogbnVsbCwKICAiY29sbGVjdGlvbl9pZCI6IG51bGwsCiAgInBvcnRhbF9pZCI6IG51bGwsCiAgImRhbV9vcmRlcl9pZCI6IG51bGwKfQ%3D%3D&Expires=1649214000&Signature=j8d6Xa2n~HF0ZKIpBoxQejfGakO39zzdv5ZmdGEu~mRr0jSESpRFuy47BzYHiDZVtwKi-RGzxY9DJ8C-x5IbGkTH-YuXaikuZTUrxTdcvX7kiup5f7bjGoarcog0BV0qjVGnTNdQ4v9wq1mUqpII0BPKZ0zt3MaFcs~~QG-WFSdmPODWiELoEcxq5flMjU3Fga9Bh9YfE7sXnsTl4cfsAk5jAf3hLg-2duByPoobDFq1Ywq6TaAOnpIxjK7ONQQJZzlZCdy4JfxXHtQq677g4uz-PcfrXMGIIxTTPMbv2V-dZUwtk~Ybq1MK8S450oLj9kF5DfVu32I3o-QLNy1Ovg__&Key-Pair-Id=APKAJM7FVRD2EPOYUXBQ",
+    "self": "https://api.widencollective.com/v2/assets/a56fb261-8ad5-4e0d-8323-0e8a3659ed39",
+    "self_all": "https://api.widencollective.com/v2/assets/a56fb261-8ad5-4e0d-8323-0e8a3659ed39?expand=asset_properties%2Cembeds%2Cfile_properties%2Cmetadata%2Cmetadata_info%2Cmetadata_vocabulary%2Csecurity%2Cthumbnails"
+  }
+}

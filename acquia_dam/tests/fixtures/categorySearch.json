@@ -1,0 +1,65 @@
+{
+  "query": "cat:(Testing)",
+  "sort": "-created_date",
+  "query_explained": "Category: Testing",
+  "sort_explained": "Created date (descending)",
+  "scroll_id": null,
+  "scroll_timeout": null,
+  "query_syntax_ok": true,
+  "include_archived": false,
+  "include_deleted": false,
+  "facets": null,
+  "item_type": "asset",
+  "total_count": 1,
+  "offset": 0,
+  "limit": 100,
+  "items": [
+    {
+      "id": "5a070b29-4aba-4755-915c-e064bc29ceaf",
+      "version_id": "ec2ba9de-3af1-47fe-a726-006c6dcb5920",
+      "current_version": true,
+      "external_id": "mulewusn3n",
+      "filename": "test-file.webm",
+      "created_date": "2024-12-09T09:15:12Z",
+      "last_update_date": "2024-12-09T09:15:12Z",
+      "file_upload_date": "2024-12-09T09:15:12Z",
+      "deleted_date": null,
+      "released_and_not_expired": true,
+      "asset_properties": null,
+      "file_properties": {
+        "format": "WEBM",
+        "format_type": "video",
+        "size_in_kbytes": 1217,
+        "size_in_bytes": 1246806,
+        "image_properties": null,
+        "video_properties": {
+          "width": 3840,
+          "height": 2160,
+          "aspect_ratio": 1.778,
+          "duration": 11.095
+        }
+      },
+      "metadata": null,
+      "metadata_info": null,
+      "security": null,
+      "status": null,
+      "thumbnails": null,
+      "embeds": null,
+      "expanded": {
+        "asset_properties": false,
+        "embeds": false,
+        "file_properties": true,
+        "metadata": false,
+        "metadata_info": false,
+        "metadata_vocabulary": false,
+        "security": false,
+        "thumbnails": false
+      },
+      "_links": {
+        "download": "https://orders-bb.us-east-1.widencdn.net/download-deferred/originals?actor=wrn%3Ausers%3Auser%3A36614591%3A4urtvx&tracking=ewogICJ&Key-Pair-Id=test",
+        "self": "https://api.widencollective.com/v2/assets/5a070b29-4aba-4755-915c-e064bc29ceaf",
+        "self_all": "https://api.widencollective.com/v2/assets/5a070b29-4aba-4755-915c-e064bc29ceaf?expand=asset_properties%2Cembeds%2Cfile_properties%2Cmetadata%2Cmetadata_info%2Cmetadata_vocabulary%2Csecurity%2Cthumbnails"
+      }
+    }
+  ]
+}

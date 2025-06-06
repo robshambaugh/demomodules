@@ -1,0 +1,137 @@
+{
+  "query": "FileType:pdf",
+  "sort": "-created",
+  "query_explained": "File Type: pdf",
+  "sort_explained": "Metadata: created (descending)",
+  "scroll_id": null,
+  "scroll_timeout": null,
+  "query_syntax_ok": true,
+  "include_archived": false,
+  "include_deleted": false,
+  "item_type": "asset",
+  "total_count": 2,
+  "offset": 0,
+  "limit": 10,
+  "items": [
+    {
+      "id": "0324b0b2-5293-4aa0-b0aa-c85b003395e2",
+      "external_id": "8a1ouvfchk",
+      "filename": "Explorer owner's manual.pdf",
+      "created_date": "2021-08-18T11:37:19Z",
+      "last_update_date": "2021-10-26T14:23:20Z",
+      "file_upload_date": "2021-08-18T11:37:19Z",
+      "deleted_date": null,
+      "released_and_not_expired": true,
+      "asset_properties": null,
+      "file_properties": {
+        "format": "PdfDocument",
+        "format_type": "pdf",
+        "size_in_kbytes": 2666,
+        "image_properties": null,
+        "video_properties": null
+      },
+      "metadata": null,
+      "metadata_info": null,
+      "security": null,
+      "status": null,
+      "thumbnails": {
+        "125px": {
+          "url": "https:\/\/previews.us-east-1.widencdn.net\/preview\/36614591\/assets\/asset-view\/56768476-748a-46c1-ad40-ac23f16654ec\/thumbnail\/eyJ3IjoxMjUsImgiOjEyNSwic2NvcGUiOiJhcHAifQ==?Expires=1642179600&Signature=PjQoP-3QE8ZDfPkJ2G-bjSoPvTbJ0i3jiyrx4esqrfyrjql8onep7osAR9x0p7-Gw7pcmy6Ee1BFcx0QZOBBXYPpoHq3LxIdvHlcr0IbI28DQDnEbW~naal3XrzOv4REd3ZWmXh3CNrBOuuhQFmlThj3S5NDO9RbGKWOsvQZ5FwnfVFChu85Ov0qGK5W70~LEnW2l5-kh9JrJdz5otLN6e6ssPUUDSd0j7mjdfg6f2iS1aOwzB3eCmSxOsCbEWUqxFGscnb2O6lsBlWGFn20tshK3tLbhp0DHKkQInWdzFKYo6rLmAaNkd9o5w8aCWAdUpJxIEYwt7P-3ccuOuVwnw__&Key-Pair-Id=APKAJM7FVRD2EPOYUXBQ",
+          "valid_until": "2022-01-14T16:03:07Z"
+        },
+        "160px": {
+          "url": "https:\/\/previews.us-east-1.widencdn.net\/preview\/36614591\/assets\/asset-view\/56768476-748a-46c1-ad40-ac23f16654ec\/thumbnail\/eyJ3IjoxNjAsImgiOjE2MCwic2NvcGUiOiJhcHAifQ==?Expires=1642179600&Signature=ValmZEphcgF1F3esxS0w7U9Ux72dTQo4aY88BEHEgnP2JjKBWf1Aa-YWbrL5XWZVYKn98PlF6t7oTasac94bYgoQCunAjAX8vMzqVTv-~JPeQijYSSJOxghnmCnWUdKfVkkkksfj9gf3EyPH3iHXkk0PJpiRYV3Y-9zr027XahhHnFVBs06X1IyELIttUo1lWWov-j~oUvk2iD5Oyr1TRPGzdHFVJ8fzoVn-8QkN8zqIQhBA3MkJf6KDZKWFNM3gJvBqoxZ2N6O5fQOtE-YjIhoiA8AWkE1jEVUl4fDgFEe56l4UeFxd1jgC-Jdd74lqUBBisi7D~taQ4KgMlmhP5Q__&Key-Pair-Id=APKAJM7FVRD2EPOYUXBQ",
+          "valid_until": "2022-01-14T16:03:07Z"
+        },
+        "2048px": {
+          "url": "https:\/\/previews.us-east-1.widencdn.net\/preview\/36614591\/assets\/asset-view\/56768476-748a-46c1-ad40-ac23f16654ec\/thumbnail\/eyJ3IjoyMDQ4LCJoIjoyMDQ4LCJzY29wZSI6ImFwcCJ9?Expires=1642179600&Signature=ZeiNxulkUuf6h5OXqY6tO9-gI23mbWNWRT3NbYmHs5gGBFwSoBEwy62VpOzUyucOTadYPEREkWhefkli3UJqwglnSMRyZSGqD5HYWLTqUCQw6hI3x7PT4oja8WE595iv29HbXpfnZ8e~v4HI0WrIciDImvv74ZyfbN3Qq0i~V05dVP7xIBdPpr~3f7V77jEgYwTaSU1lWI~E7WxjDQi0HvSKzTqtr6PkapzjddzTqI3Qn-4dx7oJyYrjpjJf4p77kG7uXvM1WnG7cCG1kV8XhvOJ6GsW3IqYsBx9JKIUka7rs7sCiDzNAOnaLHLQLAEw03dwz~IyxX849KP46D14dA__&Key-Pair-Id=APKAJM7FVRD2EPOYUXBQ",
+          "valid_until": "2022-01-14T16:03:07Z"
+        },
+        "300px": {
+          "url": "https:\/\/previews.us-east-1.widencdn.net\/preview\/36614591\/assets\/asset-view\/56768476-748a-46c1-ad40-ac23f16654ec\/thumbnail\/eyJ3IjozMDAsImgiOjMwMCwic2NvcGUiOiJhcHAifQ==?Expires=1642179600&Signature=Y6irwo-ErCKOv5rWNCtosaFBk2p9jJrIqwl0ekC3z4m9-GDUo3SR5afyPzjO8~r9D5Q85uG2FyDEtSPWegYNWA3H0fvmr964xU49egvg3D5KaLzlS4e2ssZlDnKkfBCgw8uZ6n2w9rxJdAzzL9fgt8rN0nPsNmSORYkAJzRLHNmPtJgGs7AFDG~m7ZdIuaOjF~CKa-v0WK8-nSDJk4wcaqI0LVKAmxifXL6xXNnXTkeHdX2YbyYPgXhJN9OLvc4vG4tcJEB2Afo6DeTytsbTsPcPJ7UoucDS1BnvhChjKThCvnOo1TirsFwU7fPj3ZIAw0h1Npd1bmZ-TDAU8AQ0tg__&Key-Pair-Id=APKAJM7FVRD2EPOYUXBQ",
+          "valid_until": "2022-01-14T16:03:07Z"
+        },
+        "600px": {
+          "url": "https:\/\/previews.us-east-1.widencdn.net\/preview\/36614591\/assets\/asset-view\/56768476-748a-46c1-ad40-ac23f16654ec\/thumbnail\/eyJ3Ijo2MDAsImgiOjYwMCwic2NvcGUiOiJhcHAifQ==?Expires=1642179600&Signature=peobnqlWmqVLsGmWjdmAGaTw7PbTZMR0k9JBMoc83u1vtussPsifFEHYYNUORgh1B81Xm7u5sPgD3ZWl9NFNJOSxLWMbgSA72UABsjQ5Tyu5OBm08Vz4PyRGVFD~xiKSB5T7yDky4TsIPlN1aari46srtxolxeQJJqd5YIFF6BAaxtcz~qxkCi8FXB4r4mHLSMjywvLeHukFqleEzlG5NahID769WTQl4JvkYjy0lnwWbZpOxsnxwZNChBv9D-NEDnyWVUxLliYjjK1qSgkmgH15HhHI1CFWG12IHfEldwDi-BjGCqMhcVZfi8Kk2exgI0CobmFX5NKqQS6dWYjuKQ__&Key-Pair-Id=APKAJM7FVRD2EPOYUXBQ",
+          "valid_until": "2022-01-14T16:03:07Z"
+        }
+      },
+      "embeds": null,
+      "expanded": {
+        "asset_properties": false,
+        "embeds": false,
+        "file_properties": true,
+        "metadata": false,
+        "metadata_info": false,
+        "metadata_vocabulary": false,
+        "security": false,
+        "thumbnails": true
+      },
+      "_links": {
+        "download": "https:\/\/orders-bb.us-east-1.widencdn.net\/download-deferred\/originals?asset_wrn=widen%3Aassets%3Aasset%3ALSRZZ%3A8a1ouvfchk&actor=wrn%3Ausers%3Auser%3A36614591%3Amzlh39&tracking=ewogICJkb19ub3RfdHJhY2siOiBmYWxzZSwKICAiYW5vbnltb3VzIjogZmFsc2UsCiAgInZpc2l0b3JfaWQiOiBudWxsLAogICJ1c2VyX3dybiI6ICJ3aWRlbjp1c2Vyczp1c2VyOkxTUlpaOm16bGgzOSIKfQ%3D%3D&custom_metadata=ewogICJhcHBfbmFtZSI6ICJsZW5zIiwKICAiaW50ZW5kZWRfdXNlX2NvZGUiOiBudWxsLAogICJpbnRlbmRlZF91c2VfdmFsdWUiOiBudWxsLAogICJpbnRlbmRlZF91c2VfZW1haWwiOiBudWxsLAogICJjb2xsZWN0aW9uX2lkIjogbnVsbCwKICAicG9ydGFsX2lkIjogbnVsbCwKICAiZGFtX29yZGVyX2lkIjogbnVsbAp9&Expires=1642136400&Signature=Azi9f00-nwNAlxBaOrDjOIf62NJnoTuxa8tl6OECzHokIg-0hlYuc3zyROYPJ5PfuJtb0s152Zl3cmCo4qvaM--FLFdyjU7v0ABA~cxHr~e8RD-AZ3Cm~0D0d-lNB55W5PpUgnRmUALpsG4h5zkewPCL-4f55cuwMNJ5nPIUOK6uHHsfZ0AggavGBw6x~mbLACmX~fKHcj1J9w5zGdx4rgxUBDSGWZ1SdLxeZb96V63A3Se49ETF0CSHFQIiHLdyiesDhr8vzvp-GdUsT1M3k4LJd71mOA4sA-0y4Vv1DHWIJmVAmtgOntuy-3eeRhIco--BP5rxPKbYKi~xPR1a3Q__&Key-Pair-Id=APKAJM7FVRD2EPOYUXBQ",
+        "self": "https:\/\/api.widencollective.com\/v2\/assets\/0324b0b2-5293-4aa0-b0aa-c85b003395e2",
+        "self_all": "https:\/\/api.widencollective.com\/v2\/assets\/0324b0b2-5293-4aa0-b0aa-c85b003395e2?expand=asset_properties%2Cembeds%2Cfile_properties%2Cmetadata%2Cmetadata_info%2Cmetadata_vocabulary%2Csecurity%2Cthumbnails"
+      }
+    },
+    {
+      "id": "a56fb261-8ad5-4e0d-8323-0e8a3659ed39",
+      "external_id": "jwel87liro",
+      "filename": "bobsCarsAgileExercises.md",
+      "created_date": "2021-08-21T13:56:50Z",
+      "last_update_date": "2021-08-21T13:58:45Z",
+      "file_upload_date": "2021-08-21T13:58:45Z",
+      "deleted_date": null,
+      "released_and_not_expired": true,
+      "asset_properties": null,
+      "file_properties": {
+        "format": "PdfDocument",
+        "format_type": "pdf",
+        "size_in_kbytes": 43,
+        "image_properties": null,
+        "video_properties": null
+      },
+      "metadata": null,
+      "metadata_info": null,
+      "security": null,
+      "status": null,
+      "thumbnails": {
+        "125px": {
+          "url": "https:\/\/previews.us-east-1.widencdn.net\/preview\/36614591\/assets\/asset-view\/5de5419a-05d7-46c0-9171-f1dface11acb\/thumbnail\/eyJ3IjoxMjUsImgiOjEyNSwic2NvcGUiOiJhcHAifQ==?Expires=1642179600&Signature=TjPjVcVJWfSleMDtXRCaZVcmvKP63QHtZf0X9vSQQW3UW2GPuFqtofZd3ERR8MjUvZeYF-yLA9~02SeGlp~bFKHwVR4YpfuRsjNoYXtDnYC3Cx3IaKsg~JmByLXttPL9Fv~9hSvgNpAPw9T-i~I7kQS3ezZp~Jprqw7DkieUmJ28Heh~MblwlPzUwDkJkXmTTaKNqPAu-MyuLVz7JMWhC33ZH5FHFG8Wn2SqwaFHAfo-egIuW~b9WiucySEaUw8gAOsXUMgu6Hdwb8INRBTMocFKrdLgpPKlNS2yVVIXbuRT-~F5v03oUQICE~vtGUR4nuKwT2pdPVsABdC359oWMQ__&Key-Pair-Id=APKAJM7FVRD2EPOYUXBQ",
+          "valid_until": "2022-01-14T16:03:07Z"
+        },
+        "160px": {
+          "url": "https:\/\/previews.us-east-1.widencdn.net\/preview\/36614591\/assets\/asset-view\/5de5419a-05d7-46c0-9171-f1dface11acb\/thumbnail\/eyJ3IjoxNjAsImgiOjE2MCwic2NvcGUiOiJhcHAifQ==?Expires=1642179600&Signature=nMJmBtDLH8QC17BiE15BBhZvGv1izrJkhKSQW5zMkrdUxMYD2cTXMVPtOwCgL3sgO1asmpms6Bz~1I8gk3NbNSeXfczVsfZNmj0RWz1xVDbo00DM7Y005w6KJYjWu5Vs3jiD62fTRdAbabxDadvthBk56sxkmOS6A1JVNLZfWa8Gcy9aSDMKn1OKAiAWRim~GBM2lqUId5KqG3pVY8~UMMiYmP0jPN~Qbf~uOtY4s6b3gcXZH4L3RWdYWBCi8DeXwUCM60eabO0K2PeCxXKctxjJ0NjwAetL8L-SWT6liWBs~pdna4LgLpPSb1-S5lWLosbo2XxeS-petOabCvWCdA__&Key-Pair-Id=APKAJM7FVRD2EPOYUXBQ",
+          "valid_until": "2022-01-14T16:03:07Z"
+        },
+        "2048px": {
+          "url": "https:\/\/previews.us-east-1.widencdn.net\/preview\/36614591\/assets\/asset-view\/5de5419a-05d7-46c0-9171-f1dface11acb\/thumbnail\/eyJ3IjoyMDQ4LCJoIjoyMDQ4LCJzY29wZSI6ImFwcCJ9?Expires=1642179600&Signature=aHXaEn81JDqk1aHK2pR8DomrwVjVjsYctUFIOcd97KaoPJICzynwSivXkIMlGPr1tDf0uaIiBHYljdB4NAx5ckEeyg~TthDV-0ncibr28ND0eOMcaXm0fqb~T2ePwq~55BqrEyNP8ooylB617uFB528bqeiNj42rWwdkpGZSCF7GkqlFXSoTibwiClDF01QNrKKQ4ju-YsXmoV6~OD~H1FTaLcSjh412xLqZOpCTzq4RSaSgeFisRrXDHyn30N30UqVmM0shWGkzPH9hvxuyqVmCOHVzJgv-XTLEApfxRxbzM4eKDEnRIbCyUTcFRXOZR1xGfxEfhoqCHbq057hrXQ__&Key-Pair-Id=APKAJM7FVRD2EPOYUXBQ",
+          "valid_until": "2022-01-14T16:03:07Z"
+        },
+        "300px": {
+          "url": "https:\/\/previews.us-east-1.widencdn.net\/preview\/36614591\/assets\/asset-view\/5de5419a-05d7-46c0-9171-f1dface11acb\/thumbnail\/eyJ3IjozMDAsImgiOjMwMCwic2NvcGUiOiJhcHAifQ==?Expires=1642179600&Signature=VacPWNexvVbrwwBfUpwNcLafbQlo~qA96oA7wEuUgMRNO-nyiT5vo9O8p4PO2yTJW6zASt-AuS6fgMWspIIoZ4BR655VDmlqK6QOXp5JJB0YFBdQU-a6KefEEuEd~alhPjjFYX6NPs5k3xGkm8CuNQgDwVhHY9WQY11piL7S92cC4TMUwCftQyZAKKaZwm-6~WBAMhh8Nwhlt-sSjDXUu-YOjTqCduvxnzzwZ8Ux-8xCvzeObY9U3dXPHffl7JMemcmw609rCWXrLNwYHiWU5-a8Gy-J8~EZIJW181ZtixcYMOmUo9imDYl1dvzIyToJOEnzaI6M1gDiuJO0QH7XtQ__&Key-Pair-Id=APKAJM7FVRD2EPOYUXBQ",
+          "valid_until": "2022-01-14T16:03:07Z"
+        },
+        "600px": {
+          "url": "https:\/\/previews.us-east-1.widencdn.net\/preview\/36614591\/assets\/asset-view\/5de5419a-05d7-46c0-9171-f1dface11acb\/thumbnail\/eyJ3Ijo2MDAsImgiOjYwMCwic2NvcGUiOiJhcHAifQ==?Expires=1642179600&Signature=us~uMe0vwrWAG4BKdX3HU~EWycF0s~3IJS1vzkKteLehSKhaAIv7P~o~Hq2Bae5IbDJWSJV-NM10D5x-ELFXXxE1vL0PgMadP8gfdHjRZIQQA5rivfaKpAn1sYaPKa3Wt6ONlSAl01Q21TGyJCMVuAM4qpq1ztMzJaQVX5ULHim7kiI~YsItb3Cx6c95DgDg~KMDrdhScW-h2tvWxz-Q4NKSM9~RYpyH-utMjtdmsUenbgYort~kMhPmv9jBBQZTLdqFbvuGxaiv~BqvxqpkVUT3c3iIzW~Iwf53ELz8eCmRg02SHI5ZOwXYza0dEKVzeYdXinFQV57JVQVhhqsa1w__&Key-Pair-Id=APKAJM7FVRD2EPOYUXBQ",
+          "valid_until": "2022-01-14T16:03:07Z"
+        }
+      },
+      "embeds": null,
+      "expanded": {
+        "asset_properties": false,
+        "embeds": false,
+        "file_properties": true,
+        "metadata": false,
+        "metadata_info": false,
+        "metadata_vocabulary": false,
+        "security": false,
+        "thumbnails": true
+      },
+      "_links": {
+        "download": "https:\/\/orders-bb.us-east-1.widencdn.net\/download-deferred\/originals?asset_wrn=widen%3Aassets%3Aasset%3ALSRZZ%3Ajwel87liro&actor=wrn%3Ausers%3Auser%3A36614591%3Amzlh39&tracking=ewogICJkb19ub3RfdHJhY2siOiBmYWxzZSwKICAiYW5vbnltb3VzIjogZmFsc2UsCiAgInZpc2l0b3JfaWQiOiBudWxsLAogICJ1c2VyX3dybiI6ICJ3aWRlbjp1c2Vyczp1c2VyOkxTUlpaOm16bGgzOSIKfQ%3D%3D&custom_metadata=ewogICJhcHBfbmFtZSI6ICJsZW5zIiwKICAiaW50ZW5kZWRfdXNlX2NvZGUiOiBudWxsLAogICJpbnRlbmRlZF91c2VfdmFsdWUiOiBudWxsLAogICJpbnRlbmRlZF91c2VfZW1haWwiOiBudWxsLAogICJjb2xsZWN0aW9uX2lkIjogbnVsbCwKICAicG9ydGFsX2lkIjogbnVsbCwKICAiZGFtX29yZGVyX2lkIjogbnVsbAp9&Expires=1642136400&Signature=hUM4jt1yTABXIk9G57ncqrfPvRZPysIdUd-8npqpxfmNoyK8laDcvsrLAHPakEkH8Z9-i2wjDrWpIEgVf6QDmn1K9m-BZaQp64jsX0cVlG7WOWEymsmL8fAADHWNUk1UGwh8TyEVXfEUI3mrpDH9jsXUjLHImkyp~59SNzSId0KaETbrPztJFR25ctrxYTUcBnWo5LwB4KMuU8RoI5k8SkMJqYkQF5qzUCw8Nq9hy6fX68l7rerHRHg6Ixj3w4HtxuGb9aDyjm1WZMUyzs7mhWfkFxZpzqX0oc61IjV0O7vHKSY9K9ujpJ9tvAaFDdJl1PHwvoUGCj23U6c9FH1tSQ__&Key-Pair-Id=APKAJM7FVRD2EPOYUXBQ",
+        "self": "https:\/\/api.widencollective.com\/v2\/assets\/a56fb261-8ad5-4e0d-8323-0e8a3659ed39",
+        "self_all": "https:\/\/api.widencollective.com\/v2\/assets\/a56fb261-8ad5-4e0d-8323-0e8a3659ed39?expand=asset_properties%2Cembeds%2Cfile_properties%2Cmetadata%2Cmetadata_info%2Cmetadata_vocabulary%2Csecurity%2Cthumbnails"
+      }
+    }
+  ]
+}

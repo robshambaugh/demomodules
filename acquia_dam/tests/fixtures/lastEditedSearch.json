@@ -1,0 +1,50 @@
+{
+  "query": "lastEditDate:[after 06/07/2022]",
+  "sort": "-created_date",
+  "query_explained": "Last Edit Date: is after 06/07/2022",
+  "sort_explained": "Created date (descending)",
+  "scroll_id": null,
+  "scroll_timeout": null,
+  "query_syntax_ok": true,
+  "include_archived": false,
+  "include_deleted": false,
+  "item_type": "asset",
+  "total_count": 1,
+  "offset": 0,
+  "limit": 10,
+  "items": [
+    {
+      "id": "56ff14de-02cd-41b5-9a73-c917eab19abf",
+      "external_id": "iy7lrdercp",
+      "filename": "mac_background.JPG",
+      "created_date": "2022-05-23T14:27:08Z",
+      "last_update_date": "2022-06-07T11:32:59Z",
+      "file_upload_date": "2022-06-07T11:32:59Z",
+      "deleted_date": null,
+      "released_and_not_expired": true,
+      "asset_properties": null,
+      "file_properties": null,
+      "metadata": null,
+      "metadata_info": null,
+      "security": null,
+      "status": null,
+      "thumbnails": null,
+      "embeds": null,
+      "expanded": {
+        "asset_properties": false,
+        "embeds": false,
+        "file_properties": false,
+        "metadata": false,
+        "metadata_info": false,
+        "metadata_vocabulary": false,
+        "security": false,
+        "thumbnails": false
+      },
+      "_links": {
+        "download": "https://orders-bb.us-east-1.widencdn.net/download-deferred/originals?asset_wrn=wrn%3Aassets%3Aasset%3A36614591%3Aiy7lrdercp&actor=wrn%3Ausers%3Auser%3A36614591%3Amzlh39&tracking=ewogICJkb19ub3RfdHJhY2siOiBmYWxzZSwKICAiYW5vbnltb3VzIjogZmFsc2UsCiAgInZpc2l0b3JfaWQiOiBudWxsLAogICJ1c2VyX3dybiI6ICJ3aWRlbjp1c2Vyczp1c2VyOkxTUlpaOm16bGgzOSIKfQ%3D%3D&custom_metadata=ewogICJhcHBfbmFtZSI6ICJsZW5zIiwKICAiaW50ZW5kZWRfdXNlX2NvZGUiOiBudWxsLAogICJpbnRlbmRlZF91c2VfdmFsdWUiOiBudWxsLAogICJpbnRlbmRlZF91c2VfZW1haWwiOiBudWxsLAogICJjb2xsZWN0aW9uX2lkIjogbnVsbCwKICAicG9ydGFsX2lkIjogbnVsbCwKICAiZGFtX29yZGVyX2lkIjogbnVsbAp9&Expires=1654650000&Signature=ogi4B5pEVSyjnuXnBrghcd-RvPMCLJ6UVpOCykbJMcp5wkEGEcebbc0Fb5EvlEm-aqf1iHVPGWfwlKkw9HtgWesZ41VW1h5H2KwSlTWrCPpninczgc9YiCXqXQJYw5LKBGdUZ9mUO3QyOR3xvy76ExrtMm7IijmLjGfrBmYwN-AYcr9YcZIwWtAJ1moOqsM9eRfv9JndFshWLXKxoxxqoBDFleCPfhMR-S0I7U0zw3lM5axS1urBSw3~rAZsjk978bObL97K3kvsW~vMhi3IkmWYyAtKblfU7aEu0w~UiOd9xvl9p09FNYfuQisXkfxLmSCSF8dVi4t7RznFcunVnw__&Key-Pair-Id=APKAJM7FVRD2EPOYUXBQ",
+        "self": "https://api.widencollective.com/v2/assets/2f44bb82-2ac3-476c-a905-44dfd2502698",
+        "self_all": "https://api.widencollective.com/v2/assets/2f44bb82-2ac3-476c-a905-44dfd2502698?expand=asset_properties%2Cembeds%2Cfile_properties%2Cmetadata%2Cmetadata_info%2Cmetadata_vocabulary%2Csecurity%2Cthumbnails"
+      }
+    }
+  ]
+}

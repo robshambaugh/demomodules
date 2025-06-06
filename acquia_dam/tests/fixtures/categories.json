@@ -1,0 +1,18 @@
+{
+  "item_type": "category",
+  "total_count": 13,
+  "items": [
+    {
+      "id": "42d56a37-2003-4a3e-a75c-769ffb2407c5",
+      "name": "Testing",
+      "path": "Testing",
+      "parts": [
+        "Testing"
+      ],
+      "_links": {
+        "assets": "https://api.widencollective.com/v2/assets/search?query_category=Testing",
+        "categories": "https://api.widencollective.com/v2/categories/Testing"
+      }
+    }
+  ]
+}

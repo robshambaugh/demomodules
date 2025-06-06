@@ -1,0 +1,22 @@
+{
+  "fields": [
+    {
+      "display_key": "assettype",
+      "display_name": "Asset Type",
+      "field_type": "selection_list",
+      "metadata_types": [
+        "DAM assets",
+        "Laser Metadata Type"
+      ]
+    },
+    {
+      "display_key": "containsFnords",
+      "display_name": "Contains Fnords",
+      "field_type": "selection_list",
+      "metadata_types": [
+        "DAM assets",
+        "Laser Metadata Type"
+      ]
+    }
+  ]
+}

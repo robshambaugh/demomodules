@@ -1,0 +1,104 @@
+acquia_dam.settings:
+  type: config_object
+  label: 'Acquia DAM settings'
+  mapping:
+    domain:
+      type: string
+      label: 'Acquia DAM domain'
+    auth_type:
+      type: string
+      label: 'Acquia DAM authentication type'
+    client_id:
+      type: string
+      label: 'DAM Client id.'
+    client_secret:
+      type: string
+      label: 'DAM Client secret.'
+    allowed_image_styles:
+      type: sequence
+      label: 'Allowed image styles for rendering image assets'
+      sequence:
+        type: string
+        label: 'Image style machine name'
+    allowed_metadata:
+      type: sequence
+      label: 'List of metadata allowed to be mapped by media types'
+      sequence:
+        type: string
+        label: 'Metadata name'
+    asset_file_directory_path:
+      type: string
+      label: 'Name of the directory where locally downloaded files will be stored. Tokens are allowed. Relative to the default filesystem scheme of Drupal.'
+
+media.source.acquia_dam_asset:*:
+  type: media.source.field_aware
+  label: 'Acquia DAM asset media source configuration'
+  mapping:
+    download_assets:
+      type: boolean
+      label: 'Download and Sync Assets'
+
+field.formatter.settings.acquia_dam_thumbnail:
+  type: mapping
+  label: 'Thumbnail format settings'
+  mapping:
+    thumbnail_size:
+      type: string
+      label: 'Size of the thumbnail to be taken in from the Assets'
+
+views.filter.asset_metadata_string:
+  type: views.filter.string
+  label: 'Metadata: Text data'
+  mapping:
+    display_key:
+      type: string
+      label: 'Metadata field'
+
+field.formatter.settings.embed_style:
+  type: mapping
+  label: 'Asset reference field display format settings'
+  mapping:
+    embed_style:
+      type: string
+      label: 'Embed style'
+views.filter.asset_metadata_in_operator:
+  type: views.filter.in_operator
+  label: 'Metadata: Selection list'
+  mapping:
+    display_key:
+      type: string
+      label: 'Metadata field'
+    filter_operation:
+      type: string
+      label: 'Filter operation'
+field.formatter.settings.acquia_dam_embed_code:
+  type: mapping
+  label: 'Embed code display format settings'
+  mapping:
+    embed_style:
+      type: string
+      label: 'Embed code format'
+    thumbnail_width:
+      type: integer
+      label: 'Width of the asset thumbnail'
+field.widget.settings.entity_reference_revisions_asset_media_library:
+  type: mapping
+  label: 'Media library widget settings'
+  mapping:
+    media_types:
+      type: sequence
+      label: 'Allowed media types, in display order'
+      sequence:
+        type: string
+        label: 'Media type ID'
+field.formatter.settings.acquia_dam_responsive_image:
+  type: mapping
+  label: 'Acquia DAM Responsive image list format settings'
+  mapping:
+    responsive_image_style:
+      type: string
+      label: 'Responsive image style'
+
+action.configuration.asset_update_check_action:
+  type: action_configuration_default
+  label: 'Asset update check configuration'

@@ -1,0 +1,26 @@
+{
+  "item_type": "assetgroup",
+  "total_count": 5,
+  "items": [
+    {
+      "uuid": "699f249d-d52d-404c-b037-3382011b9e4d",
+      "name": "Admin Only Assets"
+    },
+    {
+      "uuid": "a23e5fa4-a565-499a-ac15-9b70ee411a0b",
+      "name": "For Review Assets"
+    },
+    {
+      "uuid": "fe6d1d4d-3425-4d02-bbf8-067baabb1bb2",
+      "name": "Public Assets"
+    },
+    {
+      "uuid": "6d692fd9-dbb3-4091-b392-ca0678e032a1",
+      "name": "Restricted Assets"
+    },
+    {
+      "uuid": "eae2014b-4264-486d-b59b-5ed126cb34c2",
+      "name": "WidenQA"
+    }
+  ]
+}

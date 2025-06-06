@@ -1,0 +1,141 @@
+<?php
+
+/**
+ * @file
+ * Non-namespaced code of the Acquia DAM Bulk Import sub-module.
+ */
+
+declare(strict_types=1);
+
+use Drupal\Core\Link;
+use Drupal\Core\Url;
+
+/**
+ * Implements hook_uninstall().
+ */
+function acquiadam_asset_import_uninstall() {
+  // Erase traces from State API.
+  // @todo is it used for anything?
+  \Drupal::state()->delete('acquia_dam_bulk_import.migration_notice_displayed');
+
+  // Erase the yet unprocessed items from the queue.
+  // @see core/modules/update/update.install::update_uninstall()
+  $queue = \Drupal::queue('acquia_dam_asset_import');
+  $queue->deleteQueue();
+}
+
+/**
+ * DB update hook #8110.
+ *
+ * Convert configuration of the contrib `acquiadam_asset_import` module for the
+ * `acquia_dam` module.
+ */
+function acquiadam_asset_import_update_8110() {
+  $config_factory = \Drupal::configFactory();
+  $logger_channel = \Drupal::service('logger.channel.acquia_dam');
+  $old_config_id = 'acquiadam_asset_import.config';
+
+  // Check availability as \Drupal::service('config.storage.active')
+  // ->exists($old_config_id) does not seem to work.
+  if (empty($config_factory->listAll($old_config_id))) {
+    $output_message = t('No existing configuration of the contrib <code>acquiadam_asset_import</code> module was found to convert for Acquia DAM.');
+    $logger_channel->info($output_message);
+
+    return $output_message;
+  }
+
+  $old_config = $config_factory->getEditable($old_config_id);
+  $old_categories = $old_config->get('categories');
+
+  // Bail out if no categories are defined.
+  if (!$old_categories) {
+    $output_message = t('No source categories were found listed in the configuration of the contrib <code>acquiadam_asset_import</code> module to import from.');
+    $logger_channel->info($output_message);
+
+    return $output_message;
+  }
+
+  $old_categories = array_filter(explode("\r\n", $old_categories));
+
+  // Ensure our Client is allowed to call home.
+  if (!\Drupal::service('acquia_dam.authentication_service')->isSiteAuthenticated()) {
+    $error_message = 'Querying available categories failed as the website seems unauthenticated at the remote Widen system. When authenticated, run database updates again to retry the bulk import settings conversion.';
+    $config_page_link = new Link(t('Authenticate'), Url::fromRoute('acquia_dam.config'));
+    $logger_channel->info($error_message, ['link' => $config_page_link->toString()]);
+
+    throw new \Exception($error_message);
+  }
+
+  $new_config = $config_factory->getEditable('acquiadam_asset_import.settings');
+  $new_categories = $new_config->get('categories') ?? [];
+  $skipped_categories = $migrated_categories = [];
+
+  // Convert all human labels into UUID, and check their validity.
+  foreach ($old_categories as $category_name) {
+    $category_uuid = \Drupal::service('acquia_dam.client.factory')->getSiteClient()->convertCategoryNameToUuid($category_name);
+
+    // Don't overwrite categories already existing in module settings or found
+    // non-existent.
+    if (isset($new_categories[$category_uuid]) || !$category_uuid) {
+      $skipped_categories[] = $category_name;
+      continue;
+    }
+
+    $new_categories[$category_uuid] = [];
+    $migrated_categories[] = $category_name;
+  }
+
+  $new_config->set('categories', $new_categories);
+  $new_config->save();
+
+  // As in the switchover guide we suggest our to delete the source community
+  // module without uninstalling it from Drupal (to reserve its existing config
+  // for later reading), therefore we became responsible for do its garbage
+  // cleaning.
+  \Drupal::queue('dam_worker')->deleteQueue();
+  $old_config->delete();
+
+  $bulk_import_page_link = new Link(t('Review settings'), Url::fromRoute('acquiadam_asset_import.configuration'));
+  $string_translation = \Drupal::translation();
+  $output_message = '';
+
+  if (is_array($skipped_categories) && count($skipped_categories) > 0) {
+    $skipped_message = $string_translation->formatPlural(
+      count($skipped_categories),
+      'One category was either unavailable in Acquia DAM or already on the bulk import list: %category_names.',
+      '@count categories were either unavailable in Acquia DAM or already on the bulk import list: %category_names.',
+      ['%category_names' => implode(', ', $skipped_categories)]
+    );
+    $logger_channel->info($skipped_message, ['link' => $bulk_import_page_link->toString()]);
+    $output_message = PHP_EOL . $skipped_message;
+  }
+
+  if (is_array($migrated_categories) && count($migrated_categories) > 0) {
+    $migrated_message = $string_translation->formatPlural(
+      count($migrated_categories),
+      'One category was added to the bulk import list: %category_names.',
+      '@count categories were added to the bulk import list: %category_names.',
+      ['%category_names' => implode(', ', $migrated_categories)]
+    );
+    $logger_channel->info($migrated_message, ['link' => $bulk_import_page_link->toString()]);
+    $output_message .= PHP_EOL . $migrated_message;
+  }
+
+  if (!empty($output_message)) {
+    return $output_message;
+  }
+
+}
+
+/**
+ * DB update hook #8111.
+ *
+ * Create a new asset_groups config key.
+ */
+function acquiadam_asset_import_update_8111() {
+  $config = \Drupal::configFactory()->getEditable('acquiadam_asset_import.settings');
+
+  if ($config->get('asset_groups') == NULL) {
+    $config->set('asset_groups', [])->save();
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "asset_id": "efb03f75-3c42-497b-baa9-5ec79d1f56af",
+  "item_type": "asset_version",
+  "items": [
+    {
+      "_links": {
+        "version_details": "https://api.widencollective.com/v2/assets/efb03f75-3c42-497b-baa9-5ec79d1f56af/versions/04984534-8682-4fbf-95ae-f3c7b46af9ee"
+      },
+      "current_version": true,
+      "filename": "SD-Social Promo.mp4",
+      "id": "04984534-8682-4fbf-95ae-f3c7b46af9ee",
+      "version_number": 1
+    },
+    {
+      "_links": {
+        "version_details": "https://api.widencollective.com/v2/assets/efb03f75-3c42-497b-baa9-5ec79d1f56af/versions/6d8ff607-723a-474f-992a-38833a57f97b"
+      },
+      "current_version": false,
+      "filename": "SD-Social Promo.mp4",
+      "id": "6d8ff607-723a-474f-992a-38833a57f97b",
+      "version_number": 2
+    }
+  ],
+  "total_count": 2
+}

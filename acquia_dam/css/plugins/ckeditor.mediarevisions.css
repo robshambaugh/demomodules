@@ -1,0 +1,9 @@
+.media-library-item__version {
+  margin-left: 0.5em;
+  padding: 0.25em 0.5em;
+  color: #ce2727;
+  border: 2px solid #ce2727;
+  border-radius: 0.25em;
+  background: #fff;
+  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}

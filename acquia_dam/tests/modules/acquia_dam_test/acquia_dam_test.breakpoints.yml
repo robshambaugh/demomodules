@@ -1,0 +1,24 @@
+acquia_dam_test.sm:
+  label: Small
+  mediaQuery: 'all and (min-width: 500px)'
+  weight: 0
+  multipliers:
+    - 1x
+acquia_dam_test.md:
+  label: Medium
+  mediaQuery: 'all and (min-width: 700px)'
+  weight: 1
+  multipliers:
+    - 1x
+acquia_dam_test.lg:
+  label: Large
+  mediaQuery: 'all and (min-width: 1000px)'
+  weight: 2
+  multipliers:
+    - 1x
+acquia_dam_test.xl:
+  label: X-Large
+  mediaQuery: 'all and (min-width: 1300px)'
+  weight: 3
+  multipliers:
+    - 1x

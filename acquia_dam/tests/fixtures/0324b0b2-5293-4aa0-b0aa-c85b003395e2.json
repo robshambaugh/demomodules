@@ -1,0 +1,254 @@
+{
+  "id": "0324b0b2-5293-4aa0-b0aa-c85b003395e2",
+  "external_id": "8a1ouvfchk",
+  "filename": "Explorer owner's manual.pdf",
+  "created_date": "2021-08-18T11:37:19Z",
+  "last_update_date": "2021-10-26T14:23:20Z",
+  "file_upload_date": "2021-08-18T11:37:19Z",
+  "deleted_date": null,
+  "released_and_not_expired": true,
+  "asset_properties": {
+    "favorite": false,
+    "popularity": 0,
+    "cutline_caption": ""
+  },
+  "file_properties": {
+    "format": "PdfDocument",
+    "format_type": "pdf",
+    "size_in_kbytes": 2666,
+    "image_properties": null,
+    "video_properties": null
+  },
+  "metadata": {
+    "fields": {
+      "assettype": [
+        "Other"
+      ],
+      "author": [],
+      "captionAbstract": [],
+      "colorspace": [],
+      "containsFnords": [],
+      "dateCreated": [],
+      "description": [
+        "Owners manual for all Explorer Bicycles, Clorox. Shaboopie"
+      ],
+      "keywords": [],
+      "usagerightdetails": [],
+      "usagerights": [],
+      "vincent": []
+    }
+  },
+  "metadata_info": {
+    "field_set": "Laser Metadata Type",
+    "field_set_fields": [
+      {
+        "key": "assettype",
+        "label": "Asset Type",
+        "type": "selection_list",
+        "field_type": "selection_list",
+        "controlled_vocabulary": true,
+        "required": false,
+        "editable": true,
+        "vocabulary": [
+          "Document",
+          "Graphic",
+          "Image",
+          "Other",
+          "Video"
+        ]
+      },
+      {
+        "key": "author",
+        "label": "Author",
+        "type": "text",
+        "field_type": "text",
+        "controlled_vocabulary": false,
+        "required": false,
+        "editable": true,
+        "vocabulary": null
+      },
+      {
+        "key": "captionAbstract",
+        "label": "Caption/Abstract",
+        "type": "text",
+        "field_type": "text",
+        "controlled_vocabulary": false,
+        "required": false,
+        "editable": true,
+        "vocabulary": null
+      },
+      {
+        "key": "colorspace",
+        "label": "Colorspace",
+        "type": "text",
+        "field_type": "text",
+        "controlled_vocabulary": false,
+        "required": false,
+        "editable": true,
+        "vocabulary": null
+      },
+      {
+        "key": "containsFnords",
+        "label": "Contains Fnords",
+        "type": "selection_list",
+        "field_type": "selection_list",
+        "controlled_vocabulary": true,
+        "required": false,
+        "editable": true,
+        "vocabulary": [
+          "Yes",
+          "No"
+        ]
+      },
+      {
+        "key": "dateCreated",
+        "label": "Date Created",
+        "type": "date",
+        "field_type": "date",
+        "controlled_vocabulary": false,
+        "required": false,
+        "editable": true,
+        "vocabulary": null
+      },
+      {
+        "key": "description",
+        "label": "Description",
+        "type": "text_multi_line",
+        "field_type": "text_multi_line",
+        "controlled_vocabulary": false,
+        "required": false,
+        "editable": true,
+        "vocabulary": null
+      },
+      {
+        "key": "keywords",
+        "label": "Keywords",
+        "type": "text",
+        "field_type": "text",
+        "controlled_vocabulary": false,
+        "required": false,
+        "editable": true,
+        "vocabulary": null
+      },
+      {
+        "key": "usagerightdetails",
+        "label": "Usage Rights Details",
+        "type": "text_multi_line",
+        "field_type": "text_multi_line",
+        "controlled_vocabulary": false,
+        "required": false,
+        "editable": true,
+        "vocabulary": null
+      },
+      {
+        "key": "usagerights",
+        "label": "Usage Rights",
+        "type": "selection_list",
+        "field_type": "selection_list",
+        "controlled_vocabulary": true,
+        "required": false,
+        "editable": true,
+        "vocabulary": [
+          "No",
+          "Yes",
+          "Another value"
+        ]
+      },
+      {
+        "key": "vincent",
+        "label": "Vincent",
+        "type": "text",
+        "field_type": "text",
+        "controlled_vocabulary": false,
+        "required": false,
+        "editable": true,
+        "vocabulary": null
+      }
+    ]
+  },
+  "security": {
+    "expiration_date": "2034-08-18T11:37:19Z",
+    "release_date": "2021-08-18T11:37:19Z",
+    "asset_groups": [
+      "Demo Assets",
+      "public"
+    ]
+  },
+  "status": null,
+  "thumbnails": {
+    "125px": {
+      "url": "https://previews.us-east-1.widencdn.net/preview/36614591/assets/asset-view/56768476-748a-46c1-ad40-ac23f16654ec/thumbnail/eyJ3IjoxMjUsImgiOjEyNSwic2NvcGUiOiJhcHAifQ==?Expires=1642798800&Signature=jJ-Eligtpn3SylpWPAyYKXrv4LOvHQDKi39CCITrggrHB2Rq7px9P5N6GAKwu4QHQW-7gXxPhUIZcXY~6DldBhNQrH0zy6zg2DQZjxzR6e90pdUCjKPPEeTUgN6tptwj4~QrFXRdiamejETLijk7383zl6dphpsosr9rDd-LIVlXyD7j1IQw0tb1nti9lNtftfK~oWrybk2gIXi2Jyx187znTeF7daa0EdMQ5SDNX73~Adn3y~CAFgGVaj3CpVYtrrGhsJiR6mO-B5BzUaMiTQ3uVghwWPp8yoiUJUfqUeiWhc4Bg2Vu4CCsC~bRjzcd04Z6KXwJYKlKR50-HLGKiA__&Key-Pair-Id=APKAJM7FVRD2EPOYUXBQ",
+      "valid_until": "2022-01-21T20:48:01Z"
+    },
+    "160px": {
+      "url": "https://previews.us-east-1.widencdn.net/preview/36614591/assets/asset-view/56768476-748a-46c1-ad40-ac23f16654ec/thumbnail/eyJ3IjoxNjAsImgiOjE2MCwic2NvcGUiOiJhcHAifQ==?Expires=1642798800&Signature=PKqm~wBsBNpz1ko1dmSEaQBMQMC3HADiIaSrCwpYU3TH2uetJBs44F4pPfhA4tl380SpmfW3QlfqVm~0XJQKldw3H58N9U9FxyxstBy0nuNqsi9WZ67TsIcA0q9t-h8OULk~WDHxytAzdPS9SZXWNodeOmw14NHAzqTNRkkzcFhQPrDja46CEiHHZ3hoOpXBFCe31cjFORVML3MwqvF2vYmHhDWQHf1-PBCTkx~AD~wveZkiLf-weNjfwXIWZBWfxZPaO8tiNO3JDaA3oX3GvDeZjs1g4F8Bo9Kl-zpBfgbdPMBrICyWWIa2T75xTyTKRH6suxGE5hWMB4fcTAT8vQ__&Key-Pair-Id=APKAJM7FVRD2EPOYUXBQ",
+      "valid_until": "2022-01-21T20:48:01Z"
+    },
+    "2048px": {
+      "url": "https://previews.us-east-1.widencdn.net/preview/36614591/assets/asset-view/56768476-748a-46c1-ad40-ac23f16654ec/thumbnail/eyJ3IjoyMDQ4LCJoIjoyMDQ4LCJzY29wZSI6ImFwcCJ9?Expires=1642798800&Signature=nhHrfWv82gAlDaByRY6H74yKju4FR0bXdVKS9hB7ridc5fNEXp7fxJgnb-NUu0wQEuM5AECpQqmfifNruJIPgjIBzwx2EKD6UWoEHFUdomX2UJVls5r-mWXlSnH3KMA2karsefOzDyoi50c62rpyPzBBrlA~FcX68XVtZc~-5lGJ45oruH9kN10M5~ETv07MF2lP8pVREQC2j~ly~jApHea-S3hl~avfY0u230QQHty7D7DMmlEtbcgBlUd2zmXUxf7lZWWl2crjmRrSJIPYC0ji7HqoOuxAI6DtlVTUL3nMt5V8h93j91DIA6Z1ruttB53EZvKKySagLOL8PhopuA__&Key-Pair-Id=APKAJM7FVRD2EPOYUXBQ",
+      "valid_until": "2022-01-21T20:48:01Z"
+    },
+    "300px": {
+      "url": "https://previews.us-east-1.widencdn.net/preview/36614591/assets/asset-view/56768476-748a-46c1-ad40-ac23f16654ec/thumbnail/eyJ3IjozMDAsImgiOjMwMCwic2NvcGUiOiJhcHAifQ==?Expires=1642798800&Signature=gg7F15Jn8Se7IhhXcP~RSCFaAzUyv6JsVlaadDFn8TRU-cDvKGlLjMeDoTb5HPJ24tyniP9G99Tp8PgyPIBTfzSIDN~Y0s2uo7h0YPzhpYgKkOFnMLDt~ghpLx2kYCrtkJmBDAt9~7MR~~HNXe1pcFUXdwjrfZhTqrCX9UtamXjXJSUdUwOrBUnHEi-Q2G4GljbnAHJIQdVfaPRSl99AT5N~pojOIEe8-X4Bl-M73ig0p26HMmYsTYX9ef1C3~1~HURgjLpWMp5xG3lZS37~psuJTVszP7qinqeyCoBFhDzn0ik2Q~OPbhlCOCEExJ034NpZXihJJZeFMVnqjvQs5g__&Key-Pair-Id=APKAJM7FVRD2EPOYUXBQ",
+      "valid_until": "2022-01-21T20:48:01Z"
+    },
+    "600px": {
+      "url": "https://previews.us-east-1.widencdn.net/preview/36614591/assets/asset-view/56768476-748a-46c1-ad40-ac23f16654ec/thumbnail/eyJ3Ijo2MDAsImgiOjYwMCwic2NvcGUiOiJhcHAifQ==?Expires=1642798800&Signature=UE3SeKGVkHzjEpHy0di51dKEP05Bt46NTBZG3W2oBxda65zSyQFsCtzC7ekIvkVl2IiZkQtgU-vDdfouvc1HazbITY7MNNRPIeiOaVqnS6k5BHZ72Spr1~taesyOEfmWU2mJ-KByz5K9pEQ~MoXKgdDpPktkUbD7UHNPc7oGabBlaty7fxWh-IiDbkY6M0liuebdiZcqBAs2erPvOtb~uVBi6Be-cJ0j1Tkos0qixl2VO60deO16PH-O2x87eRQIAVLxXNu7Up-EioQEzD4Q-z6DobXuOHAO23mgJh1nay7pdLnJH6MqoA7JcsbQguRbY-0u4jjWeZjVmcvEdrqw0Q__&Key-Pair-Id=APKAJM7FVRD2EPOYUXBQ",
+      "valid_until": "2022-01-21T20:48:01Z"
+    }
+  },
+  "embeds": {
+    "document_html5_viewer": {
+      "url": "https://laser.widen.net/view/pdf/8a1ouvfchk/Explorer-owners-manual.pdf?u=xgdchd",
+      "html": "<iframe src=\"https://laser.widen.net/view/pdf/8a1ouvfchk/Explorer-owners-manual.pdf?u=xgdchd\" webkitallowfullscreen mozallowfullscreen allowfullscreen ></iframe>",
+      "share": "https://laser.widen.net/view/pdf/8a1ouvfchk/Explorer-owners-manual.pdf?u=xgdchd&x.share=t",
+      "apps": []
+    },
+    "document_thumbnail": {
+      "url": "https://laser.widen.net/content/8a1ouvfchk/jpeg/Explorer-owners-manual.jpg?u=xgdchd",
+      "html": "<img alt=\"Explorer-owners-manual.jpg\" src=\"https://laser.widen.net/content/8a1ouvfchk/jpeg/Explorer-owners-manual.jpg?u=xgdchd\">",
+      "share": "https://laser.widen.net/view/thumbnail/8a1ouvfchk/Explorer-owners-manual.pdf?t.format=jpeg&u=xgdchd&x.share=t",
+      "apps": []
+    },
+    "document_viewer": {
+      "url": "https://laser.widen.net/content/8a1ouvfchk/pdf/Explorer-owners-manual.pdf?u=xgdchd",
+      "html": "<iframe src=\"https://laser.widen.net/content/8a1ouvfchk/pdf/Explorer-owners-manual.pdf?u=xgdchd\" webkitallowfullscreen mozallowfullscreen allowfullscreen ></iframe>",
+      "share": "https://laser.widen.net/content/8a1ouvfchk/pdf/Explorer-owners-manual.pdf?u=xgdchd&x.share=t",
+      "apps": []
+    },
+    "document_viewer_with_download": {
+      "url": "https://laser.widen.net/view/pdf/8a1ouvfchk/Explorer-owners-manual.pdf?t.download=true&u=xgdchd",
+      "html": "<iframe src=\"https://laser.widen.net/view/pdf/8a1ouvfchk/Explorer-owners-manual.pdf?t.download=true&u=xgdchd\" webkitallowfullscreen mozallowfullscreen allowfullscreen ></iframe>",
+      "share": "https://laser.widen.net/view/pdf/8a1ouvfchk/Explorer-owners-manual.pdf?t.download=true&u=xgdchd&x.share=t",
+      "apps": []
+    },
+    "original": {
+      "url": "https://laser.widen.net/content/8a1ouvfchk/original/Explorer-owners-manual.pdf?u=xgdchd&download=true",
+      "html": "<a href=\"https://laser.widen.net/content/8a1ouvfchk/original/Explorer-owners-manual.pdf?u=xgdchd&download=true\" target=\"_blank\">Explorer-owners-manual.pdf</a>",
+      "share": "https://laser.widen.net/content/8a1ouvfchk/original/Explorer-owners-manual.pdf?u=xgdchd&download=true&x.share=t",
+      "apps": []
+    },
+    "templated": {
+      "url": "https://embed.widencdn.net/img/laser/8a1ouvfchk/{size}px@{scale}x/Explorer-owners-manual.pdf?q={quality}&x.template=y",
+      "html": null,
+      "share": "https://embed.widencdn.net/img/laser/8a1ouvfchk/{size}px@{scale}x/Explorer-owners-manual.pdf?q={quality}&x.template=y",
+      "apps": []
+    }
+  },
+  "expanded": {
+    "asset_properties": true,
+    "embeds": true,
+    "file_properties": true,
+    "metadata": true,
+    "metadata_info": true,
+    "metadata_vocabulary": true,
+    "security": true,
+    "status": false,
+    "thumbnails": true
+  },
+  "_links": {
+    "download": "https://orders-bb.us-east-1.widencdn.net/download-deferred/originals?asset_wrn=widen%3Aassets%3Aasset%3ALSRZZ%3A8a1ouvfchk&actor=wrn%3Ausers%3Auser%3A36614591%3Axgdchd&tracking=ewogICJkb19ub3RfdHJhY2siOiBmYWxzZSwKICAiYW5vbnltb3VzIjogZmFsc2UsCiAgInZpc2l0b3JfaWQiOiBudWxsLAogICJ1c2VyX3dybiI6ICJ3aWRlbjp1c2Vyczp1c2VyOkxTUlpaOnhnZGNoZCIKfQ%3D%3D&custom_metadata=ewogICJhcHBfbmFtZSI6ICJheGlvbSIsCiAgImludGVuZGVkX3VzZV9jb2RlIjogbnVsbCwKICAiaW50ZW5kZWRfdXNlX3ZhbHVlIjogbnVsbCwKICAiaW50ZW5kZWRfdXNlX2VtYWlsIjogbnVsbCwKICAiY29sbGVjdGlvbl9pZCI6IG51bGwsCiAgInBvcnRhbF9pZCI6IG51bGwsCiAgImRhbV9vcmRlcl9pZCI6IG51bGwKfQ%3D%3D&Expires=1642755600&Signature=jyqubiXK4mq1d8gB8-eK~LYrpgNL~WNgxk44A~NmhYqNVHzcRcFel-hf5Z-WGG5nrb0f04sdB3P4PN51V-i6h72nHUqSF4Kt1rlRPusJY9bAPlsIcAckUYfjrkksDzJ6gpL3G823CEcC5viXYeNgIHDUj-9bcdBZ6xhRdoBbqeshKPNP5LDlk~Ha6lw2BYwXnoqQq9ewFeFXVQQivlvx3yhaz07zdoBKdO~mpEcN-A6j2OaTw6imAeMAl2xz-LevP8rU47PhIaZjoLquWCfz6gMumKr06GfXu41hNiANub5-zoyXods6K~hkipofRLSTsXNTgoaSY0GnYBcKx9RSxQ__&Key-Pair-Id=APKAJM7FVRD2EPOYUXBQ",
+    "self": "https://api.widencollective.com/v2/assets/0324b0b2-5293-4aa0-b0aa-c85b003395e2",
+    "self_all": "https://api.widencollective.com/v2/assets/0324b0b2-5293-4aa0-b0aa-c85b003395e2?expand=asset_properties%2Cembeds%2Cfile_properties%2Cmetadata%2Cmetadata_info%2Cmetadata_vocabulary%2Csecurity%2Cthumbnails"
+  }
+}

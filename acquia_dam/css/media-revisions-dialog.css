@@ -1,0 +1,12 @@
+.ui-dialog.media-revisions-dialog.ui-widget {
+  max-width: 75%;
+}
+.ui-dialog.media-revisions-dialog.ui-widget .ui-dialog-titlebar {
+  background: #154575;
+}
+.ui-dialog.media-revisions-dialog.ui-widget .button--primary {
+  background: #154575;
+}
+.ui-dialog.media-revisions-dialog.ui-widget .button--primary:focus {
+  background: #1c5c9c;
+}

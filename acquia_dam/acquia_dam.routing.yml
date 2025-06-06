@@ -1,0 +1,145 @@
+acquia_dam.config:
+  path: '/admin/config/acquia-dam'
+  defaults:
+    _form: '\Drupal\acquia_dam\Form\AcquiaDamConfigurationForm'
+    _title: 'Acquia DAM configuration'
+  requirements:
+    _permission: 'administer site configuration'
+
+entity.user.acquia_dam_auth:
+  path: '/user/{user}/acquia-dam'
+  defaults:
+    _title: 'Acquia DAM'
+    _controller: '\Drupal\acquia_dam\Controller\AuthenticationPage::authPage'
+  requirements:
+    _custom_access: '\Drupal\acquia_dam\Controller\AuthenticationPage::access'
+    _permission: 'authorize with acquia dam+administer site configuration'
+    _user_is_logged_in: 'TRUE'
+    _acquia_dam_site_authenticated_access_check: 'TRUE'
+    user: \d+
+
+acquia_dam.user_auth:
+  path: '/user/acquia-dam/auth'
+  defaults:
+    _controller: '\Drupal\acquia_dam\Controller\AuthenticationController::authenticateUser'
+  requirements:
+    _permission: 'authorize with acquia dam+administer site configuration'
+    _user_is_logged_in: 'TRUE'
+
+acquia_dam.site_auth:
+  path: '/acquia-dam/auth'
+  defaults:
+    _controller: '\Drupal\acquia_dam\Controller\AuthenticationController::authenticateSite'
+  requirements:
+    _permission: 'administer site configuration'
+
+acquia_dam.logout:
+  path: '/user/acquia-dam/logout'
+  defaults:
+    _controller: '\Drupal\acquia_dam\Controller\AuthenticationController::logout'
+  requirements:
+    _permission: 'authorize with acquia dam+administer site configuration'
+    _user_is_logged_in: 'TRUE'
+
+acquia_dam.disconnect_site:
+  path: '/acquia-dam/disconnect'
+  defaults:
+    _form: '\Drupal\acquia_dam\Form\SiteDisconnectConfirm'
+  requirements:
+    _permission: 'administer site configuration'
+
+acquia_dam.add_embed:
+  path: '/acquia-dam/embed-form/{asset_type}/{selected_ids}'
+  defaults:
+    _form: '\Drupal\acquia_dam\Form\EmbedSelectForm'
+  requirements:
+    _custom_access: 'media_library.ui_builder:checkAccess'
+
+acquia_dam.categories:
+  path: '/acquia-dam/categories'
+  defaults:
+    _controller: '\Drupal\acquia_dam\Controller\AcquiaDamCategoriesController::getCategory'
+  requirements:
+    _user_is_logged_in: 'TRUE'
+
+editor.media_revisions_dialog:
+  path: '/editor/dialog/media-revisions/{editor}'
+  defaults:
+    _form: 'Drupal\acquia_dam\Form\EditorMediaRevisionDialog'
+    _title: 'Update media'
+  methods: [POST]
+  requirements:
+    _entity_access: 'editor.use'
+  options:
+    parameters:
+      editor:
+        type: entity:editor
+
+acquia_dam.field_media_revision_dialog:
+  path: '/acquia_dam/media-revisions-form/{revision_id}/{target_id}'
+  defaults:
+    _form: 'Drupal\acquia_dam\Form\FieldMediaRevisionDialog'
+  requirements:
+    _custom_access: 'acquia_dam.asset_library_builder:checkUpdateFormAccess'
+
+acquia_dam.editor.media_revision_check:
+  path: '/acquia-dam/{editor}/media-revision'
+  defaults:
+    _controller: '\Drupal\acquia_dam\Controller\EditorMediaController::isLatestRevision'
+  methods: [GET]
+  requirements:
+    _entity_access: 'editor.use'
+    _format: json
+  options:
+    parameters:
+      editor:
+        type: entity:editor
+
+acquia_dam.editor.media_expiration_check:
+  path: '/acquia-dam/{editor}/media-expiration'
+  defaults:
+    _controller: '\Drupal\acquia_dam\Controller\EditorMediaController::isExpired'
+  methods: [GET]
+  requirements:
+    _entity_access: 'editor.use'
+    _format: json
+  options:
+    parameters:
+      editor:
+        type: entity:editor
+
+# Deprecated, will be removed in 1.2.x versions.
+acquia_dam.version_update:
+  path: '/acquia-dam/check-version/{media}'
+
+acquia_dam.asset_update_check_route:
+  path: '/acquia-dam/check-asset-update/{media}'
+  defaults:
+    _controller: '\Drupal\acquia_dam\Controller\AssetUpdateCheckController::checkAssetUpdate'
+  requirements:
+    _entity_access: 'media.update'
+  options:
+    parameters:
+      media:
+        type: entity:media
+
+acquia_dam.metadata_config:
+  path: '/admin/config/acquia-dam/metadata'
+  defaults:
+    _form: '\Drupal\acquia_dam\Form\AcquiaDamMetadataConfigurationForm'
+    _title: 'Acquia DAM metadata handling'
+  requirements:
+    _acquia_dam_site_authenticated_access_check: 'TRUE'
+    _permission: 'administer site configuration'
+
+acquia_dam.metadata_sync:
+  path: '/acquia-dam/metadata-sync/{media}'
+  defaults:
+    _controller: '\Drupal\acquia_dam\Controller\MetadataSyncController::syncMetadata'
+  requirements:
+    _entity_access: 'media.update'
+    _csrf_token: 'TRUE'
+  options:
+    parameters:
+      media:
+        type: entity:media

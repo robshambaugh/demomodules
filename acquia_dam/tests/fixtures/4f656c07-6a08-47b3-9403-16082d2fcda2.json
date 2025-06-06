@@ -1,0 +1,278 @@
+{
+  "id": "4f656c07-6a08-47b3-9403-16082d2fcda2",
+  "external_id": "8q3z9gm2ec",
+  "filename": "test-course-catalog-v2.pdf",
+  "created_date": "2022-07-18T13:58:48Z",
+  "last_update_date": "2022-07-18T13:58:48Z",
+  "file_upload_date": "2022-07-18T13:58:48Z",
+  "deleted_date": null,
+  "released_and_not_expired": true,
+  "asset_properties": {
+    "favorite": false,
+    "popularity": 0,
+    "cutline_caption": ""
+  },
+  "file_properties": {
+    "format": "PdfDocument",
+    "format_type": "pdf",
+    "size_in_kbytes": 2759,
+    "image_properties": null,
+    "video_properties": null
+  },
+  "metadata": {
+    "fields": {
+      "assettype": [
+        "Document"
+      ],
+      "author": [],
+      "captionAbstract": [],
+      "colorspace": [],
+      "containsFnords": [
+        "No"
+      ],
+      "dateCreated": [],
+      "description": [],
+      "keywords": [],
+      "testkey": [],
+      "teststatus": [],
+      "usagerightdetails": [],
+      "usagerights": [],
+      "vincent": []
+    }
+  },
+  "metadata_info": {
+    "field_set": "Laser Metadata Type",
+    "field_set_fields": [
+      {
+        "key": "assettype",
+        "label": "Asset Type",
+        "type": "selection_list",
+        "field_type": "selection_list",
+        "controlled_vocabulary": true,
+        "required": false,
+        "editable": true,
+        "vocabulary": [
+          "Document",
+          "Graphic",
+          "Other",
+          "Image",
+          "Video"
+        ]
+      },
+      {
+        "key": "author",
+        "label": "Author",
+        "type": "text",
+        "field_type": "text",
+        "controlled_vocabulary": false,
+        "required": false,
+        "editable": true,
+        "vocabulary": null
+      },
+      {
+        "key": "captionAbstract",
+        "label": "Caption/Abstract",
+        "type": "text_short",
+        "field_type": "text_short",
+        "controlled_vocabulary": false,
+        "required": false,
+        "editable": true,
+        "vocabulary": null
+      },
+      {
+        "key": "colorspace",
+        "label": "Colorspace",
+        "type": "text",
+        "field_type": "text",
+        "controlled_vocabulary": false,
+        "required": false,
+        "editable": true,
+        "vocabulary": null
+      },
+      {
+        "key": "containsFnords",
+        "label": "Contains Fnords",
+        "type": "selection_list",
+        "field_type": "selection_list",
+        "controlled_vocabulary": true,
+        "required": false,
+        "editable": true,
+        "vocabulary": [
+          "Yes",
+          "No"
+        ]
+      },
+      {
+        "key": "dateCreated",
+        "label": "Date Created",
+        "type": "date",
+        "field_type": "date",
+        "controlled_vocabulary": false,
+        "required": false,
+        "editable": true,
+        "vocabulary": null
+      },
+      {
+        "key": "description",
+        "label": "Description",
+        "type": "text_multi_line",
+        "field_type": "text_multi_line",
+        "controlled_vocabulary": false,
+        "required": false,
+        "editable": true,
+        "vocabulary": null
+      },
+      {
+        "key": "keywords",
+        "label": "Keywords",
+        "type": "text",
+        "field_type": "text",
+        "controlled_vocabulary": false,
+        "required": false,
+        "editable": true,
+        "vocabulary": null
+      },
+      {
+        "key": "testkey",
+        "label": "test field",
+        "type": "selection_list_multi",
+        "field_type": "selection_list_multi",
+        "controlled_vocabulary": true,
+        "required": false,
+        "editable": true,
+        "vocabulary": [
+          "NETWORKING, STORAGE AND DATA CENTER",
+          "test1, test2"
+        ]
+      },
+      {
+        "key": "teststatus",
+        "label": "teststatus",
+        "type": "selection_list",
+        "field_type": "selection_list",
+        "controlled_vocabulary": true,
+        "required": false,
+        "editable": true,
+        "vocabulary": []
+      },
+      {
+        "key": "usagerightdetails",
+        "label": "Usage Rights Details",
+        "type": "text_multi_line",
+        "field_type": "text_multi_line",
+        "controlled_vocabulary": false,
+        "required": false,
+        "editable": true,
+        "vocabulary": null
+      },
+      {
+        "key": "usagerights",
+        "label": "Usage Rights",
+        "type": "selection_list",
+        "field_type": "selection_list",
+        "controlled_vocabulary": true,
+        "required": false,
+        "editable": true,
+        "vocabulary": [
+          "No",
+          "Yes",
+          "Another value"
+        ]
+      },
+      {
+        "key": "vincent",
+        "label": "Vincent",
+        "type": "text",
+        "field_type": "text",
+        "controlled_vocabulary": false,
+        "required": false,
+        "editable": true,
+        "vocabulary": null
+      }
+    ]
+  },
+  "security": {
+    "expiration_date": null,
+    "release_date": "2022-07-18T13:58:48Z",
+    "asset_groups": [
+      "public"
+    ]
+  },
+  "status": null,
+  "thumbnails": {
+    "125px": {
+      "url": "https://previews.us-east-1.widencdn.net/preview/36614591/assets/asset-view/aa65b1b7-203d-412d-a83a-3385a636d2a1/thumbnail/eyJ3IjoxMjUsImgiOjEyNSwic2NvcGUiOiJhcHAifQ==?Expires=1659200400&Signature=tMptic5zfyggqtD1ZoHT3mEMJo6oeXP~agslfmfZZBVHO3ZT-N88mnOdz2go-i~YGJDbPnh61XkpiXT8Zddr-uajB8RFdKInPygJAEvKyfR0hRO1lgLAKf7sJT1saPRNOQs-GdIkuyMbxhP3F2unfdAcfVF5I20HlhTyMCyKhnb0WE7ne0GY004dCNy10728wsRoHbQ3IZugC3WirmzCF46lA4BHDnZy3QlO0UVo4ob~l04QnIMjiwQ0V5JCGbkH~WwWSQhKLCCGEoToROAGADgcTMsme3EXgUwe6y~In-q8~e1h~Lz7qqArF2-ejpBlsB~gjirGW~rOEozHHZKm9Q__&Key-Pair-Id=APKAJM7FVRD2EPOYUXBQ",
+      "valid_until": "2022-07-30T16:53:46Z"
+    },
+    "160px": {
+      "url": "https://previews.us-east-1.widencdn.net/preview/36614591/assets/asset-view/aa65b1b7-203d-412d-a83a-3385a636d2a1/thumbnail/eyJ3IjoxNjAsImgiOjE2MCwic2NvcGUiOiJhcHAifQ==?Expires=1659200400&Signature=HRkwV1nCPEhFF1lniO3iG7w6O006J0Wx0UjEIonVeAdLbXLpWV6MJ6QnR5oyFg0gZTEhWmP4nA0uwxZAoF-rY-5duxBLAgIrfCAmiqgwwnG7ROCe0nOOAkXs6m2ubQoKtCHSJPodFtKxKTVm6N3t7CIE8IhUh-X4XghmS11mut5XrTAT286kjgKOtoail1JNkLhN91-KS58uB4gcMsOzJT6qRhr07vdQTAB0dKFmoKenOhBYPaNQqn-0sTc3vFlfHb82dqF7qcLLfunJD3Dpa3E9sg6kkpVDvD3DgAdyRf5ZytCy707mCBQKBMCzEtyq3tKuu4akDo40aGHnZx29FQ__&Key-Pair-Id=APKAJM7FVRD2EPOYUXBQ",
+      "valid_until": "2022-07-30T16:53:46Z"
+    },
+    "2048px": {
+      "url": "https://previews.us-east-1.widencdn.net/preview/36614591/assets/asset-view/aa65b1b7-203d-412d-a83a-3385a636d2a1/thumbnail/eyJ3IjoyMDQ4LCJoIjoyMDQ4LCJzY29wZSI6ImFwcCJ9?Expires=1659200400&Signature=LpwYFgHONk5tcDH-KIw6f9Vn5Vh7NRca18ccInT78Er4hRKvLGZ~UNLNHmv18h2NWNshS89tWtGbLnSCHkPR7IKL28UTwiYxH3h~k4TrpxzvmehVtwbqLl5xB7sOXAt9vWrtNElzZWfa2uHZFGTqjOFnR5pWVEWPHef19LZPBvpYwwNzwjoEy1UYTl9MZ7dkZsWYdAuxGt9~-k6k6IL4UJMwbQBjX0Tda3NVh1SijrJvuP~np6ZpVDMfjsaxzK4RhnSzghqwTbWkz8ULB22UehfHID25RQ7bibTCqafDCbDnFt2Zkl2oWrVJFQAIjElo4SjJRFi4lL5JaI3QPw1dew__&Key-Pair-Id=APKAJM7FVRD2EPOYUXBQ",
+      "valid_until": "2022-07-30T16:53:46Z"
+    },
+    "300px": {
+      "url": "https://previews.us-east-1.widencdn.net/preview/36614591/assets/asset-view/aa65b1b7-203d-412d-a83a-3385a636d2a1/thumbnail/eyJ3IjozMDAsImgiOjMwMCwic2NvcGUiOiJhcHAifQ==?Expires=1659200400&Signature=cjWuih00Bbre5nca2sSTer10s4apVMlwSfKu1ytGAOha5iasMqOHXxCJ~H7H8aynfsSWDmcsmLQxnM1FPyBN-RWRUvWxoxaX20lSv0QC4dQZ3GkXT~jHYF0O~LTekE~XeZQQDVpGNoK~R2q1ShqGZvzPKJi2sz7Lm3LQKM1SV-2IVbEESsc5RUWKNBsXpQBw2-5MBgCcUbjmt9BUUxK8nsVNZ4Pz9MqWI37NP2obb~fLFWON18Pe3OWPW1NLr52HcY0eeZ~Dq~ZJjdVrgi6lf-Uq6SfkB3GfU1LbxDM-cUJkyjAimJ~PS8CG6Nl-N3HDdYWnBhQYEC0A3ZAMvHZmbA__&Key-Pair-Id=APKAJM7FVRD2EPOYUXBQ",
+      "valid_until": "2022-07-30T16:53:46Z"
+    },
+    "600px": {
+      "url": "https://previews.us-east-1.widencdn.net/preview/36614591/assets/asset-view/aa65b1b7-203d-412d-a83a-3385a636d2a1/thumbnail/eyJ3Ijo2MDAsImgiOjYwMCwic2NvcGUiOiJhcHAifQ==?Expires=1659200400&Signature=dCwUEleLpudegLXvwo91ZKHTAXfJju3vMAS3ZGfsbu66FuJcszNDGIj8Oo2RvX9-tZFjKMsp1oW7jsQjDVNxLerJzRYyBB5shBTBTZ3xxvFVvdqlePPtNUlfGkeAKeIy5GQ6bIZdQFWnOsWO6sEwxOqow1-8K6ojpzKONhJzi3b9ZcwDqSvdBQQUKGT9TNos7PNxmSFeIewCCAVoSGEp5wvP-py1MS6J84u8trL8yp97PVgt6l1T00P3IbQhq7phK~RMqQWO7eWB0vDaKjLMcBeiG2GJLVPnjPykaIs~NpUc0x9XKttnT6jGCJ5yUb0KZbx5bdFWwleI45rMcW6r5g__&Key-Pair-Id=APKAJM7FVRD2EPOYUXBQ",
+      "valid_until": "2022-07-30T16:53:46Z"
+    }
+  },
+  "embeds": {
+    "document_html5_viewer": {
+      "url": "https://laser.widen.net/view/pdf/8q3z9gm2ec/test-course-catalog-v2.pdf?u=xgdchd",
+      "html": "<iframe src=\"https://laser.widen.net/view/pdf/8q3z9gm2ec/test-course-catalog-v2.pdf?u=xgdchd\" webkitallowfullscreen mozallowfullscreen allowfullscreen title=\"Document for &quot;test-course-catalog-v2.pdf&quot;\" ></iframe>",
+      "share": "https://laser.widen.net/view/pdf/8q3z9gm2ec/test-course-catalog-v2.pdf?u=xgdchd&x.share=t",
+      "apps": []
+    },
+    "document_thumbnail": {
+      "url": "https://laser.widen.net/content/8q3z9gm2ec/jpeg/test-course-catalog-v2.jpg?u=xgdchd",
+      "html": "<img alt=\"test-course-catalog-v2.jpg\" src=\"https://laser.widen.net/content/8q3z9gm2ec/jpeg/test-course-catalog-v2.jpg?u=xgdchd\">",
+      "share": "https://laser.widen.net/view/thumbnail/8q3z9gm2ec/test-course-catalog-v2.pdf?t.format=jpeg&u=xgdchd&x.share=t",
+      "apps": []
+    },
+    "document_viewer": {
+      "url": "https://laser.widen.net/content/8q3z9gm2ec/pdf/test-course-catalog-v2.pdf?u=xgdchd",
+      "html": "<iframe src=\"https://laser.widen.net/content/8q3z9gm2ec/pdf/test-course-catalog-v2.pdf?u=xgdchd\" webkitallowfullscreen mozallowfullscreen allowfullscreen title=\"test-course-catalog-v2.pdf\" ></iframe>",
+      "share": "https://laser.widen.net/content/8q3z9gm2ec/pdf/test-course-catalog-v2.pdf?u=xgdchd&x.share=t",
+      "apps": []
+    },
+    "document_viewer_with_download": {
+      "url": "https://laser.widen.net/view/pdf/8q3z9gm2ec/test-course-catalog-v2.pdf?t.download=true&u=xgdchd",
+      "html": "<iframe src=\"https://laser.widen.net/view/pdf/8q3z9gm2ec/test-course-catalog-v2.pdf?t.download=true&u=xgdchd\" webkitallowfullscreen mozallowfullscreen allowfullscreen title=\"Document for &quot;test-course-catalog-v2.pdf&quot;\" ></iframe>",
+      "share": "https://laser.widen.net/view/pdf/8q3z9gm2ec/test-course-catalog-v2.pdf?t.download=true&u=xgdchd&x.share=t",
+      "apps": []
+    },
+    "original": {
+      "url": "https://laser.widen.net/content/8q3z9gm2ec/original/test-course-catalog-v2.pdf?u=xgdchd&download=true",
+      "html": "<a href=\"https://laser.widen.net/content/8q3z9gm2ec/original/test-course-catalog-v2.pdf?u=xgdchd&download=true\" target=\"_blank\">test-course-catalog-v2.pdf</a>",
+      "share": "https://laser.widen.net/content/8q3z9gm2ec/original/test-course-catalog-v2.pdf?u=xgdchd&download=true&x.share=t",
+      "apps": []
+    },
+    "templated": {
+      "url": "https://embed.widencdn.net/img/laser/8q3z9gm2ec/{size}px@{scale}x/test-course-catalog-v2.pdf?q={quality}&x.template=y",
+      "html": null,
+      "share": "https://embed.widencdn.net/img/laser/8q3z9gm2ec/{size}px@{scale}x/test-course-catalog-v2.pdf?q={quality}&x.template=y",
+      "apps": []
+    }
+  },
+  "expanded": {
+    "asset_properties": true,
+    "embeds": true,
+    "file_properties": true,
+    "metadata": true,
+    "metadata_info": true,
+    "metadata_vocabulary": true,
+    "security": true,
+    "status": false,
+    "thumbnails": true
+  },
+  "_links": {
+    "download": "https://orders-bb.us-east-1.widencdn.net/download-deferred/originals?asset_wrn=wrn%3Aassets%3Aasset%3A36614591%3A8q3z9gm2ec&actor=wrn%3Ausers%3Auser%3A36614591%3Axgdchd&tracking=ewogICJkb19ub3RfdHJhY2siOiBmYWxzZSwKICAiYW5vbnltb3VzIjogZmFsc2UsCiAgInZpc2l0b3JfaWQiOiBudWxsLAogICJ1c2VyX3dybiI6ICJ3aWRlbjp1c2Vyczp1c2VyOkxTUlpaOnhnZGNoZCIKfQ%3D%3D&custom_metadata=ewogICJhcHBfbmFtZSI6ICJheGlvbSIsCiAgImludGVuZGVkX3VzZV9jb2RlIjogbnVsbCwKICAiaW50ZW5kZWRfdXNlX3ZhbHVlIjogbnVsbCwKICAiaW50ZW5kZWRfdXNlX2VtYWlsIjogbnVsbCwKICAiY29sbGVjdGlvbl9pZCI6IG51bGwsCiAgInBvcnRhbF9pZCI6IG51bGwsCiAgImRhbV9vcmRlcl9pZCI6IG51bGwKfQ%3D%3D&Expires=1659157200&Signature=Ww3hWypZ0E8xXzJDsP73~proLfQ356KsTvMdcXSMm6ptDgqWC6vjmNaO~Iacll2DPEm4Q-ZzMC3y0uQhStE1oAxH~yh-S0aQtqIcfheLu7lgPtQaZIM~58M6jiz7a5cfa3Q0Ubp4QEARQQStupvOrQlEubf6bJuPkmrhozckliTFebdfrW7WBxZ~RzaJ7-V1F36fuvOZIkmo1hS65uCEQS4iWFKBzn42WUKknyPOYbhXiM64W5X~jMFjdxr08HutZHd8zPOdR7xGqQzlqEf7zdSZWhOLE3WwFxlwMEvA6C2I2QiLuXvZ~rApkrB3Buh80oKUQajb8V9I9wgANfWgHQ__&Key-Pair-Id=APKAJM7FVRD2EPOYUXBQ",
+    "self": "https://api.widencollective.com/v2/assets/4f656c07-6a08-47b3-9403-16082d2fcda2",
+    "self_all": "https://api.widencollective.com/v2/assets/4f656c07-6a08-47b3-9403-16082d2fcda2?expand=asset_properties%2Cembeds%2Cfile_properties%2Cmetadata%2Cmetadata_info%2Cmetadata_vocabulary%2Csecurity%2Cthumbnails"
+  }
+}

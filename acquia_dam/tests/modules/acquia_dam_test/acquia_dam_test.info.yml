@@ -1,0 +1,10 @@
+name: Acquia DAM test helper
+type: module
+package: Testing
+description: Helper for Acquia DAM tests
+hidden: true
+
+# Information added by Drupal.org packaging script on 2025-05-14
+version: '1.1.2'
+project: 'acquia_dam'
+datestamp: 1747255123

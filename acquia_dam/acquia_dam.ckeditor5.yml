@@ -1,0 +1,45 @@
+acquia_dam_mediaEmbedCode:
+  ckeditor5:
+    plugins:
+      # @todo why does acquia_dam.MediaEmbedCode not work? because of parent namespace?
+      - mediaEmbedCode.MediaEmbedCode
+  drupal:
+    label: Embed Code
+    library: acquia_dam/ckeditor5.media_embed_code
+    class: Drupal\acquia_dam\Plugin\CKEditor5Plugin\MediaEmbedCode
+    elements:
+      - <drupal-media data-embed-code-id>
+    conditions:
+      plugins:
+        - media_media
+acquia_dam_mediaRevisions:
+  ckeditor5:
+    plugins:
+      # @todo why does acquia_dam.mediaRevision not work? because of parent namespace?
+      - mediaRevisions.MediaRevisions
+    config:
+      drupalMedia:
+        toolbar: [openMediaRevision]
+  drupal:
+    label: Media revision
+    library: acquia_dam/ckeditor5.media_revisions
+    class: Drupal\acquia_dam\Plugin\CKEditor5Plugin\MediaRevisions
+    elements:
+      - <drupal-media data-entity-revision>
+    conditions:
+      plugins:
+        - media_media
+acquia_dam_mediaExpired:
+  ckeditor5:
+    plugins:
+      # @todo why does acquia_dam.mediaExpired not work? because of parent namespace?
+      - mediaExpired.MediaExpired
+  drupal:
+    label: Media expired
+    library: acquia_dam/ckeditor5.media_expired
+    class: Drupal\acquia_dam\Plugin\CKEditor5Plugin\MediaExpired
+    elements:
+      - <drupal-media>
+    conditions:
+      plugins:
+        - media_media

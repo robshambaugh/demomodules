@@ -1,0 +1,16 @@
+{
+  "asset_id": "56ff14de-02cd-41b5-9a73-c917eab19abf",
+  "item_type": "asset_version",
+  "items": [
+    {
+      "_links": {
+        "version_details": "https://api.widencollective.com/v2/assets/56ff14de-02cd-41b5-9a73-c917eab19abf/versions/9e4e810c-147b-4ac2-85a9-cf64f8fa61e0"
+      },
+      "current_version": true,
+      "filename": "Wheel Illustration.ai",
+      "id": "9e4e810c-147b-4ac2-85a9-cf64f8fa61e0",
+      "version_number": 1
+    }
+  ],
+  "total_count": 1
+}

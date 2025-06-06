@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - acquia_dam
+id: acquia_dam_documents_asset
+label: 'Acquia DAM: Document'
+description: 'Media assets type of any other documents in the remote DAM service.'
+source: 'acquia_dam_asset:documents'
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: acquia_dam_asset_id
+  download_assets: false
+field_map:
+  filename: name

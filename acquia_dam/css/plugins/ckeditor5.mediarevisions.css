@@ -1,0 +1,15 @@
+.ck .drupal-media__mediarevision-update {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 28px;
+  height: 28px;
+}
+
+.ck .drupal-media__mediarevision-update-icon {
+  display: block;
+  width: 28px;
+  height: 28px;
+  background: url("../../images/alert-triangle-circle.svg") no-repeat center 4px;
+  background-size: 28px;
+}

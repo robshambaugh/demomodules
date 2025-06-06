@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - cohesion
+third_party_settings: {  }
+name: 'Site Studio'
+type: site_studio
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true
