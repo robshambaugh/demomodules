@@ -1,0 +1,31 @@
+<?php
+
+/**
+ * @file
+ * Contains docgen_demo.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function docgen_demo_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the docgen_demo module.
+    case 'help.page.docgen_demo':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('A demonstration of the Drupal to Acquia DAM document generation workflow.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_page_attachments().
+ */
+function docgen_demo_page_attachments(array &$attachments) {
+    $attachments['#attached']['library'][] = 'docgen_demo/global-styling';
+}

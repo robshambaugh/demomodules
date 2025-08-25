@@ -1,0 +1,5 @@
+name: 'DocGen Demo'
+type: module
+description: 'A demonstration of the Drupal to Acquia DAM document generation workflow.'
+core_version_requirement: ^10
+package: 'Custom'

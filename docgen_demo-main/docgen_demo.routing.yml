@@ -1,0 +1,7 @@
+docgen_demo.form:
+  path: '/docgen-demo'
+  defaults:
+    _form: '\Drupal\docgen_demo\Form\DocGenForm'
+    _title: 'Document Generation Demo'
+  requirements:
+    _permission: 'access content'
