@@ -1,0 +1,4 @@
+name: Fun Modal
+description: A Drupal 10 module that displays a fun modal in the admin interface.
+type: module
+core_version_requirement: ^10

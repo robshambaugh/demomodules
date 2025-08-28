@@ -1,0 +1,16 @@
+fun_modal.settings_page:
+  path: '/admin/config/fun-modal'
+  defaults:
+    _controller: '\Drupal\fun_modal\Controller\FunModalController::settingsPage'
+    _title: 'Fun Modal'
+  requirements:
+    _permission: 'access administration pages'
+
+fun_modal.modal_content:
+  path: '/admin/fun-modal/content'
+  defaults:
+    _controller: '\Drupal\fun_modal\Controller\FunModalController::modalContent'
+  requirements:
+    _permission: 'access administration pages'
+  options:
+    _no_ui_modes: TRUE

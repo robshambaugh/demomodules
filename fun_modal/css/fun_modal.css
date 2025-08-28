@@ -1,0 +1,9 @@
+/* Style the modal content area for the fun modal. */
+.ui-dialog .ui-dialog-content .fun-modal-content {
+  background-color: #0074bd; /* A solid blue */
+  color: #fff; /* Large white text */
+  font-size: 2em;
+  text-align: center;
+  padding: 2em;
+  font-weight: bold;
+}

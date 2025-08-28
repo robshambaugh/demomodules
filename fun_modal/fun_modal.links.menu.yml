@@ -1,0 +1,6 @@
+fun_modal.settings_link:
+  title: 'Fun Modal'
+  description: 'Display a fun modal with a button.'
+  route_name: fun_modal.settings_page
+  parent: system.admin_config_development
+  weight: 10
